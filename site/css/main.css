@@ -1,0 +1,32 @@
+strong{
+color:#A67C00;
+}
+ .code, code{
+margin:0px 0px;
+padding:2px;
+background:#eee;
+overflow:auto;
+}
+ .code h1{
+margin:0px;
+margin-bottom:0px;
+font-size:10px;
+text-align:right;
+color:black;
+}
+.nav .active a{
+color:#A67C00;
+text-decoration:underline;
+}
+h1{
+border-bottom:1px dotted gray;
+} 
+
+
+
+.container .navbar-header{
+background:url('images/logoMk.png') no-repeat 0px 8px ;
+}
+.container a.navbar-brand{
+padding-left:70px;
+}
