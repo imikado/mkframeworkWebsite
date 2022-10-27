@@ -1,0 +1,10 @@
+<map id="getRequete" name="getRequete">
+<area shape="rect" id="node2" href="$classabstract__model.html#a04f56952f146aba98f88c32e7474193b" title="findOneSimple" alt="" coords="148,5,255,32"/>
+<area shape="rect" id="node3" href="$classabstract__model.html#ade52bdcdd15cdf1a1bf31160b186b850" title="findOne" alt="" coords="168,56,235,83"/>
+<area shape="rect" id="node4" href="$classabstract__model.html#a1a59505502682ff262820c794f5fd043" title="findMany" alt="" coords="164,107,239,133"/>
+<area shape="rect" id="node5" href="$classabstract__model.html#ae9637c14563f71a0c5910e3229488a7d" title="findManySimple" alt="" coords="144,157,259,184"/>
+<area shape="rect" id="node6" href="$classabstract__model.html#a1909f4b7f8129c7790cb75de2ffbe1e4" title="execute" alt="" coords="167,208,235,235"/>
+<area shape="rect" id="node7" href="$classabstract__model.html#a15dc1a73f6da2cba3f80727a3f4aeddd" title="update" alt="" coords="171,259,232,285"/>
+<area shape="rect" id="node8" href="$classabstract__model.html#a92414af9ebb0d9d7fca394808d445052" title="insert" alt="" coords="174,309,229,336"/>
+<area shape="rect" id="node9" href="$classabstract__model.html#a20ce0afb6dbcbad3e548d541255cad59" title="delete" alt="" coords="173,360,230,387"/>
+</map>

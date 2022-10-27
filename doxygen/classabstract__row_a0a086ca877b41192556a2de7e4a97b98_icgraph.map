@@ -1,0 +1,8 @@
+<map id="getModel" name="getModel">
+<area shape="rect" id="node2" href="$classabstract__row.html#a842e4774e3b3601a005b995c02f7e883" title="update" alt="" coords="137,5,199,32"/>
+<area shape="rect" id="node4" href="$classabstract__row.html#a473241246338cfccc4709ba896749019" title="insert" alt="" coords="141,56,195,83"/>
+<area shape="rect" id="node5" href="$classabstract__row.html#a13bdffdd926f26b825ea57066334ff01" title="delete" alt="" coords="139,107,197,133"/>
+<area shape="rect" id="node6" href="$classabstract__row.html#ad55202ad46584c420f9c75f8bcdefee8" title="getWhere" alt="" coords="129,157,207,184"/>
+<area shape="rect" id="node7" href="$classabstract__row.html#a06eebf63e89cbbf3fb7a28bb2533e4b5" title="setId" alt="" coords="143,208,193,235"/>
+<area shape="rect" id="node3" href="$classabstract__row.html#afc8a3c62679cf00ade9f15fb2a6d6132" title="save" alt="" coords="256,56,307,83"/>
+</map>

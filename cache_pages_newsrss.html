@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link href="" rel="self" type="application/rss+xml" /><title>Mkframework</title><link>http://mkf.mkdevs.com</link><description><![CDATA[Feed Rss du mkFramework, pour suivre les evolutions]]></description><item><title><![CDATA[Mise à jour du mode de distribution du mkframework
+]]></title><pubDate>Tue, 15 May 2018 00:00:00 +0200</pubDate><description><![CDATA[Vous avez désormais 3 dépots pour le framework
+- la librairie du framework seule
+- le builder (generateur web) seul
+- un package contenant l'ensemble pour débuter
+
+]]></description><guid>http://mkf.mkdevs.com#d9c9a206d452979f91b203dbc0f2d5282fc5ad80</guid></item><item><title><![CDATA[Mise à jour builder
+]]></title><pubDate>Sun, 11 Mar 2018 00:00:00 +0100</pubDate><description><![CDATA[Builder:
+- Mise à jour du module CRUD embarquee pour le profil SC
+- Idem pour le module de génération du module menu
+Barre de debug
+- Mise à jour des templates, desormais la barre de debug est masquee par défaut.
+
+]]></description><guid>http://mkf.mkdevs.com#1946ee779fa367cd33bf4b3bb9c324bc14de66ff</guid></item><item><title><![CDATA[Correction du profil de correction Oracle
+]]></title><pubDate>Tue, 26 Dec 2017 00:00:00 +0100</pubDate><description><![CDATA[Un utilisateur m'a signalé que le profil de connexion oracle n'etait pas correcte pour fonctionner avec le builder
+Il est désormais corrigé
+
+Merci llaffont ;)
+
+]]></description><guid>http://mkf.mkdevs.com#5aa4144bec3ab25917162ac33b7691a8f8ee2b64</guid></item><item><title><![CDATA[Bugfix du dépot git
+]]></title><pubDate>Mon, 31 Jul 2017 00:00:00 +0200</pubDate><description><![CDATA[Un utilisateur m'a signalé un soucis sur la dernière version, en effet depuis le switch sur dépot git, les repertoires vides n'étaient plus présents dans l'archive
+Cette absence de répertoires provoquaient de multiples erreurs.
+J'ai corrigé en créant les fichiers .gitignore correspondant et généré une nouvelle version 4.130.5
+
+Merci Skyline-gtr ;)
+
+]]></description><guid>http://mkf.mkdevs.com#6fea1d36e79d386f195cde34ec01b237e6cc7272</guid></item><item><title><![CDATA[Mise a jour systeme de telechargement du framework + ajout fichier de version
+]]></title><pubDate>Tue, 11 Jul 2017 00:00:00 +0200</pubDate><description><![CDATA[Deux choses ici:
+- Ajout d'un fichier json contenant notamment le numéro de version du framework, permettant notamment aux personnes telechargeant l'archive zip du framework de connaitre le numéro de version
+- Changement du système de telechargement de l'archive: on télécharge désormais via le dépot github du framework
+
+]]></description><guid>http://mkf.mkdevs.com#6c94641b91e114ae19e04d7e3c98c1d92367be6f</guid></item><item><title><![CDATA[Mise a jour driver mysql
+]]></title><pubDate>Mon, 22 May 2017 00:00:00 +0200</pubDate><description><![CDATA[Ajout des quotes de protection des colonnes lors d'insert/update
+
+Vous pouvez désormais utiliser des champs en utilisant des "mots reservés" tel que order, limit...
+
+]]></description><guid>http://mkf.mkdevs.com#179cb2d48b260b29eafc4e9a828b8f661609eb66</guid></item><item><title><![CDATA[Nouveau tutoriaux sur le nouveau template
+]]></title><pubDate>Sun, 19 Mar 2017 00:00:00 +0100</pubDate><description><![CDATA[Vous pouvez désormais trouver plusieurs informations supplémentaires pour vous présenter le nouveau template.
+
+Voici la page regroupant les tutoriaux.
+- #lien scraftsmanship.html #label Introduction lien#
+- #lien scraftsmanshipDetail_builder.html #label Présentation dans le builder lien#
+- #lien scraftsmanshipDetail_exampleHexagonal.html #label Exemple d'un module utilisant l'architecture hexagonale lien#
+- #lien scraftsmanshipDetail_impactCoucheModel.html #label L'impact sur la couche model lien#
+
+]]></description><guid>http://mkf.mkdevs.com#6855da0ce447dbce94398b896ec605eea28315d1</guid></item><item><title><![CDATA[Nouveau template disponible dans le builder
+]]></title><pubDate>Sat, 04 Mar 2017 00:00:00 +0100</pubDate><description><![CDATA[C'est avec un grand honneur que je peux enfin, après de longs mois de developpement vous présenter cette nouvelle version du framework incluant un tout nouveau template.
+Ce template s'inspire du mouvement "software craftsmanship"
+J'ai d'ailleurs ajouté une page spécifique à ce nouveau template pour mieux le présenter: #lien scraftsmanship.html #label page software craftsmanship lien#
+
+
+]]></description><guid>http://mkf.mkdevs.com#a16c21855c02a76257751abc46e05f3ac9310ef1</guid></item><item><title><![CDATA[Nouveau tutoriel sur Docker
+]]></title><pubDate>Mon, 19 Dec 2016 00:00:00 +0100</pubDate><description><![CDATA[Deux nouveaux tutoriels vous permettront de mettre facilement en place une solution docker pour simplifier vos developpements.
+ Rendez-vous sur la #lien http://mkframework.com/tutoriaux.html #label page tutoriaux lien# , rubrique Docker
+- #lien bigtutoriel_dockerInstall.html #label Créer une image docker pour le mkframework lien#
+- #lien bigtutoriel_dockerPremiereAppli.html #label Créer une application en utilisant cette image lien#
+
+
+]]></description><guid>http://mkf.mkdevs.com#e33a5cf4b94e68d8810c2505882009bf1f91b87d</guid></item><item><title><![CDATA[Mise à jour du module GoogleMap
+]]></title><pubDate>Thu, 03 Nov 2016 00:00:00 +0100</pubDate><description><![CDATA[Pour information, google a modifié son api il y a quelques temps, il faut désormais fournir une clé à votre module pour fonctionner.
+Le module googleMap a été mis à jour en conséquence, ainsi que la documentation associée
+
+Pour rappel, vous avez deux méthodes pour récuperer un module: #lien telechargerModule_googleMap.html #label via le site web lien#, ou via le market
+
+Voici la nouvelle méthode de définition de la clé googleMap
+&lt;div&gt;
+$oModuleGoogleMap=new module_googleMap();
+$oModuleGoogleMap-&gt;setKey('VOTRECLEGOOGLEMAP');
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#9fd959727552d80f8e47fab6e096a80ee8e4fe57</guid></item><item><title><![CDATA[Mise a jour de la navigation du builder + quelques correctifs
+]]></title><pubDate>Fri, 28 Oct 2016 00:00:00 +0200</pubDate><description><![CDATA[A partir de la version v4.128.0, vous aurez le plaisir de voir une navigation avec "fil d'ariane" afin d'éviter de surcharger l'affichage comme c'etait le cas avant.
+Il y a eu également quelques corrections pour rendre le framework compatible avec php7 ainsi que quelques bugfix
+
+Pour rappel, le changelog complet est toujours disponible #lien http://projets.developpez.com/projects/mkframework/repository #label ici lien#
+
+]]></description><guid>http://mkf.mkdevs.com#2f6e6319c60f8bcbf4bae612014c1e564933b980</guid></item><item><title><![CDATA[Migration du module Crud Multi pour les projets bootstrap
+]]></title><pubDate>Sat, 08 Oct 2016 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais générer des modules CRUD multi ligne pour vos projets Bootsrap (version &gt;= 4.126.2)
+
+]]></description><guid>http://mkf.mkdevs.com#d6f514181b15b9fa2029a97b6102fcabb51e9aef</guid></item><item><title><![CDATA[Ajout d'une verification sur le market
+]]></title><pubDate>Thu, 12 May 2016 00:00:00 +0200</pubDate><description><![CDATA[Certains utilisateurs ont rencontré un problème: ils ne peuvent pas accéder au market ou mettre à jour leur modules
+Cela vient d'un paramètre du php.ini allow_url_fopen qui n'autorise pas sur certaines configuration à accéder à une adresse web.
+Un code a donc été ajouté, vérifiant ce paramétrage pour en informer l'utilisateur.
+
+Pour les tests unitaires, des tutoriaux ont été ajoutés dans la page #lien tutoriaux.html #label "tutoriaux" lien#
+
+]]></description><guid>http://mkf.mkdevs.com#527201a5591727b0044e257fa42422144fd87a77</guid></item><item><title><![CDATA[Ajout module test unitaire sur le builder
+]]></title><pubDate>Sat, 16 Apr 2016 00:00:00 +0200</pubDate><description><![CDATA[Les tests unitaires sont souvent omis pour des raisons de difficulté/ temps à mettre en place.
+Pour aider dans cette démarche de qualité, un nouvelle version est en ligne proposant un nouveau module de "test unitaires"
+Je n'avais pas la possibilité ici simplement d'ajouter ce module dans le market (ce module necessitant quelques fichiers/fonctions en plus dans la gestion des modules, vous devrez alors telecharger la nouvelle version du framework.)
+Version supérieur ou égal à v4.125.0
+
+Des tutoriaux écrits et vidéos suivront pour bien expliquer ce nouveau module et l'utilisation de phpUnit pour tester vos applications existantes.
+
+]]></description><guid>http://mkf.mkdevs.com#24dc8ce2f64a78a34b6914cc1cd9493755ad1270</guid></item><item><title><![CDATA[Plugin debug: nouvelle fonctionnalité
+]]></title><pubDate>Thu, 14 Jan 2016 00:00:00 +0100</pubDate><description><![CDATA[Il arrive à certain moment que l'on veuille espionner une variable mais qu'a cause d'une redirection on ne puisse l'afficher dans la barre de debug.
+Vous pouvez désormais via la méthode
+&lt;div&gt;
+plugin_debug::addSessionSpy('label',$oVar);
+&lt;/div&gt;
+
+Par exemple pour un formulaire d'édition d'un auteur
+&lt;div&gt;
+public function _edit(){
+		$tMessage=$this-&gt;processSave();
+
+		$oAuteur=model_auteur::getInstance()-&gt;findById( _root::getParam('id') );
+
+		$oView=new _view('auteur::edit');
+		$oView-&gt;oAuteur=$oAuteur;
+		$oView-&gt;tId=model_auteur::getInstance()-&gt;getIdTab();
+
+
+
+		$oPluginXsrf=new plugin_xsrf();
+		$oView-&gt;token=$oPluginXsrf-&gt;getToken();
+		$oView-&gt;tMessage=$tMessage;
+
+		$this-&gt;oLayout-&gt;add('main',$oView);
+}
+&lt;/div&gt;
+On appelle processSave() pour enregistrer le formulaire
+On souhaite vérifier que l'on est passé par là:
+&lt;div&gt;
+
+private function processSave(){
+		if(!_root::getRequest()-&gt;isPost() ){ //si ce n'est pas une requete POST on ne soumet pas
+			return null;
+		}
+
+		$oPluginXsrf=new plugin_xsrf();
+		if(!$oPluginXsrf-&gt;checkToken( _root::getParam('token') ) ){ //on verifie que le token est valide
+			return array('token'=&gt;$oPluginXsrf-&gt;getMessage() );
+		}
+
+		$iId=_root::getParam('id',null);
+		if($iId==null){
+			$oAuteur=new row_auteur;
+		}else{
+			$oAuteur=model_auteur::getInstance()-&gt;findById( _root::getParam('id',null) );
+		}
+
+		$tColumn=array('nom','prenom');
+		foreach($tColumn as $sColumn){
+			$oAuteur-&gt;$sColumn=_root::getParam($sColumn,null) ;
+		}
+
+
+		if($oAuteur-&gt;save()){
+			//une fois enregistre on redirige (vers la page liste)
+
+			//on ajoute un espion sur cette variable
+			plugin_debug::addSessionSpy('auteur',$oAuteur);
+
+			_root::redirect('auteur::list');
+		}else{
+			return $oAuteur-&gt;getListError();
+		}
+
+}
+&lt;/div&gt;
+
+$image:$plugin_debugSessionSpyVar.jpg$:image$
+
+$image:$plugin_debugSessionSpyVar2.jpg$:image$
+
+]]></description><guid>http://mkf.mkdevs.com#d129d06175e622f136b5a8b968bffe0be1e97939</guid></item><item><title><![CDATA[Nouveau tutoriel pour le market
+]]></title><pubDate>Sun, 29 Nov 2015 00:00:00 +0100</pubDate><description><![CDATA[Un nouveau tutoriel permettant d' #lien bigtutoriel_marketAppliCreerPlugin.html #label écrire lien# et #lien bigtutoriel_marketAppliSoumettrePlugin.html #label soumettre lien# un plugin au market
+
+]]></description><guid>http://mkf.mkdevs.com#e6b51ec4a50d37a977ad7e72b0e3b5821254856f</guid></item><item><title><![CDATA[Market Application disponible
+]]></title><pubDate>Wed, 25 Nov 2015 00:00:00 +0100</pubDate><description><![CDATA[La phase 2 du market est engagée, vous avez désormais un market permettant d'ajouter modules et plugins à votre application
+Plus besoin de passer par le site web pour télécharger le zip puis déplacer certains sous répertoire
+Désormais, à partir du builder, en quelques clics installer un module GoogleMap, Guriddo...
+
+Des tutoriaux suivront pour vous indiquer comment développer et soumettre vos propres modules/plugins
+
+]]></description><guid>http://mkf.mkdevs.com#81695639fe76e4842876728eeb4e5894d82aa259</guid></item><item><title><![CDATA[Tutoriel de création d'une extension (market)
+]]></title><pubDate>Sat, 07 Nov 2015 00:00:00 +0100</pubDate><description><![CDATA[Trois nouveaux tutoriels vous permettent désormais d'écrire et soumettre des extensions pour le market ;)
+#lien bigtutoriel_marketCreerExtension.html #label Comment créer une extension de builder lien#
+#lien bigtutoriel_marketDevelopperExtension.html #label Comment développer votre extension de builder lien#
+#lien bigtutoriel_marketSoumettreExtension.html #label Comment Soumettre une extension au market lien#
+
+Bien sur d'autres tutoriels suivront pour bien expliquer comment créer simplement des extensions.
+
+]]></description><guid>http://mkf.mkdevs.com#3712e780f56bb788524242d75dda5d27da64110a</guid></item><item><title><![CDATA[Mise à jour du market
+]]></title><pubDate>Wed, 04 Nov 2015 00:00:00 +0100</pubDate><description><![CDATA[On peut désormais installer des extensions via le Market.
+La phase deux est lancé (2/3) vous allez pouvoir proposer et/ou installer de nouvelles extensions sur le builder sans devoir passer par le site pour récupérer le dernier zip ;)
+
+Viendrons dans les prochains jours tutoriel et procédure pour proposer vos propres extensions de génération ;)
+Vous verrez c'est très simple à écrire
+
+Pour la phases suivante, il manque le market pour vos applications qui permettra d'installer de nouveau modules comme googleMap,phpExcel,Guriddo... sur vos application en quelques clics (plus besoin de passer par le site) ;)
+Cette nouvelle extension arrivera via ce nouveau market :)
+
+$image:$builderMarket.jpg$:image$
+
+]]></description><guid>http://mkf.mkdevs.com#abb2bfe14689b43667c4deed83f337915431ef44</guid></item><item><title><![CDATA[Grosse mise à jour du builder
+]]></title><pubDate>Mon, 26 Oct 2015 00:00:00 +0100</pubDate><description><![CDATA[Une nouvelle version du framework qui marque un tournant dans son histoire: l'arrivée d'un Market ;)
+Au menu de cette importante mise à jour:
+- nouveau builder multi-lingue
+- refactorisation/industrialisation des modules de générations qui deviennent des extensions
+- l'arrivé du market lot 0, qui ne gère que les mises à jour des extensions
+
+Les prochains jours permettront de corriger d'eventuels bugs sur ce gros chantier de refactorisation/traduction
+
+Ensuite viendront les étapes logiques suivantes:
+Market builder:
+- mise à jour du market pour permettre d'ajouter de nouvelles extensions
+- écriture de la procédure pour que VOUS puissiez soumettre de nouvelles extensions
+
+Market application:
+- arrivée d'un market sur les applications pour ajouter modules, plugins...
+- gestion mise à jour modules/plugins existants
+
+
+]]></description><guid>http://mkf.mkdevs.com#80eba642b401cc6a38a96acc0162d58078891adc</guid></item><item><title><![CDATA[Mise à jour gestion authentification
+]]></title><pubDate>Wed, 14 Oct 2015 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais mettre tout votre site sous authentification (variable auth.enabled dans conf/site.ini.php) ET exclure une liste de module de cette authentification.
+Pour cela, avec la nouvelle version (&gt;= v4_118_0_r287), ajoutez dans votre fichier conf/site.ini.php
+&lt;div&gt;
+[auth]
+(...)
+;liste des modules non concerne par l'auth: separe par des virgules
+module.disabled.list=moduleAexclure,autreModuleAexclure
+&lt;/div&gt;
+Le besoin peut etre d'avoir une partie du site "public" et une partie "privée"
+
+]]></description><guid>http://mkf.mkdevs.com#d6d56bb505b80d6f9241ac075f294d26a43b4f1c</guid></item><item><title><![CDATA[Nouvelle page roadmap
+]]></title><pubDate>Tue, 13 Oct 2015 00:00:00 +0200</pubDate><description><![CDATA[Une nouvelle page #lien roadmap.html #label "roadmap" lien# a fait son apparition sur le site, elle permet de communiquer sur les developpements en cours et à venir.
+
+]]></description><guid>http://mkf.mkdevs.com#aa22c93e4796b2073ca4da087b73870658292fe0</guid></item><item><title><![CDATA[Nouveau module PHPExcel
+]]></title><pubDate>Sun, 20 Sep 2015 00:00:00 +0200</pubDate><description><![CDATA[Plusieurs personnes ont déjà demandé comment utiliser cette puissante librairie avec ce framework.
+Vous avez désormais deux façons de le faire,
+1. en suivant ce #lien tutoriaux.html#phpexcel #label tutoriel lien#
+2. en téléchargeant le nouveau module #lien telechargerModule_phpExcel.html #label PhpExcel lien#
+
+]]></description><guid>http://mkf.mkdevs.com#76d91bfb3503c115c8b03869a4422efd61418a06</guid></item><item><title><![CDATA[Builder: ajout de la génération de CRUD multi-ligne
+]]></title><pubDate>Tue, 08 Sep 2015 00:00:00 +0200</pubDate><description><![CDATA[Nouvel ajout: possibilité de faire un CRUD multi-ligne
+Vous avez ainsi un tableau de plusieurs enregistrements modifiable en une fois.
+Des tutoriaux suivront prochainement.
+
+]]></description><guid>http://mkf.mkdevs.com#6330b7c59a5755101f2a1957372130e29eec63b0</guid></item><item><title><![CDATA[Builder: ajout de la génération d'ACL multi-groupes
+]]></title><pubDate>Mon, 07 Sep 2015 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais générer une gestion d'ACL multi-groupes via le builder en quelques clics.
+
+PS: il y aura désormais les dates de publication sur les liens de téléchargements du framework.
+
+]]></description><guid>http://mkf.mkdevs.com#3de758eac8933ab922ea2b58f8850e4b899e1070</guid></item><item><title><![CDATA[Builder: correction d'un bug sur la génération Guriddo
+]]></title><pubDate>Fri, 28 Aug 2015 00:00:00 +0200</pubDate><description><![CDATA[Certains utilisateurs m'ont remonté des problèmes avec la nouvelle fonctionnalité sur d'autres SGBDs que mysql.
+J'ai corrigé le builder en conséquence.
+Vous devez télécharger la dernière version du module qui a également été mis à jour en conséquence.
+
+J'en ai profité pour ajouter une rubrique "Actualités" dans la page de téléchargement de module.
+
+]]></description><guid>http://mkf.mkdevs.com#94c38a74f386b4e76a9a5592ddec677f925a508f</guid></item><item><title><![CDATA[Builder: ajout d'un menu pour générer un CRUD avec Guriddo
+]]></title><pubDate>Sat, 22 Aug 2015 00:00:00 +0200</pubDate><description><![CDATA[Vous avez désormais la possibilité de générer un tableau CRUD appuyé sur la librairie Guriddo
+Une nouvelle entrée a été ajoutée sur la page de tutorial:  #lien tutoriaux.html#crudguriddo #label ici lien#
+$image:$builder_blog_crudguriddo11.png$:image$
+
+]]></description><guid>http://mkf.mkdevs.com#67b4535c965d93a88874731f94b71ee1a235bbcd</guid></item><item><title><![CDATA[Ajout d'un driver mongoDb
+]]></title><pubDate>Fri, 07 Aug 2015 00:00:00 +0200</pubDate><description><![CDATA[Mongodb est une base noSQL, il est désormais possible sur le framework de s'y connecter.
+Pour information, contrairement aux autres SGBD, il y a quelques différences dans le classe modèle mongodb
+1. en noSQL on n'utilise pas de requete SQL
+2. chaque collection (équivalent des tables en SQL) possède par défaut une clé primaire "_id"
+3. n'ayant pas de structure fixe, dans le builder, vous devez indiquer les champ à créer dans votre CRUD (via l'interface)
+
+Comme d'habitude, le builder vous facilite le travail en vous générant vos classe modèle
+
+Voici un exemple de connexion mongodb
+&lt;div&gt;
+mongodb.dsn="mongodb://monuser:pass@localhost:27017/mabase"
+mongodb.sgbd=mongodb
+mongodb.database=mabase
+&lt;/div&gt;
+
+Et voici un exemple de couche modèle mongodb
+&lt;div&gt;
+&lt;?php
+class model_article extends abstract_model{
+
+	protected $sClassRow='row_article';
+
+	protected $sTable='article';
+	protected $sConfig='mongodb';
+
+	protected $tId=array('_id');
+
+	public static function getInstance(){
+		return self::_getInstance(__CLASS__);
+	}
+
+	public function findById($uId){
+		return $this-&gt;findOne($this-&gt;sTable,array('_id' =&gt; new MongoId($uId)) );
+	}
+	public function findAll(){
+		return $this-&gt;findMany($this-&gt;sTable);
+	}
+
+}
+&lt;/div&gt;
+
+Vous noterez une différence dans la manière de requeter: ici au lieu de faire une requete SQL de select type:
+&lt;div&gt;
+return $this-&gt;findMany('SELECT * FROM '.$this-&gt;sTable);
+&lt;/div&gt;
+on fait plutôt:
+&lt;div&gt;
+return $this-&gt;findMany($this-&gt;sTable);
+&lt;/div&gt;
+
+Et pour une recherche avec critère on passe un tableau
+Au lieu de
+&lt;div&gt;
+return $this-&gt;findOne('SELECT * FROM '.$this-&gt;sTable.' WHERE id=?',$id);
+&lt;/div&gt;
+on fait:
+&lt;div&gt;
+return $this-&gt;findOne($this-&gt;sTable,array('_id' =&gt; new MongoId($uId)) );
+&lt;/div&gt;
+Note: pour l'id seulement il faut passer en paramètre un objet MongoId, mais c'est uniquement pour l'id.
+Mais pour les autres paramètres, par exemple lister les articles d'une catégorie:
+Au lieu de
+&lt;div&gt;
+return $this-&gt;findMany('SELECT * FROM '.$this-&gt;sTable.' WHERE category=?',$category);
+&lt;/div&gt;
+on fait:
+&lt;div&gt;
+return $this-&gt;findMany($this-&gt;sTable,array('category' =&gt; $category) );
+&lt;/div&gt;
+
+
+]]></description><guid>http://mkf.mkdevs.com#5e972730595783d293fdb6105150282a59d746c1</guid></item><item><title><![CDATA[Ajout d'un driver oracle "natif"
+]]></title><pubDate>Mon, 15 Jun 2015 00:00:00 +0200</pubDate><description><![CDATA[Un nouveau driver oracle est désormais disponible, n'utilisant pas pdo.
+Il utilise les fonctions natives php oci_connect /oci_execute...
+Pour l'utiliser, dans votre fichier de configuration:
+&lt;div&gt;
+oracleExple.sgbd=oracle
+oracleExple.username=username
+oracleExple.password=pass
+oracleExple.database=myOracleDb
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#7dd504d387b413ce7ff74fd0d78d777eccc2b348</guid></item><item><title><![CDATA[Ajout d'un driver "virtuel"
+]]></title><pubDate>Mon, 15 Jun 2015 00:00:00 +0200</pubDate><description><![CDATA[On peut désormais ajouter un modèle virtuel, permettant de requeter fichiers/sgbd... afin de constituer un tableau php requetable/paginable et triable via des requête SQL
+
+Pour l'utiliser, vous pouvez creer une classe modèle héritant de "abstract_modelVirtual"
+
+Un tutoriel est disponible #lien faq.html#abstract_modelVirtual #label ici lien#
+
+]]></description><guid>http://mkf.mkdevs.com#7dd504d387b413ce7ff74fd0d78d777eccc2b348</guid></item><item><title><![CDATA[Le module Guriddo s'améliore
+]]></title><pubDate>Fri, 12 Jun 2015 00:00:00 +0200</pubDate><description><![CDATA[On peut désormais gérer une customisation "à la volée" du contenu ou des attibuts d'une cellule en fonction du contexte
+$image:$moduleGuriddocellattr.jpg$:image$
+
+#lien telechargerModule_guriddo.html #label La documentation et la page de téléchargement du module Guriddo lien#
+
+]]></description><guid>http://mkf.mkdevs.com#13aea4a266e37100a3b0091091d51a9f64faf4c9</guid></item><item><title><![CDATA[On continue la traduction du builder
+]]></title><pubDate>Mon, 01 Jun 2015 00:00:00 +0200</pubDate><description><![CDATA[Si vous avez téléchargé la version 111.0 je vous invite à télécharger la suivante: il manquait les fichiers de traduction correspondant.
+
+]]></description><guid>http://mkf.mkdevs.com#189c4326ef1bdf4bb3c37fa9eb83cd9c7ed5638e</guid></item><item><title><![CDATA[Debut du chantier builder multi-lingue
+]]></title><pubDate>Sun, 31 May 2015 00:00:00 +0200</pubDate><description><![CDATA[Suite à de nombreuses demandes, j'entreprend le mode multi-lingue du builder
+Vous pouvez à partir de la verion 111.0 (révision svn 275) passer le builder en anglais, en modifiant le fichier conf/site.ini.php
+Modifiez la vaiable "default", en= anglais, fr=français
+&lt;div&gt;
+[language]
+;fr / en... //sLangue
+default=en
+allow=fr,en
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#d05aa317b79e5042a70905fb20b4f0363a570d72</guid></item><item><title><![CDATA[Nouvelle publication dans le magazine PROGRAMMEZ!
+]]></title><pubDate>Mon, 04 May 2015 00:00:00 +0200</pubDate><description><![CDATA[Un nouvel article vient d'être publié dans le numéro 185 du magazine, présent #lien tutoriaux.html#programmezNum185 #label ici lien#
+
+]]></description><guid>http://mkf.mkdevs.com#540690eb3aa25ccf17e1f873f85a5a55321954b6</guid></item><item><title><![CDATA[Mise à jour Builder bootstrap
+]]></title><pubDate>Mon, 20 Apr 2015 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais générer des module CRUD embedded avec le builder Bootstrap, les templates ont été migrés.
+Pour le plugin form, une correction a été appliquée concernant les champs disabled
+Par défaut: on affiche dans le champ du formulaire la propriété de l'objet, celle-ci est écrasée par la valeur du POST en cas de soumission de celui-ci.
+Mais dans le cas d'un champ disabled, sa valeur n'est pas transmise, et l'on se retrouvait avec un champ vide. C'est désormais corrigé, on écrase uniquement avec les valeurs soumises.
+
+]]></description><guid>http://mkf.mkdevs.com#81521b0d4bfbbcfcba51b21a960835e4f589762e</guid></item><item><title><![CDATA[Mise à jour de plugin_valid
+]]></title><pubDate>Wed, 08 Apr 2015 00:00:00 +0200</pubDate><description><![CDATA[Une mise à jour de la documentation vous explique comment ajouter une vérification ponctuelle #lien tutoriaux.html#ajoutcheck2 #label ici lien#
+Pour permettre ceci, le plugin plugin_valid a été légèrement modifié: sa méthode ko() est passée publique.
+Pour eviter de télécharger tout le framework, vous pouvez vous rendre dans la rubrique de #lien plugins.html #label téléchargement lien# pour récupérer la dernière version du plugin
+
+]]></description><guid>http://mkf.mkdevs.com#dd9ce53e64c73fa270fefcc8f01bbdf54755e440</guid></item><item><title><![CDATA[Mise à jour du module Guriddo
+]]></title><pubDate>Thu, 26 Feb 2015 00:00:00 +0100</pubDate><description><![CDATA[Quelques amélioration du module Guriddo, je vous invite à visiter la page en question pour voir les mises à jour
+La page sur #lien telechargerModule_guriddo.html #label le module Guriddo lien#
+
+]]></description><guid>http://mkf.mkdevs.com#8c1f7c5be40e9d552f6ebda703d9c3e5f014dbbd</guid></item><item><title><![CDATA[Nouveau module: Guriddo
+]]></title><pubDate>Mon, 16 Feb 2015 00:00:00 +0100</pubDate><description><![CDATA[Un nouveau module est disponible dans la rubrique téléchargement de modules: #lien http://guriddo.net/ #label Guriddo lien#
+
+$image:$moduleGuriddo.jpg$:image$
+
+Cette librairie s'appuie sur jQuery et permet d'afficher des tableaux très pratique: on peut simplement
+- trier,
+- redimensionner les colonnes
+- et filtrer
+Voici le lien pour la télécharger et l'installer: #lien telechargerModule_guriddo.html #label le module Guriddo lien#
+
+]]></description><guid>http://mkf.mkdevs.com#2892b559c299ceb4a87b956d7d534a4a1dc6a8be</guid></item><item><title><![CDATA[Amélioration du framework: ranger vos modules
+]]></title><pubDate>Tue, 02 Dec 2014 00:00:00 +0100</pubDate><description><![CDATA[Suite à une idée d'un utilisateur (merci oliverell62).
+L'idée est simple: pour une application un peu complexe on se retrouve rapidement avec une multitude de modules dans le répertoire du même nom.
+Ici, vous pouvez désormais ordonner ceux-ci dans des répertoires.
+Avant:
+$image:$sousmoduleAvant.png$:image$
+Après
+$image:$sousmoduleApres.png$:image$
+
+Deux choses:
+1. Pour indiquer le sous répertoire, on utiliser le caractère "_" (underscore).
+Le module privé: module_private_article (module/private/article/)
+&lt;div&gt;
+class module_private_article extends abstract_module{
+&lt;/div&gt;
+2. Pour récupérer la vue adequate list.php (module/private/article/view/list.php)
+&lt;div&gt;
+$oView = new _view('private/article::list');
+&lt;/div&gt;
+
+Pour information, pour éviter toute regression sur les applications existantes, on externalise le chargeur de classes dans un plugin. Seul les nouvelles applications en bénéficie.
+
+Mais vous pouvez, après avoir mis à jour le framework sur votre plateforme, en bénéficier en téléchargeant le nouveau fichier de plugin autoload #lien plugins.html #label ici lien#
+ET en désactivant le chargeur d'origine en mettant en commentaire la ligne suivante dans le fichier public/index.php
+&lt;div&gt;
+spl_autoload_register(array('_root','autoload'));
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#b52a3b0811e8a28d378ba4b48230f41469b22745</guid></item><item><title><![CDATA[Amélioration du builder: couche modèle
+]]></title><pubDate>Sat, 11 Oct 2014 00:00:00 +0200</pubDate><description><![CDATA[Le builder vous permet désormais, au moment de la génération de la couche modèle, d'ajouter des contraintes.
+$image:$builderCoucheModeleModelC.png$:image$
+Vous pouvez ajouter des contraintes par champ et indiquer le message d'erreur.
+$image:$builderCoucheModeleModelC2.png$:image$
+
+
+]]></description><guid>http://mkf.mkdevs.com#e2c17cf2dfa28a03b768890f7cc9a0f89249b031</guid></item><item><title><![CDATA[Framework amélioration de la sécurité
+]]></title><pubDate>Mon, 29 Sep 2014 00:00:00 +0200</pubDate><description><![CDATA[Modification de la partie authentification: amélioration de la sécurité pour éviter qu'un tiers se connecte en volant le cookie de session.
+
+]]></description><guid>http://mkf.mkdevs.com#86af2b9c4bfdb88617bcbf1298822d62a2d5580c</guid></item><item><title><![CDATA[Builder: nouvelle page d'ajout de droits
+]]></title><pubDate>Sat, 27 Sep 2014 00:00:00 +0200</pubDate><description><![CDATA[Le builder gagne une nouvelle fonctionnalité: ils vous facilite l'ajout de la gestion de droits.
+$image:$builderMenuDroits.png$:image$
+Qui propose de vous guider dans la génération des tables nécessaires
+$image:$builderMenuDroits2.png$:image$
+et vous générera un module pour enregistrer les permissions,renseigner le profil des utilisateurs et vous affichera le code à ajouter pour prendre en compte cette gestion de droits.
+$image:$builderMenuDroits3.png$:image$
+
+Pour rappel, le code pour vérifier un droit:
+&lt;div&gt;
+if(_root::getACL()-&gt;can('action','element')){
+ //code
+}
+&lt;/div&gt;
+
+Un tutoriel écrit ainsi qu'une vidéo suivront prochainement.
+
+]]></description><guid>http://mkf.mkdevs.com#194b7e3eeb9a7113934307cd346d954c6fb58b2d</guid></item><item><title><![CDATA[Nouveau tutoriel pour l'utilisation de la barre de debug
+]]></title><pubDate>Sun, 21 Sep 2014 00:00:00 +0200</pubDate><description><![CDATA[Nouveau tutoriel pour expliquer le #lien tutoriaux.html#debug #label fonctionnement de la barre de debug lien#
+La documentation API a également été mise à jour pour prendre en compte ce plugin.
+
+]]></description><guid>http://mkf.mkdevs.com#912ba8b0635cc2fcf31a160aef2477cd8be8a0d3</guid></item><item><title><![CDATA[Amélioration de la gestion d'erreur
+]]></title><pubDate>Tue, 16 Sep 2014 00:00:00 +0200</pubDate><description><![CDATA[Pour améliorer l'affichage des erreurs, une nouvelle variable fait son apparition.
+&lt;div&gt;
+[debug]
+class=plugin_debugError
+&lt;/div&gt;
+La variable "class" indique le nom d'un nouveau plugin permettant d'afficher plus de détail sur les erreurs.
+On a désormais le nom du fichier, mais également l'affichage du code source avec une mise en évidence sur la ligne en question.
+
+Pour vos applications existantes:
+- mettre le framework à jour
+- insérer le bloc précédement cité dans votre fichier conf/site.ini.php
+- télécharger le plugin plugin_debugError, disponible #lien plugins.html #label sur la page des plugins lien#
+- copier ce plugin dans le répertoire plugin de votre projet
+
+]]></description><guid>http://mkf.mkdevs.com#be6bc20796c27c77e1ae937774e0f821a09ec1e9</guid></item><item><title><![CDATA[Nouveau driver SGBD : firebird
+]]></title><pubDate>Sat, 06 Sep 2014 00:00:00 +0200</pubDate><description><![CDATA[Un nouveau driver permettant désormais de se connecter à une base firebird (via pdo)
+Exemple de connexion firebird (dans votre fichier de configuration conf/connexion.ini.php)
+&lt;div&gt;
+firebirdExple.dsn="firebird:host=localhost;dbname=/var/www/firebirdDb"
+firebirdExple.sgbd=pdo_firebird
+firebirdExple.username=root
+firebirdExple.password=root
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#27a18e5b420c572019f62a0e1f04420dd00f8e6b</guid></item><item><title><![CDATA[Builder: amélioration de la création de module d'authentification
+]]></title><pubDate>Sat, 06 Sep 2014 00:00:00 +0200</pubDate><description><![CDATA[Le module a été un peu simplifié sur la partie concernant les méthodes à copier dans votre classe modèle.
+Le screencast correspondant a été enregistré de nouveau, visible #lien screencasts_9.html #label ici lien#.
+
+]]></description><guid>http://mkf.mkdevs.com#27a18e5b420c572019f62a0e1f04420dd00f8e6b</guid></item><item><title><![CDATA[Information driver ORM via PDO
+]]></title><pubDate>Tue, 02 Sep 2014 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez utilisez les placeholders avec vos requêtes préparés:
+Vous pouvez aussi bien écrire :
+&lt;div&gt;
+$this-&gt;findMany('SELECT FROM article WHERE id=?',12);
+&lt;/div&gt;
+Que
+&lt;div&gt;
+$this-&gt;findMany('SELECT FROM article WHERE id=:id',array('id'=&gt;12) );
+&lt;/div&gt;
+La documentation #lien orm.html #label de l'ORM lien# a été mise à jour en conséquence
+
+]]></description><guid>http://mkf.mkdevs.com#56f80dfdcbdc9094bf658f1128084e5081bc285e</guid></item><item><title><![CDATA[Amélioration des logs en mode "production"
+]]></title><pubDate>Tue, 19 Aug 2014 00:00:00 +0200</pubDate><description><![CDATA[Lorsque vous passez votre application en mode production, le framework cache les messages d'erreurs.
+Vous pouvez à present décider d'écrire ces messages d'erreur dans un fichier de log (dans data/log/) ou intégrer ces messages dans le fichier de log d'apache.
+Pour cela, deux nouvelles variables font leur apparition dans le fichier de configuration conf/site.ini.php
+&lt;div&gt;
+[log]
+(...)
+file.enabled=1
+apache.enabled=1
+&lt;/div&gt;
+PS: pour rappel, vous pouvez changer le mode de votre application dans le fichier conf/mode.ini.php
+
+]]></description><guid>http://mkf.mkdevs.com#4edfa6d421660601ea6b1a1190544f2e4209bcf9</guid></item><item><title><![CDATA[Automatisation de formatage à l'affichage et l'enregistrement
+]]></title><pubDate>Thu, 24 Jul 2014 00:00:00 +0200</pubDate><description><![CDATA[Suite à une question d'un utilsateur (NhyMbuS), j'ai ajouté dans la FAQ un paragraphe pour indiquer comment automatiser un traitement sur les row.
+Le cas est simple:
+- Vous recevez une date dans un format et souhaitez afficher dans un autre sur vos pages.
+- Vous utiliser un datePicker et souhaitez reformater la date avant d'enregistrer.
+- Vous souhaitez formater la date en fonction de la langue du site.
+
+#lien faq.html#automatiserrow #label La FAQ est ici.  lien#
+
+]]></description><guid>http://mkf.mkdevs.com#273c189d8e9dec84860055fd245e7d5eba76a19c</guid></item><item><title><![CDATA[Correction suite dernière livraison
+]]></title><pubDate>Tue, 15 Jul 2014 00:00:00 +0200</pubDate><description><![CDATA[Une correction suite à la dernière livraison pour plus de souplesse:
+La fonction php array_merge_recursive créé un tableau si la valeur de configuration est déjà définie
+Hors il est plus pratique/souple d'écraser cette valeur:
+ainsi vous pouvez avoir vos fichiers de configuration de votre application et écraser certaines valeurs en ajoutant un fichier de configuration supplémentaire (par exemple en production)
+
+]]></description><guid>http://mkf.mkdevs.com#2a5a0dba5e545dabb67d7e31584b5f859d347124</guid></item><item><title><![CDATA[Corrections, optimisation + nouvelle fonctionnalité
+]]></title><pubDate>Sat, 12 Jul 2014 00:00:00 +0200</pubDate><description><![CDATA[Dans cette livraison, plusieurs corrections font suite à la #lien analysesonar.html #label dernière analyse sonar lien#
+Une nouvelle fonctionnalité vous permet de generer un fichier de cache de vos fichiers de configurations.
+Pour cela, il vous faut:
+- un fichier de configuration path.ini.php afin de charger notamment le repertoire contenant le cache
+- ajouter les lignes suivante dans votre fichier index.php:
+&lt;div&gt;
+$oRoot=new _root();
+//enregistre les chemins des repertoires dans la configuration (necessaire pour la mise en cache)
+$oRoot-&gt;setConfigVar('path',$tIni['path']);
+
+//decommenter pour activer le cache de fichier de configuration
+//$oRoot-&gt;setConfigVar('cache.conf.enabled',1);
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#a42e35ca3e8ed94e78fa8d4f4f3b5baf46d8b001</guid></item><item><title><![CDATA[Corrections, optimisations, fragmentation
+]]></title><pubDate>Sat, 12 Jul 2014 00:00:00 +0200</pubDate><description><![CDATA[Plusieurs choses dans cette livraison:
+- correction d'un bug sur la gestion de la date de peremption du cache des pages.
+- correction d'un bug sur la gestion du cache du fichier autoload (generant un tableau php de l'ensemble des classes)
+- simplification du processus de chargement d'un module via l'ajout des methodes before() et after() au sein de la classes abstraite (ainsi plus besoin de verifier avant de lancer before() et after() de chaque module)
+- separation du fichier site.ini en deux: site.ini et path.ini afin d'alleger le fichier index.php qui doit precharger la configuration pour charger le framework.
+
+]]></description><guid>http://mkf.mkdevs.com#a42e35ca3e8ed94e78fa8d4f4f3b5baf46d8b001</guid></item><item><title><![CDATA[Builder: allegement du code généré des modules CRUDs
+]]></title><pubDate>Mon, 07 Jul 2014 00:00:00 +0200</pubDate><description><![CDATA[Utilisation du plugin plugin_form pour les CRUDs
+Coté controlleur on a plus besoin de la méthode fillRow() qui permettait de remplir l'objet avec les valeurs soumises dans le formulaire (pour ne pas perdre sa saisie)
+Cette fonctionnalité est gérée par le plugin plugin_form.
+
+Coté vue, on passe de ce code:
+&lt;div&gt;
+&lt;?php $oPluginHtml=new plugin_html?&gt;
+&lt;form action="" method="POST" &gt;
+&lt;table class="tb_edit"&gt;
+	&lt;tr&gt;
+		&lt;th&gt;titre&lt;/th&gt;
+		&lt;td&gt;&lt;input name="titre" value="&lt;?php echo $this-&gt;oArticle-&gt;titre ?&gt;" /&gt;&lt;?php if($this-&gt;tMessage and isset($this-&gt;tMessage['titre'])): echo implode(',',$this-&gt;tMessage['titre']); endif;?&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;resume&lt;/th&gt;
+		&lt;td&gt;&lt;input name="resume" value="&lt;?php echo $this-&gt;oArticle-&gt;resume ?&gt;" /&gt;&lt;?php if($this-&gt;tMessage and isset($this-&gt;tMessage['resume'])): echo implode(',',$this-&gt;tMessage['resume']); endif;?&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;&lt;/th&gt;
+		&lt;td&gt;
+			&lt;p&gt;
+				&lt;input type="submit" value="Modifier" /&gt; &lt;a href="&lt;?php echo $this-&gt;getLink('article::list')?&gt;"&gt;Annuler&lt;/a&gt;
+			&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;input type="hidden" name="token" value="&lt;?php echo $this-&gt;token?&gt;" /&gt;
+&lt;?php if($this-&gt;tMessage and isset($this-&gt;tMessage['token'])): echo $this-&gt;tMessage['token']; endif;?&gt;
+
+&lt;/form&gt;
+&lt;/div&gt;
+Au code suivant:
+&lt;div&gt;
+&lt;?php
+$oForm=new plugin_form($this-&gt;oAuteur);
+$oForm-&gt;setMessage($this-&gt;tMessage);
+?&gt;
+&lt;form action="" method="POST" &gt;
+&lt;table class="tb_edit"&gt;
+	&lt;tr&gt;
+		&lt;th&gt;nom&lt;/th&gt;
+		&lt;td&gt;&lt;?php echo $oForm-&gt;getInputText('nom')?&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;prenom&lt;/th&gt;
+		&lt;td&gt;&lt;?php echo $oForm-&gt;getInputText('prenom')?&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;&lt;/th&gt;
+		&lt;td&gt;
+			&lt;p&gt;
+				&lt;input type="submit" value="Modifier" /&gt; &lt;a href="&lt;?php echo $this-&gt;getLink('auteur::list')?&gt;"&gt;Annuler&lt;/a&gt;
+			&lt;/p&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;?php echo $oForm-&gt;getToken('token',$this-&gt;token)?&gt;
+
+&lt;/form&gt;
+&lt;/div&gt;
+En effet, la partie permettant d'afficher les messages d'erreurs est également géré par le plugin plugin_form.
+
+]]></description><guid>http://mkf.mkdevs.com#9617cbca5da8ae5182c9b6f86409e9c722f0b691</guid></item><item><title><![CDATA[Pdo + Layout par défaut
+]]></title><pubDate>Thu, 03 Jul 2014 00:00:00 +0200</pubDate><description><![CDATA[Coté Pdo:
+On peut désormais définir les paramètres ATTR_ERRMODE et ATTR_CASE
+&lt;div&gt;
+[pdo]
+;Plus d'informations ici: http://www.php.net//manual/fr/pdo.setattribute.php
+;SILENT,WARNING,EXCEPTION
+ATTR_ERRMODE=WARNING
+;LOWER,NATURAL,UPPER
+ATTR_CASE=NATURAL
+&lt;/div&gt;
+
+Coté projets source du builder
+- ajout des charset/encoding des différents layout
+- changement par défaut doctype html: xhtml1 &gt; html4 transitionnal
+
+]]></description><guid>http://mkf.mkdevs.com#60cd902d8054f4d87ef3459b277d2da88b90edce</guid></item><item><title><![CDATA[(ORM) Ajout des methodes isset() et unset() sur les classes row
+]]></title><pubDate>Mon, 30 Jun 2014 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais verifier l'existance d'une propriété d'objet avec isset()
+&lt;div&gt;
+$oArticle=model_Article::getInstance()-&gt;findById(2);
+if(isset($oArticle-&gt;titre)){
+	echo $oArticle-&gt;titre;
+}
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#32e88f62d422476ed3340a58d53921e5e8b7b73f</guid></item><item><title><![CDATA[Ajout de plugins facilitant l'export XML
+]]></title><pubDate>Wed, 25 Jun 2014 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais facilement convertir vos objets en xml pour les afficher ou les enregistrer dans des fichiers
+Pour afficher un enregistrement en xml:
+&lt;div&gt;
+public function _showXml(){
+
+	$oAuteur=model_auteur::getInstance()-&gt;findById(_root::getParam('id'));
+
+	$oXml=new plugin_xmlObject($oAuteur);
+	$oXml-&gt;setListColumn(array('id','nom','prenom'));
+	$oXml-&gt;show();
+}
+
+&lt;/div&gt;
+Pour afficher une liste/tableau d'objet en xml:
+&lt;div&gt;
+public function _listXml(){
+
+	$tAuteur=model_auteur::getInstance()-&gt;findAll();
+
+	$oXml=new plugin_xmlListObject($tAuteur);
+	$oXml-&gt;setListColumn(array('id','nom','prenom'));
+	$oXml-&gt;show();
+}
+&lt;/div&gt;
+
+Et pour enregistrer dans un fichier, utilisez la méthode build() plutot que show():
+&lt;div&gt;
+public function _saveXml(){
+	$tAuteur=model_auteur::getInstance()-&gt;findAll();
+
+	$oXml=new plugin_xmlListObject($tAuteur);
+	$oXml-&gt;setListColumn(array('id','nom','prenom'));
+	$sXml=$oXml-&gt;build();
+
+	$oFile=new _file('../data/auteurs.xml');
+	$oFile-&gt;setContent($sXml);
+	$oFile-&gt;save();
+}
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#07b02672d68e2ee72d6eeb0a82a8879ef50fdc9b</guid></item><item><title><![CDATA[Ajout du framework sur packagist.org
+]]></title><pubDate>Tue, 03 Jun 2014 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais installer le framework via composer, en effet le repository github du framework est désormais lié sur #lien https://packagist.org/packages/mkframework/mkframework #label packagist.org lien#, le gestionnaire de dépot de composer.
+Plus d'information sur composer ici: #lien https://getcomposer.org/ #label getcomposer.org lien#
+
+]]></description><guid>http://mkf.mkdevs.com#1f87830d73403fbfbcf8c29f0e4ca0088c4b70d6</guid></item><item><title><![CDATA[Ajout d'une fonctionnalité pour les bases mysql
+]]></title><pubDate>Sun, 01 Jun 2014 00:00:00 +0200</pubDate><description><![CDATA[Mysql propose lors d'une insertion d'effectuer un update si il detecte une clé dupliqué, cette fonctionnalité s'appelle "ON DUPLICATE KEY"
+Via le builder, vous pouvez désormais, lors de la génération de la couche modèle activer l'utilisation de cette fonctionnalitée
+
+]]></description><guid>http://mkf.mkdevs.com#1801d8bc08c6bb70a7a68b059d82d35e50c74653</guid></item><item><title><![CDATA[Ajout d'une page Slides
+]]></title><pubDate>Sun, 01 Jun 2014 00:00:00 +0200</pubDate><description><![CDATA[Ajout d'une page #lien slides.html #label Slides lien# vous proposant une autre façon d'expliquer le fonctionnement du framework via des diaporamas.
+
+]]></description><guid>http://mkf.mkdevs.com#1801d8bc08c6bb70a7a68b059d82d35e50c74653</guid></item><item><title><![CDATA[Mise à jour du builder: génération des CRUD
+]]></title><pubDate>Thu, 29 May 2014 00:00:00 +0200</pubDate><description><![CDATA[Une petite mise à jour graphique de la génération des CRUD, CRUD embedded et CRUD bootstrap
+
+]]></description><guid>http://mkf.mkdevs.com#691a08f6c7558d3c1cc0c933c8b450b7f892c261</guid></item><item><title><![CDATA[Publication d'un tutoriel sur developpez.com
+]]></title><pubDate>Thu, 08 May 2014 00:00:00 +0200</pubDate><description><![CDATA[Un nouvel article publié sur developpez.com permettant de #lien http://imikado.developpez.com/tutoriels/php//creer-site-fullcache/ #label faire une application full cache lien#
+
+]]></description><guid>http://mkf.mkdevs.com#28c60b3d465f77d1a3d57770fb9241d703938f13</guid></item><item><title><![CDATA[Mise à jour du builder: possibilité d'exporter un projet
+]]></title><pubDate>Thu, 08 May 2014 00:00:00 +0200</pubDate><description><![CDATA[De base, vos projets sont générés dans le répertoire data/genere du framework, le moment où vous devez le livrer en test ou en production, il vous faut le copier sur un serveur ainsi que la librairie du framework.
+Jusqu'à maintenant vous deviez alors suivre la procédure disponible ici: #lien faq.html#livrer #label dans la FAQ lien#
+
+Aujourd'hui vous avez un nouveau bouton de menu vous simplifiant cette partie en vous proposant deux choix:
+1. copier votre projet et modifier le chemin d'accès à la librairie du framework
+2. copier votre projet et la librairie du framework au sein de votre projet (et modifier le chemin de la librairie en conséquence)
+
+$image:$builder_exporter.png$:image$
+
+]]></description><guid>http://mkf.mkdevs.com#28c60b3d465f77d1a3d57770fb9241d703938f13</guid></item><item><title><![CDATA[Sécurisation de la méthode _root::getLinkWithCurrent
+]]></title><pubDate>Sat, 26 Apr 2014 00:00:00 +0200</pubDate><description><![CDATA[Une correction de sécurité de la méthode _root::getLinkWithCurrent qui permet de récupérer les paramètres déjà présent dans l'URL. Par exemple pour des liens de changements de langue où l'on souhaite rester sur la page actuelle.
+
+]]></description><guid>http://mkf.mkdevs.com#b13eb1551fbb7c421c761c3cdd4986f478b55e9b</guid></item><item><title><![CDATA[Ajout d'un plugin pour gérér facilement des classes métiers
+]]></title><pubDate>Wed, 02 Apr 2014 00:00:00 +0200</pubDate><description><![CDATA[Il peut vous arriver d'avoir des routines, logique métiers transverses, pour cela, vous avez désormais la possibilité d'ajouter vos propres classes dans une arborescence à part.
+Pour cela, pour vos applications existantes, téléchargez la classe plugin_autoload #lien telecharger.html #label sur cette page lien#
+et ajoutez dans votre fichier public/index.php
+&lt;div&gt;
+//enregistrement de votre autoloader personnel
+include($tIni['path']['plugin'].'/plugin_autoload.php');
+spl_autoload_register(array('plugin_autoload','autoload'));
+&lt;/div&gt;
+
+Pour l'utiliser écrivez simplement:
+&lt;div&gt;
+$oMetier= new my_metier;
+//le plugin autoload va chercher le fichier myClasses/metier.php
+&lt;/div&gt;
+
+Par défaut, dans la classe autoload fournie, on charge les fichiers débutant par "my_" dans le répertiore myClasses, mais vous pouvez modifier celle-ci à votre gré
+
+]]></description><guid>http://mkf.mkdevs.com#b8ef171e33a15fe76ce69348c77a851a15afd8a1</guid></item><item><title><![CDATA[Publication dans le numéro 173 du magazine PROGRAMMEZ!
+]]></title><pubDate>Fri, 28 Mar 2014 00:00:00 +0100</pubDate><description><![CDATA[Parution d'un nouveau tutoriel dans le numéro 173 du magazine papier PROGRAMMEZ!
+#lien http://www.programmez.com/magazine/article/developper-un-gestionnaire-de-contact-couple-google-maps-avec-le-mkframework #label Lien vers le numéro lien#
+$image:$programmezNum173page.jpg$:image$
+
+]]></description><guid>http://mkf.mkdevs.com#5c6659e8c5cbead04cbea6de51669830db92e4f5</guid></item><item><title><![CDATA[Ajout de Bootstrap
+]]></title><pubDate>Thu, 27 Mar 2014 00:00:00 +0100</pubDate><description><![CDATA[Vous pouvez désormais créer une application bootstrap avec le builder: créer des modules CRUD, menu et module d'authentification utilisant ce framework.
+
+]]></description><guid>http://mkf.mkdevs.com#7ac8a121eaac46b60484e85c4bb8ae079726356e</guid></item><item><title><![CDATA[Ajout d'un nouveau type de tableau: tri/pagination en ajax
+]]></title><pubDate>Tue, 25 Mar 2014 00:00:00 +0100</pubDate><description><![CDATA[Le module table est mis à jour, avec son nouveau type complex5, il permet d'afficher un tableau dont la pagination et le tri se font en ajax
+Plus d'informations sur la page dédiée: #lien telechargerModule_table.html #label telechargerModule_table.html lien#
+
+]]></description><guid>http://mkf.mkdevs.com#3a6c4593c54b00ae6ed2b4a41d239441d289689f</guid></item><item><title><![CDATA[Correction du plugin debug
+]]></title><pubDate>Wed, 12 Mar 2014 00:00:00 +0100</pubDate><description><![CDATA[Petite correction sur le plugin_debug suite à l'ajout des permissions, vous pouvez téléchager la dernière version corrigée sur la #lien telecharger.html #label page télécharger lien#
+
+]]></description><guid>http://mkf.mkdevs.com#360bdcb35aaf1c23ade84608a5c94b4a797514b7</guid></item><item><title><![CDATA[Amelioration de l'affichage des permissions
+]]></title><pubDate>Mon, 10 Mar 2014 00:00:00 +0100</pubDate><description><![CDATA[Il est parfois difficile de mettre en place une gestion de droits, une amelioration du plugin de gestion de droits ainsi que le plugin de debug vont vous faciliter celle-ci.
+En effet vous allez avoir sur votre barre de debug un bouton supplémentaire "permissions" qui affichera un tableau listant les permissions vérifiées sur la page.
+
+$image:$barreDebug.png$:image$
+Vous pouvez ainsi voir des lignes en rouge quand non autorisé
+$image:$aclNok.png$:image$
+Et en en vert quand autorisé
+$image:$aclOk.png$:image$
+
+Pour être précis, il y a une ligne à chaque fois que vous allez appeler la vérification de droit via
+&lt;div&gt;
+_root::getACL()-&gt;can('action','composant')
+&lt;/div&gt;
+
+note: pour bénéficier de cette mise à jour, télécharger les dernières versions des plugins plugin_gestionuser et plugin_debug dans #lien telecharger.html #label la page télécharger lien#
+
+]]></description><guid>http://mkf.mkdevs.com#10317ff6c1a9e7d8641c097eaa750a1c033a1b79</guid></item><item><title><![CDATA[Ajout d'un nouveau module téléchargeable de tableau
+]]></title><pubDate>Sun, 09 Mar 2014 00:00:00 +0100</pubDate><description><![CDATA[Il nous arrive souvent de faire des tableaux dans nos applications.
+L'idée ici est de capitaliser, d'éviter de ce repetter, on appelle ceci DRY: don't repeat yourself.
+Vous pouvez désormais télécharger sur le site un nouveau module intégrable "Table"
+Ce module permet de centraliser les types de tableau de votre site, n'hésitez pas à le personnaliser selon vos besoins pour le réutiliser.
+Plus d'informations #lien telechargerModule_table.html #label sur la page du module table lien#
+Quelques exemples de rendu:
+$image:$moduleTableSimple.png$:image$
+$image:$moduleTableComplexe2.png$:image$
+
+]]></description><guid>http://mkf.mkdevs.com#23664816ad0a5e5637f3b0f3d322ee252cb3ed73</guid></item><item><title><![CDATA[Nouvelles améliorations sur le plugin_chart
+]]></title><pubDate>Mon, 03 Mar 2014 00:00:00 +0100</pubDate><description><![CDATA[Ajout d'un nouveau type de graphique: le graphique bar
+Amélioration des graphiques existants
+La page d'utilisation a été mise à jour en conséquence: #lien faq.html #label page FAQ lien#
+
+]]></description><guid>http://mkf.mkdevs.com#77c5ee29a9afae47aee169365524280b7ecdcd82</guid></item><item><title><![CDATA[Amélioration plugin plugin_chart
+]]></title><pubDate>Sun, 23 Feb 2014 00:00:00 +0100</pubDate><description><![CDATA[Plusieurs modifications pour améliorer ce plugin:
+- possibilité d'ajout de repères
+- possibilité d'indique les min/max des axes x et y
+- possibilité de définir une marge gauche pour le graphique
+
+
+]]></description><guid>http://mkf.mkdevs.com#7869fab710f754db8b5489d70ba65542d9e20b0f</guid></item><item><title><![CDATA[Nouveau plugin plugin_rss
+]]></title><pubDate>Sat, 22 Feb 2014 00:00:00 +0100</pubDate><description><![CDATA[Dans le cadre d'un nouveau projet disponible sur github: #lien projets_mkdraw.html #label mkdraw lien#
+J'avais besoin de mettre en place un webservice
+J'ai créé un nouveau plugin plugin_rss pour l'occasion, dispnobile #lien data/down/plugins/plugin_rss.php.txt #label ici lien#
+
+]]></description><guid>http://mkf.mkdevs.com#82d906cb5102ea5e6a968609734242b88ba66208</guid></item><item><title><![CDATA[Nouvelle méthode getOutput() pour la classe _layout
+]]></title><pubDate>Thu, 30 Jan 2014 00:00:00 +0100</pubDate><description><![CDATA[Vous pouvez désormais créer une page complète et l'enregistrer facilement.
+Un tutoriel, à cette adresse explique comment créer un cache complet de site en utilisant cette méthode:
+#lien tutoriaux.html#cachesite #label Faire un site avec un cache html complet  lien#
+Les avantages:
+- une base de donnée peu solicitée: juste à la génération de cache et lors de la modification de données
+- de très bonnes performances, le serveur apache (ou autre) ne faisant que retourner de simples pages html
+- coté sécurité: aucune faille xss,xsrf, nullbyte, sql injection ou autre: le client n'a accès qu'à des pages html
+
+]]></description><guid>http://mkf.mkdevs.com#87347d12ad429ba447e9f6da6151547046274448</guid></item><item><title><![CDATA[Nouveau plugin plugin_form
+]]></title><pubDate>Mon, 27 Jan 2014 00:00:00 +0100</pubDate><description><![CDATA[Afin de rendre plus confortable la création de formulaire, un nouveau plugin fait son apparition: plugin_form
+Il permet de créer des éléments de formulaire en se prenant en compte l'objet modifié
+Par exemple, pour l'édition d'un article
+Coté vue:
+&lt;div&gt;
+&lt;?php
+$oForm=new plugin_form($this-&gt;oArticle);
+$oForm-&gt;setMessage($this-&gt;tMessage);
+?&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Titre&lt;/th&gt;
+		&lt;td&gt;&lt;?php echo $oForm-&gt;getInputText('titre');?&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Resume&lt;/th&gt;
+		&lt;td&gt;&lt;?php echo $oForm-&gt;getInputText('resume');?&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+Qui correspond à
+&lt;div&gt;
+&lt;p&gt;Titre &lt;input type="text" name="titre" value="&lt;?php echo $this-&gt;oArticle-&gt;titre?&gt;" /&gt;&lt;/p&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Titre&lt;/th&gt;
+		&lt;td&gt;
+			&lt;input type="text" name="titre" value="&lt;?php echo $this-&gt;oArticle-&gt;titre?&gt;" /&gt;
+			&lt;?php if($this-&gt;tMessage['titre])):?&gt;
+				&lt;p class="error"&gt;
+					&lt;?php echo implode(',',$this-&gt;tMessage['titre']; ?&gt;
+				&lt;/p&gt;
+			&lt;?php endif;?&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Resume&lt;/th&gt;
+		&lt;td&gt;
+			&lt;input type="text" name="resume" value="&lt;?php echo $this-&gt;oArticle-&gt;resume?&gt;" /&gt;
+			&lt;?php if($this-&gt;tMessage['resume])):?&gt;
+				&lt;p class="error"&gt;
+					&lt;?php echo implode(',',$this-&gt;tMessage['resume']; ?&gt;
+				&lt;/p&gt;
+			&lt;?php endif;?&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#31bd83a5fa417e4c702d34f6c738f3ab6982cd1c</guid></item><item><title><![CDATA[Mise à jour du module google map
+]]></title><pubDate>Sun, 26 Jan 2014 00:00:00 +0100</pubDate><description><![CDATA[Une nouvelle méthode permet d'ajouter des pointers cliquables qui ouvre des fenêtre d'information.
+Plus d'information ici: #lien telechargerModule_googleMap.html #label telechargerModule_googleMap.html lien#
+
+]]></description><guid>http://mkf.mkdevs.com#7dcc74affa9a58ec03cbfa1b22878452fee9663c</guid></item><item><title><![CDATA[Amélioration sécurité plugin upload + génération CRUD
+]]></title><pubDate>Sun, 26 Jan 2014 00:00:00 +0100</pubDate><description><![CDATA[Le plugin upload enregistre désormais les fichiers sous forme de hash, cela permet d'éviter un utilisateur de retrouver des fichiers uploadés par bruteforce
+Concernant la génération de CRUD, un tableau des colonnes attendus permet d'éviter que l'utilisateur soumette des champs non attendu.
+Merci à Lo000oL pour cette suggestion.
+
+]]></description><guid>http://mkf.mkdevs.com#7dcc74affa9a58ec03cbfa1b22878452fee9663c</guid></item><item><title><![CDATA[Ajout d'un nouveau module: google Map
+]]></title><pubDate>Thu, 02 Jan 2014 00:00:00 +0100</pubDate><description><![CDATA[Vous pouvez désormais télécharger un nouveau module embarqué vous permettant de facilement ajouté une carte Google map dans vos sites.
+Vous pouvez télécharger le module ici: #lien telechargerModule_googleMap.html #label Module Google Map lien#
+
+]]></description><guid>http://mkf.mkdevs.com#9cf2aa2df28b8d1e0bedd962385240816d1d3a25</guid></item><item><title><![CDATA[Ajout d'une méthode pour créer un lien avec le contexte actuel
+]]></title><pubDate>Fri, 27 Dec 2013 00:00:00 +0100</pubDate><description><![CDATA[Dans le cas où par exemple vous avez des liens permettant juste de changer de langue
+Vous pouvez utiliser cette nouvelle méthode _root::getLinkWithCurren()
+&lt;div&gt;
+&lt;a href="&lt;?php echo _root::getLinkWithCurrent(array('langue'=&gt;'fr') )?&gt;"&gt;FR&lt;/a&gt;
+&lt;a href="&lt;?php echo _root::getLinkWithCurrent(array('langue'=&gt;'en') )?&gt;"&gt;EN&lt;/a&gt;
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#00a857f33be228f0cece7aeb66499a1ce98395da</guid></item><item><title><![CDATA[Ajout d'un plugin pour faire des graphiques en html5
+]]></title><pubDate>Sun, 15 Dec 2013 00:00:00 +0100</pubDate><description><![CDATA[A l'occasion un nouveau template (layout) html5 fait son apparition pour permettre d'utiliser ce nouveau plugin*
+Il permet pour l'instant de génerer des histogrammes, camembert et lignes.
+Le projet avec exemple (générable via le builder) compte une page en plus utilisant ce plugin.
+Sa documentation doxygen a été ajoutée #lien http://mkframework.com/doxygen/classplugin__chart.html #label ici lien#
+
+*note: ce plugin utilise la balise canvas html5
+]]></description><guid>http://mkf.mkdevs.com#abe367a550f31f7b369a0b634537f190b5b22960</guid></item><item><title><![CDATA[Correction de la méthode getParams() de la classe request
+]]></title><pubDate>Tue, 10 Dec 2013 00:00:00 +0100</pubDate><description><![CDATA[Cette méthode qui retourne le tableau complet des paramètres ne protégeait pas le du XSS (contrairement à getParam() )
+
+]]></description><guid>http://mkf.mkdevs.com#5e6b408848a7f86fa9dc4149c54703bb18ca1912</guid></item><item><title><![CDATA[Ajout d'une page de recherche
+]]></title><pubDate>Fri, 06 Dec 2013 00:00:00 +0100</pubDate><description><![CDATA[Vous pouvez désormais chercher dans la documentation via une nouvelle page recherche. (tout en bas dans le menu de gauche)
+
+]]></description><guid>http://mkf.mkdevs.com#efd7ed203986c9db9f25eaaa9673a41a0e1fda41</guid></item><item><title><![CDATA[Amélioration graphique du builder + futur application Android
+]]></title><pubDate>Tue, 03 Dec 2013 00:00:00 +0100</pubDate><description><![CDATA[Petite amélioration graphique du builder sur la partie génération d'index pour les bases xml et json.
+J'en profite également pour vous informer travailler sur une petite application Android permettant d'avoir dans vos smartphone la documentation du framework (sans être connecté)
+
+]]></description><guid>http://mkf.mkdevs.com#6d555d8a5c2f25b8ab52b305b219926916ed4125</guid></item><item><title><![CDATA[Amélioration de la génération de CRUD
+]]></title><pubDate>Sun, 10 Nov 2013 00:00:00 +0100</pubDate><description><![CDATA[Désormais, si vous avez une erreur à la validation d'un formulaire, vous retrouvez vos données saisies.
+
+]]></description><guid>http://mkf.mkdevs.com#d76e2c6bcaf32e10f88e82cba6d9882b56f1bfaa</guid></item><item><title><![CDATA[Nouveau sgbd: json
+]]></title><pubDate>Fri, 01 Nov 2013 00:00:00 +0100</pubDate><description><![CDATA[Un nouveau moteur vient s'ajouter au xml et csv: json
+Vous pouvez désormais créer une base json et, comme pour une base xml, ajouter des index quand nécéssaire.
+
+]]></description><guid>http://mkf.mkdevs.com#8ee1987f6bc79bcc73428ac35b2e4e0842aebc27</guid></item><item><title><![CDATA[Publication d'un tutoriel pour créer son site de microblogging sur developpez.com
+]]></title><pubDate>Thu, 31 Oct 2013 00:00:00 +0100</pubDate><description><![CDATA[Retrouvez sur developpez ce tutoriel: #lien http://imikado.developpez.com/tutoriels/php/creer-votre-microblogging/ #label http://imikado.developpez.com/tutoriels/php/creer-votre-microblogging/ lien#
+
+]]></description><guid>http://mkf.mkdevs.com#1383b0a126eb2a3f4f7ba7313b31a92f62be4bf7</guid></item><item><title><![CDATA[Dernières news
+]]></title><pubDate>Wed, 30 Oct 2013 00:00:00 +0100</pubDate><description><![CDATA[Au menu:
+- on peut désormais dans le builder choisir de générer un module CRUD avec/sans pagination.
+- une nouvelle partie de la page de téléchargement permet désormais de télécharger des modules.
+- Deux nouveaux projets sont disponibles dans la rubrique "Projets & Applications": un projet de reseau social, et un projet de microblogging
+Pour information, vous pourrez retrouver dès demain sur developpez.com un tutoriel pour faire ce site de microblogging en moins d'une heure.
+
+]]></description><guid>http://mkf.mkdevs.com#9c21de8cc600698b53b85d0ac01046d6149b0789</guid></item><item><title><![CDATA[Tutoriel sur le réseau social fini
+]]></title><pubDate>Sat, 19 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Le tutoriel permettant de créer un réseau social est désormais fini et disponible #lien /bigtutoriel_socialnetwork_I.html #label ici lien#.
+Ce projet est également disponible sur la page de #lien projets.html #label Projets & Applications lien#
+
+]]></description><guid>http://mkf.mkdevs.com#3ae77f1f6130d543d828c4ea2b7aceffb6636e23</guid></item><item><title><![CDATA[Ajout d'une nouvelle rubrique "Projets & Applications"
+]]></title><pubDate>Mon, 14 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Depuis de longs mois, je travaille sur des projets, et ceux-ci étant basés sur ce framework, je vous les propose en téléchargement
+Pour le moment il y a MkNotes et MkSql
+MkNotes est une application de gestion de taches.
+MkSql est une application d'écriture de requete SQL en mode graphique utilisant les drivers du framework.
+note: ces projets sont et seront ajoutés chacun sur github sous licence LGPLv3
+
+]]></description><guid>http://mkf.mkdevs.com#8951dfa4ed61d302c6b71c6ac74ef880831a3f54</guid></item><item><title><![CDATA[Amélioration du log SQL
+]]></title><pubDate>Thu, 10 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Vous avez désormais dans vos logs d'information les requetes SQL éxécutées.
+Pour rappel, pour activer ce log, il vous suffit de passer la variable information à 1 dans la section [log]
+&lt;div&gt;
+[log]
+class=plugin_log
+error=0
+warning=0
+application=0
+information=1
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#0bcccbab968a8a56d1d36d106eccf89bc5c529a9</guid></item><item><title><![CDATA[Amélioration du plugin plugin_debug
+]]></title><pubDate>Wed, 09 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Ajout de la possibilité d'initié des chronos pour identifier dans votre code ce qui prend du temps
+Par exemple chronométrer le temps de récupération d'une requete
+&lt;div&gt;
+public function findAll(){
+	plugin_debug::addChrono('debut requte A');
+	$tArticle=$this-&gt;findMany('SELECT * FROM article');
+	plugin_debug::addChrono('fin requete A');
+	return $tArticle;
+}
+&lt;/div&gt;
+Vous verrez dans la barre un bouton "times" pour les afficher
+
+]]></description><guid>http://mkf.mkdevs.com#8925dfaa330fe4fcf1b97b8a997dbb71adcbfcb8</guid></item><item><title><![CDATA[Amélioration du plugin plugin_debug
+]]></title><pubDate>Wed, 09 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Ajout du log sql sur les drivers CSV et XML
+Amélioration de l'affichage de la barre de debug plugin_debug
+
+]]></description><guid>http://mkf.mkdevs.com#8925dfaa330fe4fcf1b97b8a997dbb71adcbfcb8</guid></item><item><title><![CDATA[Ajout d'un nouveau plugin: le plugin_debug
+]]></title><pubDate>Tue, 08 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Celui-ci vous fournit en bas de l'écran (en mode dev) une barre de debug, celle -ci
+- affiche les variables d'environnements $_GET,$_POST,$_SERVER,$_SESSION
+- affiche les variables de connexion
+- affiche les variables de configuration
+- permet de debuguer une variable en utilisant un espion
+- permet d'afficher le fichier de log, si l'option est activée
+
+Utiliser un espion dans votre code avec
+&lt;div&gt;
+plugin_debug::addSpy('mon commentaire', $oMaVariable);
+&lt;/div&gt;
+
+note: si vous avez une application existante et que vous souhaitez utiliser ce plugin,
+1. ajoutez dans votre fichier public/index.php
+En début de script:
+&lt;div&gt;
+$iMicrotime=microtime();
+&lt;/div&gt;
+et en fin de script
+&lt;div&gt;
+if(_root::getConfigVar('site.mode')=='dev'){
+	$oDebug=new plugin_debug($iMicrotime);
+	echo $oDebug-&gt;display();
+}
+&lt;/div&gt;
+2. téléchargez le plugin plugin_debug dans le répertoire plugin/ de votre application (page #lien telecharger.html #label de téléchargement lien#
+note: la documentation suivra très vite
+
+]]></description><guid>http://mkf.mkdevs.com#4598a08da1a4a21eb41d963905271d5d8936cbc7</guid></item><item><title><![CDATA[Amélioration du plugin plugin_routing
+]]></title><pubDate>Sun, 06 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais débrayer la page 404 si nécessaire:
+Lorsque l'url rewriging est activé, le plugin cheche pour chaque url si elle est renseignée dans le fichier de configuration.
+Dans le cas contraire, il redirige vers la page 404 inscrite dans le fichier de configuration.
+Vous pouvez désormais désactiver cette page 404 en renseignant une nouvelle variable use404 dans la section [urlrewriting] du fichier conf/site.ini.php
+
+]]></description><guid>http://mkf.mkdevs.com#b540de042ac30cbbe5fd0607a4be50b059f65350</guid></item><item><title><![CDATA[Amélioration de l'explorateur de projet
+]]></title><pubDate>Sun, 06 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais dans l'explorateur de projet editer le fichier en entier en plus de ligne à ligne.
+
+]]></description><guid>http://mkf.mkdevs.com#b540de042ac30cbbe5fd0607a4be50b059f65350</guid></item><item><title><![CDATA[Amélioration du plugin_rouging et _cache
+]]></title><pubDate>Sat, 05 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Coté cache, vous pouvez désormais supprimer un fichier de cache quand nécessaire (par exemple ajout d'un enregistrement)
+Coté plugin_routing, vous pouvez désormais forcer des variables de manières cachées
+Par exemple, vous avez une url index_2.html et vous souhaitez non seulement appelé un module avec le paramètre 2, mais également initialisé une seconde variable
+Fichier conf/routing.php
+&lt;div&gt;
+'index_:postsid:.html' =&gt; array(
+	'nav'=&gt;'default::index',
+	'tParam'=&gt;array('postsid','postsAction'),
+	'tParamHidden'=&gt;array(
+				'postsAction'=&gt;'show',
+	)
+	),
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#80eced519197e1114f464fbe8d6ff2a6ee5d4ad9</guid></item><item><title><![CDATA[Builder: amélioration du module authentification + inscription
+]]></title><pubDate>Fri, 04 Oct 2013 00:00:00 +0200</pubDate><description><![CDATA[Le module authentifaction + inscription généré via le builder vérfifie désormais la présence de l'utilisateur.
+Le fichier de connexion (conf/connexion.ini.php), contenant les profils de connexions a été un peu simplifié pour les connexions utilisant pdo
+On passe de
+&lt;div&gt;
+mysqlExple.dsn="mysql:dbname=blog;host=localhost"
+mysqlExple.sgbd=pdo_mysql
+mysqlExple.hostname=localhost
+mysqlExple.database=blog
+mysqlExple.username=root
+mysqlExple.password=root
+&lt;/div&gt;
+à
+&lt;div&gt;
+mysqlExple.dsn="mysql:dbname=blog;host=localhost"
+mysqlExple.sgbd=pdo_mysql
+mysqlExple.username=root
+mysqlExple.password=root
+&lt;/div&gt;
+En effet pour les connexions via pdo, les variables hostname et database ne sont pas utilisées: ces paramètres sont contenues dans la variable "dsn"
+
+]]></description><guid>http://mkf.mkdevs.com#4bbf6983c8dbba87e70c3d756edb3d6276288551</guid></item><item><title><![CDATA[Builder: amélioration des CRUD "normaux" et intégrable
+]]></title><pubDate>Mon, 30 Sep 2013 00:00:00 +0200</pubDate><description><![CDATA[Ajout de la possibilité de définir un label lorsque vous générer un module CRUD
+$image:$builder_blog_crud_article.png$:image$
+
+]]></description><guid>http://mkf.mkdevs.com#d40a5a292d93e993a6975fe336e0def8df684323</guid></item><item><title><![CDATA[Builder: amélioration du CRUD intégrable
+]]></title><pubDate>Fri, 27 Sep 2013 00:00:00 +0200</pubDate><description><![CDATA[Même modification que pour le module CRUD
+
+]]></description><guid>http://mkf.mkdevs.com#b5ba20bd43499ea52e322ea363142a2484bce8d7</guid></item><item><title><![CDATA[Builder: amélioration du CRUD
+]]></title><pubDate>Thu, 26 Sep 2013 00:00:00 +0200</pubDate><description><![CDATA[Vous pouvez désormais, lors de la génération du CRUD, choisir les pages/actions à générer (ajout/modification/suppression/affichage) en cochant ou non des cases.
+
+]]></description><guid>http://mkf.mkdevs.com#5605f2f703161091f6190aa9ae91d105fec3bb77</guid></item><item><title><![CDATA[Nouveau tutoriel pour créer votre propre réseau social
+]]></title><pubDate>Tue, 24 Sep 2013 00:00:00 +0200</pubDate><description><![CDATA[Vous avez bien lu, un tutoriel permet de créer votre propre réseau social, celui-ci est en cours de rédaction, il est mis en ligne au fur et à mesure
+Il est disponible ici bigtutoriel_socialnetwork_I.html
+
+]]></description><guid>http://mkf.mkdevs.com#15261e03853baf4b5f3913e1dbaf088cc3aa3b3a</guid></item><item><title><![CDATA[Refactorisation du builder et ajout d'une fonctionnalité
+]]></title><pubDate>Sun, 22 Sep 2013 00:00:00 +0200</pubDate><description><![CDATA[Coté coeur du builder: le builder a été refactorisé
+Coté visible: vous pouvez désormais générer un module d'authentification + un formulaire d'inscription
+Le menu du builder a été un peu amélioré, il y a désormais un regroupement par type de liens.
+$image:$builder_blog_index.png$:image$
+
+]]></description><guid>http://mkf.mkdevs.com#db007fea313033d65d03dfa0168d3ccdbe00cdd5</guid></item><item><title><![CDATA[Nouvelle fonctionnalité: le cache de variable
+]]></title><pubDate>Sun, 15 Sep 2013 00:00:00 +0200</pubDate><description><![CDATA[Vous avez désormais la possibilité de gerer un cache de variable. Proposé à l'origine pour vos requetes ORM, il permet:
+- de gagner en performances
+- de décharger votre SGBD
+note: vous avez toujours la possibilité d'indiquer une date de "peremption" pour ce cache
+
+Son utilisation:
+&lt;div&gt;
+	public function findAll(){
+		$sId='articleFindAll';
+
+		//y a-t-il un cache pour cette variable ?
+		if(_root::getCacheVar()-&gt;isCached($sId) ){
+			//si oui, on recupere le tableau d'objets en cache
+			$tArticle=_root::getCacheVar()-&gt;getCached($sId);
+		}else{
+			//si non: on execute la requete dans l'ORM et on enregistre le tableau en cache
+			$tArticle = $this-&gt;findMany('SELECT * FROM '.$this-&gt;sTable.'   ');
+			_root::getCacheVar()-&gt;setCache($sId,$tArticle);
+		}
+
+		return $tArticle;
+
+	}
+&lt;/div&gt;
+
+]]></description><guid>http://mkf.mkdevs.com#0d401d668fdf292b5a895670c37ccea168ea2365</guid></item><item><title><![CDATA[Deux nouvelles méthodes dans la couche modèle findManySimple et findOneSimple
+]]></title><pubDate>Tue, 10 Sep 2013 00:00:00 +0200</pubDate><description><![CDATA[Si vous avez besoin de performances, vous pouvez utiliser ces deux méthodes qui retourneront uniquement des simples objets (stdclass)
+Ce faisant vous afficherez vos enregistrements plus vite qu'avec findMany et findOne, en revanche, les objets retournés seront des objets "simples" vous ne pouvez pas interagir avec, juste les afficher.
+
+]]></description><guid>http://mkf.mkdevs.com#2e36441ac358e8c4af206c6fdb38f2d9c0f922b3</guid></item><item><title><![CDATA[Nouveau tutoriel sur la génération de module d'authentification
+]]></title><pubDate>Sun, 08 Sep 2013 00:00:00 +0200</pubDate><description><![CDATA[Un nouveau tutoriel est disponible et montre comme utiliser le builder pour générer un module d'authentification #lien tutoriaux.html#auth2 #label ici lien#
+
+]]></description><guid>http://mkf.mkdevs.com#f148c9a61c597f3342be9ca15c041ce7b566d44d</guid></item><item><title><![CDATA[Mises à jour du builder
+]]></title><pubDate>Tue, 20 Aug 2013 00:00:00 +0200</pubDate><description><![CDATA[Le builder permet désormais de générer un module d'authentification en quelques clics.
+L'explorateur de projet a également été un peu amélioré pour afficher mieux les fichiers de configuration.
+
+]]></description><guid>http://mkf.mkdevs.com#bcf399a6bee8926501b87eb63200ce71f8d71a2b</guid></item><item><title><![CDATA[Amélioration du builder et mise à jour du site
+]]></title><pubDate>Sat, 17 Aug 2013 00:00:00 +0200</pubDate><description><![CDATA[Le builder permet désormais en plus de générer des modules CRUD de generer des module équivalent en lecture seule
+Concernant le site, il devient bilingue ;)
+
+]]></description><guid>http://mkf.mkdevs.com#4a0b5d3865be352c76522e3ec9ce0a671458a392</guid></item><item><title><![CDATA[Disponibilité sur GitHub
+]]></title><pubDate>Fri, 09 Aug 2013 00:00:00 +0200</pubDate><description><![CDATA[Suite à de nombreuses discussions à propos notamment de la possibilité de soumettre des mises à jour et corrections de bugs, je viens d'installer le framework également sur github
+L'adresse: https://github.com/imikado/mkframework
+Pour information, le dépôt subversion reste actif, je fairais des mises à jour sur les deux, mais préferez la version svn pour votre environnent stable.
+
+]]></description><guid>http://mkf.mkdevs.com#60af49eabecb396c9ea6a89955493fc0ab356798</guid></item><item><title><![CDATA[Nouvelles méthodes disponibles isset/unset pour le layout/view et amélioration de l'explorateur de projet
+]]></title><pubDate>Fri, 09 Aug 2013 00:00:00 +0200</pubDate><description><![CDATA[Deux nouvelles méthodes pour améliorer votre utilisation des layout et des vues de vos applications:
+Vous pouvez désormais vérifier l'assignation d'une variable avant de l'utiliser dans le layout et dans les vues.
+Concernant l'explorateur de projet, l'adresse du fihier reste visible en amont du code même si vous scrollez
+
+]]></description><guid>http://mkf.mkdevs.com#60af49eabecb396c9ea6a89955493fc0ab356798</guid></item><item><title><![CDATA[Nouvelle fonctionnalité pour le Builder
+]]></title><pubDate>Thu, 01 Aug 2013 00:00:00 +0200</pubDate><description><![CDATA[Une nouvelle fonctionnalité importante sur le builder: l'explorateur de projet.
+Celui-ci, en beta, permet
+- de naviguer à travers les fichiers de vos projets,
+- d'avoir une documentation contextuel
+- de naviguer entre vos appels de classes model/module
+- d'éditer vos fichiers avec des aides de code
+C'est la première brique d'une fonctionnalité qui va vous faire gagner du temps.
+
+]]></description><guid>http://mkf.mkdevs.com#49d5ed57d374beccccb0db141f12aa679daf6a00</guid></item><item><title><![CDATA[Mise à jour de la page de tutoriaux vidéos
+]]></title><pubDate>Fri, 05 Jul 2013 00:00:00 +0200</pubDate><description><![CDATA[La page mettait trop de temps à charger, j'ai opté pour un système de lien qui ouvre une popup où se joue la vidéo youtube.
+
+]]></description><guid>http://mkf.mkdevs.com#c5f021bddd6e7f3b82bf86d8b3c3cb4516d676e8</guid></item><item><title><![CDATA[Correction des classes plugin sgbd_mysql, plugin_html et plugin_check
+]]></title><pubDate>Thu, 04 Jul 2013 00:00:00 +0200</pubDate><description><![CDATA[Ajout d'une méthode "isStrictlyEqual()" dans le plugin plugin_check permettant de faire un test d'égalité stricte contrairement à "isEqual()"
+Et sécurisation des classes sgbd_mysql et plugin_check, note: pour mysql préférez l'utilisation de pdo_mysql (plus sur)
+
+]]></description><guid>http://mkf.mkdevs.com#202efdfdcd97e1061912e0c44853fde6da9bdfa8</guid></item><item><title><![CDATA[Correction de la classe plugin_check
+]]></title><pubDate>Wed, 03 Jul 2013 00:00:00 +0200</pubDate><description><![CDATA[Une correction a été apportée sur la vérification du format d'un email.
+
+]]></description><guid>http://mkf.mkdevs.com#bd49f936080e4969e930900e0cbee0755fa5466d</guid></item><item><title><![CDATA[Nouvelle correction de la classe plugin_routing
+]]></title><pubDate>Mon, 01 Jul 2013 00:00:00 +0200</pubDate><description><![CDATA[Dernière correction en date qui corrige un problème lors de l'utilisation de plusieurs paramètres.
+Par exemple dans le cas "article_:id:_:categorie:.html", pour une url de type article_2_archive.html il trouvait uniquement une variable "id" qui contenait "2_archive"
+Désormais c'est corrigé ;)
+Encore merci à @modulo2 (de developpez.com)
+
+]]></description><guid>http://mkf.mkdevs.com#8a401ce1bdb3395f1431d18428bb7ec5b33dad83</guid></item><item><title><![CDATA[Ajout d'une page de documentation
+]]></title><pubDate>Sun, 30 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Une nouvelle page de documentation permet d'expliquer les variables des différents fichiers de configuration
+
+]]></description><guid>http://mkf.mkdevs.com#1020119dfdca208bc3f391a672bfb5552cc83b2d</guid></item><item><title><![CDATA[Correction de la classe plugin_routing
+]]></title><pubDate>Fri, 28 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Un dernier bug concernant le plugin plugin_routing pour limiter le début et la fin de l'url
+Il permettait d'indiquer de mauvaises url: zzz/backoffice/articles.html était aussi valide que backoffice/articles.html
+Idem pour les caractères après: articles.html etait aussi valide que articles.html?variableInconnu=2
+Pour rappel, vous pouvez télécharger uniquement le plugin corrigé dans la page de téléchargement
+
+]]></description><guid>http://mkf.mkdevs.com#4f730adf344632f6218baca4bc9b20523ba471f9</guid></item><item><title><![CDATA[Correction de la classe plugin_routing
+]]></title><pubDate>Thu, 27 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Un autre bug a été corrigé concernant le plugin_routing, il ne retournait pas la bonne valeur en cas de variable en début de "pattern"
+Par exemple si vous aviez :id:_page.html, il récupérait la totalité de l'url jusqu'à _page.html
+Merci à @modulo2 (de developpez.com)
+
+]]></description><guid>http://mkf.mkdevs.com#ec4d3053df2abf812141928f4ea0d98bf7d3cf12</guid></item><item><title><![CDATA[Correction de la classe plugin_routing
+]]></title><pubDate>Thu, 27 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Un bug a été corrigé concernant le plugin_routing, il ne trouvait pas la bonne règle si le nom de ces pages se ressemblait, par exemple il confondait connexion.html et deconnexion.html (selon l'ordre dans lequel il était renseigné).
+Merci à @modulo2 (de developpez.com)
+
+]]></description><guid>http://mkf.mkdevs.com#ec4d3053df2abf812141928f4ea0d98bf7d3cf12</guid></item><item><title><![CDATA[Correction de la classe _root
+]]></title><pubDate>Tue, 18 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Correction lors de l'appel du module principal, celui-ci appelait la méthode after_action() avant votre méthode _action()
+Merci à @modulo (de developpez.com)
+
+]]></description><guid>http://mkf.mkdevs.com#522cbd812c8aa647e22fb5a8e7158d35dda06166</guid></item><item><title><![CDATA[Page sur la sécurité
+]]></title><pubDate>Tue, 11 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Une nouvelle page fait son apparition et vous indique quels éléments de sécurité sont gérés par le framework et lesquels sont à la charge du développeur.
+La page: #lien http://mkdevs.com/security.html #label http://mkdevs.com/security.html lien#
+
+]]></description><guid>http://mkf.mkdevs.com#3971283d8f86abab26fcea576d013ae71da9ee8f</guid></item><item><title><![CDATA[Correction du du builder (générateur web) et sources
+]]></title><pubDate>Sun, 09 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Le sous menu permettant de générer un menu avait un soucis avec les projet généré "avec exemples", c'est désormais corrigé
+A ce propos deux choses au niveau des projets générés "avec examples":
+1. les modules d'exemple (utilisé pour les générations) ne sont pu copiés
+2. le module article d'exemple utilise des tableaux de jointures pour afficher le nom des auteurs ;)
+
+]]></description><guid>http://mkf.mkdevs.com#a31174c744a7b0bb24143128eddbca5ecf701525</guid></item><item><title><![CDATA[Correction du menu du builder (générateur web)
+]]></title><pubDate>Sun, 09 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Lors d'une mise à jour du builder, j'ai malencontreusement livré une entrée dans le menu du générateur web pas encore prête "ajouter un module", j'ai créé une version en enlevant cette entrée.
+A terme il y aura un sous menu permettant d'ajouter certains types de module (authentification...)
+
+]]></description><guid>http://mkf.mkdevs.com#a31174c744a7b0bb24143128eddbca5ecf701525</guid></item><item><title><![CDATA[Mise à jour du site
+]]></title><pubDate>Fri, 07 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Amélioration de la documentation: j'ai scindé la doc API en deux menus: d'un coté la documentation doxygen, de l'autre une page qui permet de trouver facilement la documentation d'une classe.
+
+]]></description><guid>http://mkf.mkdevs.com#7eb0fe5a006c778b29af31dda57b4fc3200c9c90</guid></item><item><title><![CDATA[Générateur web: Ajout d'un menu pour créer un menu
+]]></title><pubDate>Wed, 05 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Une nouvelle entrée dans le générateur web, elle permet de générer un menu à partir des modules présents sur votre projet.
+Vous pouvez, via un formulaire, sélectionner les méthodes des modules et leur libéllés dans le menu.
+
+]]></description><guid>http://mkf.mkdevs.com#6b313646c7c3b3e00e441fa3e627f5a9ce71b1e9</guid></item><item><title><![CDATA[Amélioration du plugin plugin_upload
+]]></title><pubDate>Sat, 01 Jun 2013 00:00:00 +0200</pubDate><description><![CDATA[Suite à une remarque pertinente d'un membre de developpez.com (modulo2,que je remercie au passage) le plugin a ainsi été amélioré.
+
+]]></description><guid>http://mkf.mkdevs.com#27afa3bdfac2dde9267c6b5fc2cdce9780b06733</guid></item><item><title><![CDATA[Changement de licence, passage de la AGPLv3 à la LGPLv3
+]]></title><pubDate>Thu, 30 May 2013 00:00:00 +0200</pubDate><description><![CDATA[Suite aux nombreuses discussions que j'ai pu avoir sur le sujet, je change la licence du framework pour une licence plus permessive pour permettre une plus large adoption du framework ;)
+Le framework passe ainsi en LGPLv3 :)
+]]></description><guid>http://mkf.mkdevs.com#fc59d50ce0707cf59196bb6e7bdfc287b5765cea</guid></item></channel></rss>
+<!--cache -->

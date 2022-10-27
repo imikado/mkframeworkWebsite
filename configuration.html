@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item active">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="configuration.html">FR</a></li>
+
+			<li><a class="nav-link"  href="configuration_en.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="fonctionnement.html" >Sch&eacute;mas <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="builder.html" >Le g&eacute;n&eacute;rateur web <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="orm.html" >L'ORM (La couche mod&egrave;le) <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item active">
+				<a class="nav-link" href="#" >Configuration <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="security.html" >La s&eacute;curit&eacute; <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="scraftsmanship.html" >Software Craftsmanship <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Les fichiers de configuration de votre application</h1>Lors de la cr&eacute;ation d&#039;un nouveau projet, le builder cr&eacute;&eacute; 3 fichiers de configuration connexion.ini.php site.ini.php et routing.php<br />D&eacute;taillons ici leur utilisation<br /><br /><h1>Fichier connexion.ini.php</h1>Il contient les diff&eacute;rents profil de connexion sous la forme<br /><h2>Section [db]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">db</span><span style="color: #007700">]<br /></span><span style="color: #0000BB">nomDuProfil</span><span style="color: #007700">.</span><span style="color: #0000BB">dsn</span><span style="color: #007700">=</span><span style="color: #DD0000">"chaineDeConnexionDsn"<br /></span><span style="color: #0000BB">nomDuProfil</span><span style="color: #007700">.</span><span style="color: #0000BB">sgbd</span><span style="color: #007700">=</span><span style="color: #0000BB">typdeDeDriverSgbd<br />nomDuProfil</span><span style="color: #007700">.</span><span style="color: #0000BB">hostname</span><span style="color: #007700">=</span><span style="color: #0000BB">serveur<br />nomDuProfil</span><span style="color: #007700">.</span><span style="color: #0000BB">database</span><span style="color: #007700">=</span><span style="color: #0000BB">baseDeDonnee<br />nomDuProfil</span><span style="color: #007700">.</span><span style="color: #0000BB">username</span><span style="color: #007700">=</span><span style="color: #0000BB">nomDutilisateur<br />nomDuProfil</span><span style="color: #007700">.</span><span style="color: #0000BB">password</span><span style="color: #007700">=</span><span style="color: #0000BB">motDePasse<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable nomDuProfil.dsn</h3>Dans le cas d&#039;utilisation d&#039;un driver de type pdo: pdo_mysql,pdo_pgsql,pdo_sqlite,pdo_mssql,pdo_oracle, il faut renseigner une chaine de connexion<br />Plus d&#039;information ici: <a href="http://php.net/manual/fr/pdo.construct.php">http://php.net/manual/fr/pdo.construct.php </a><br /><h3>Variable nomDuProfil.sgbd</h3>Type de driver sgbd &agrave; utiliser,il repr&eacute;sente le nom de la classe qui sera utilis&eacute;e:<br />Pour pdo: pdo_mysql,pdo_pgsql,pdo_sqlite,pdo_mssql,pdo_oracle<br />Non pdo: mysql,csv,xml<br /><h3>Variable nomDuProfil.database</h3>Nom de la base de donn&eacute;e (uniquement n&eacute;c&eacute;ssaire pour les drivers non pdo)<br /><h3>Variable nomDuProfil.hostname</h3>Nom du serveur de base de donn&eacute;e (uniquement n&eacute;c&eacute;ssaire pour les drivers non pdo)<br /><h3>Variable nomDuProfil.username</h3>Nom d&#039;utilisateur de la connexion<br /><h3>Variable nomDuProfil.password</h3>Mot de passe de la connexion<br /><br /><h1>Fichier site.ini.php</h1>Contient la majorit&eacute; de la configuration de votre site<br /><h2>Section [cache]</h2><h3>introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">cache</span><span style="color: #007700">]<br /></span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br />lifetime</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">0</span><span style="color: #007700">*</span><span style="color: #0000BB">3600</span><span style="color: #007700">)<br /></span><span style="color: #0000BB">autoload</span><span style="color: #007700">.</span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable enabled</h3>Permet d&#039;activer ou non le cache sur le site<br /><h3>Variable lifetime</h3>Temps de validit&eacute; d&#039;une page en cache (en secondes)<br /><h3>Variable autoload.enabled</h3>Active/d&eacute;sactive la g&eacute;n&eacute;ration d&#039;un cache du chargeur de classe (pour gagner en performance au moment de livrer en production)<br />Normalement &agrave; l&#039;appel d&#039;une classe, l&#039;autoloader analyse de nom de celle-ci pour determiner d&#039;adresse de son fichier de classe.<br />En activant cette variable, le framework va g&eacute;n&eacute;rer un tableau contenant l&#039;ensemble des classes pr&eacute;sentes dans l&#039;application.<br /><br /><h2>Section [encodage]</h2><h3>Introduction</h3>Permet de choisir l&#039;encodage utilis&eacute; par le framework: pour information les variables d&#039;environnent $_GET et $_POST sont converti en HTML suivant cette variable<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">encodage</span><span style="color: #007700">]<br />;</span><span style="color: #0000BB">indique&nbsp;l</span><span style="color: #DD0000">'encodage&nbsp;des&nbsp;fichiers&nbsp;de&nbsp;code,&nbsp;utilise&nbsp;par&nbsp;defaut&nbsp;pour&nbsp;plugin_html::encode($texte)<br />charset=ISO-8859-1<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable charset</h3>Encodage utilis&eacute;<br /><br /><h2>Section [language]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">language</span><span style="color: #007700">]<br />;</span><span style="color: #0000BB">fr&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">en</span><span style="color: #007700">...&nbsp;</span><span style="color: #FF8000">//sLangue<br /></span><span style="color: #007700">default=</span><span style="color: #0000BB">fr<br />allow</span><span style="color: #007700">=</span><span style="color: #0000BB">fr</span><span style="color: #007700">,</span><span style="color: #0000BB">en<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable default</h3>Langue utilis&eacute; par d&eacute;faut<br /><br /><h2>Section [auth]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">auth</span><span style="color: #007700">]<br />;</span><span style="color: #0000BB">note&nbsp;</span><span style="color: #007700">:&nbsp;&gt;=&nbsp;</span><span style="color: #0000BB">php5.2&nbsp;dans&nbsp;le&nbsp;php</span><span style="color: #007700">.</span><span style="color: #0000BB">ini<br />session</span><span style="color: #007700">.</span><span style="color: #0000BB">use_cookies&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1<br />session</span><span style="color: #007700">.</span><span style="color: #0000BB">use_only_cookies&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1<br />session</span><span style="color: #007700">.</span><span style="color: #0000BB">cookie_httponly</span><span style="color: #007700">=</span><span style="color: #0000BB">1<br />session</span><span style="color: #007700">.</span><span style="color: #0000BB">cookie_secure</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br />session</span><span style="color: #007700">.</span><span style="color: #0000BB">cookie_domain</span><span style="color: #007700">=<br /></span><span style="color: #0000BB">session</span><span style="color: #007700">.</span><span style="color: #0000BB">cookie_path</span><span style="color: #007700">=<br /></span><span style="color: #0000BB">session</span><span style="color: #007700">.</span><span style="color: #0000BB">cookie_lifetime</span><span style="color: #007700">=<br /></span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br /></span><span style="color: #007700">class=</span><span style="color: #0000BB">plugin_auth<br />module</span><span style="color: #007700">=</span><span style="color: #0000BB">auth</span><span style="color: #007700">::</span><span style="color: #0000BB">login<br />session</span><span style="color: #007700">.</span><span style="color: #0000BB">timeout</span><span style="color: #007700">.</span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">1<br />session</span><span style="color: #007700">.</span><span style="color: #0000BB">timeout</span><span style="color: #007700">.</span><span style="color: #0000BB">lifetime</span><span style="color: #007700">=(</span><span style="color: #0000BB">60</span><span style="color: #007700">*</span><span style="color: #0000BB">1</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><h3>Variable session.use_cookies</h3>Utiliser des cookies de session et non le param&egrave;tre session_id dans l&#039;url<br /><h3>Variable session.cookie_httponly</h3>Utilis&eacute; lors de la cr&eacute;ation d&#039;un cookie: indique que le cookie est accessible uniquement cot&eacute; serveur et non cot&eacute; javascript (mesure de s&eacute;curit&eacute;)<br /><h3>Variable session.cookie_secure</h3>Indique si le cookie est accessible uniquement en https<br /><h3>Variable session.cookie_domain</h3>Indique le domaine &agrave; renseigner lors de la cr&eacute;ation du cookie de session, plus d&#039;informations ici: <a href="http://php.net/manual/fr/function.session-set-cookie-params.php">http://php.net/manual/fr/function.session-set-cookie-params.php </a><br /><h3>Variable session.cookie_path</h3>Indique le chemin &agrave; renseigner lors de la cr&eacute;ation du cookie de session, plus d&#039;informations ici: <a href="http://php.net/manual/fr/function.session-set-cookie-params.php">http://php.net/manual/fr/function.session-set-cookie-params.php </a><br /><h3>Variable session.use_only_cookies</h3>Utiliser uniquement les cookie de session<br /><h3>Variable enabled</h3>Permet d&#039;activer/d&eacute;sactiver l&#039;authentification sur l&#039;ensemble du site<br /><h3>Variable class</h3>Plugin &agrave; utiliser pour l&#039;authentification<br /><h3>Variable module</h3>Module a utiliser pour l&#039;authentification: si l&#039;utilisateur n&#039;est pas connect&eacute;, on le redirigera sur ce couple module/action<br /><h3>Variable session.timeout.enabled</h3>Donner un temps de p&eacute;remption &agrave; votre session (temps d&#039;inactivit&eacute;)<br /><h3>Variable session.timeout.lifetime</h3>Temps d&#039;inactivit&eacute; limite (entre 2 clics)<br /><br /><h2>Section [acl]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">acl</span><span style="color: #007700">]<br />class=</span><span style="color: #0000BB">plugin_gestionuser<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable class</h3>Nom de la classe &agrave; utiliser pour g&eacute;rer les droits de l&#039;application appel&eacute; lors de la m&eacute;thode _root::getACL()<br />Plus d&#039;informations sur la gestion de droits: <a href="http://mkdevs.com/tutoriaux.html#acl">http://mkdevs.com/tutoriaux.html#acl </a><br /><br /><h2>Section [navigation]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">navigation</span><span style="color: #007700">]<br /></span><span style="color: #0000BB">scriptname</span><span style="color: #007700">=</span><span style="color: #0000BB">index</span><span style="color: #007700">.</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">var=:</span><span style="color: #0000BB">nav<br />module</span><span style="color: #007700">.default=</span><span style="color: #0000BB">pages<br />action</span><span style="color: #007700">.default=</span><span style="color: #0000BB">accueil<br />layout</span><span style="color: #007700">.</span><span style="color: #0000BB">erreur</span><span style="color: #007700">=</span><span style="color: #0000BB">site</span><span style="color: #007700">/</span><span style="color: #0000BB">layout</span><span style="color: #007700">/</span><span style="color: #0000BB">erreurprod</span><span style="color: #007700">.</span><span style="color: #0000BB">php<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable scriptname</h3>Nom du fichier php frontal, index.php par d&eacute;faut, mais peut etre remplac&eacute; par un autre nom.<br /><h3>Variable var</h3>Nom de la variable de navigation: par d&eacute;faut &quot;:nav&quot; index.php?:nav=article::list, on peut ainsi le remplacer par exemple par &quot;page&quot; index.php?page=article::list<br /><h3>Variable module.default</h3>Module par d&eacute;faut si on a pas de variable de navigation renseign&eacute;<br /><h3>Variable action.default</h3>Action par d&eacute;faut si on a pas de variable de navigation renseign&eacute;<br /><h3>Variable layout.erreur</h3>Layout utilis&eacute; lors de l&#039;affichage d&#039;une erreur, si le mode du site est diff&eacute;rent de &quot;dev&quot; (voir fichier conf/mode.ini.php<br /><br /><h2>Section [urlrewriting]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">urlrewriting</span><span style="color: #007700">]<br /></span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br /></span><span style="color: #007700">class=</span><span style="color: #0000BB">plugin_routing<br />conf</span><span style="color: #007700">=../</span><span style="color: #0000BB">conf</span><span style="color: #007700">/</span><span style="color: #0000BB">routing</span><span style="color: #007700">.</span><span style="color: #0000BB">php<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable enabled</h3>Permet d&#039;activer/d&eacute;sactiver l&#039;url rewriting<br /><h3>Variable class</h3>Nom de la classe &agrave; utiliser pour g&eacute;rer l&#039;url rewriting, par d&eacute;faut le plugin plugin_routing<br /><h3>Variable conf</h3>Indication du fichier de param&eacute;trage des r&egrave;gles d&#039;url rewriting &agrave; charger<br /><br /><h2>Section [security]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">security</span><span style="color: #007700">]<br />;</span><span style="color: #0000BB">XSRF&nbsp;ou&nbsp;CSRF</span><span style="color: #007700">,</span><span style="color: #0000BB">bSecuriteXSRF&nbsp;utilisation&nbsp;de&nbsp;jeton&nbsp;dans&nbsp;le&nbsp;CRUD</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">plus&nbsp;d</span><span style="color: #DD0000">'infos:&nbsp;http://fr.wikipedia.org/wiki/Cross-Site_Request_Forgeries<br />;XSS,&nbsp;bSecuriteXSS&nbsp;protection&nbsp;des&nbsp;variables&nbsp;GET,POST...&nbsp;via&nbsp;getParam(&nbsp;,&nbsp;plus&nbsp;d'</span><span style="color: #0000BB">infos&nbsp;http</span><span style="color: #007700">:</span><span style="color: #FF8000">//fr.wikipedia.org/wiki/XSS<br /></span><span style="color: #0000BB">xsrf</span><span style="color: #007700">.</span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">1<br />xsrf</span><span style="color: #007700">.</span><span style="color: #0000BB">timeout</span><span style="color: #007700">.</span><span style="color: #0000BB">lifetime</span><span style="color: #007700">=</span><span style="color: #0000BB">360<br />xsrf</span><span style="color: #007700">.</span><span style="color: #0000BB">checkReferer</span><span style="color: #007700">.</span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">1<br />xss</span><span style="color: #007700">.</span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">1<br />xsrf</span><span style="color: #007700">.</span><span style="color: #0000BB">session</span><span style="color: #007700">.</span><span style="color: #0000BB">enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable xsrf.enabled</h3>Non utilis&eacute;e pour le moment, pour utiliser la protection xrf, utilisez des token comme indiqu&eacute; dans le tutorial<br /><h3>Variable xsrf.timeout.lifetime</h3>Temps de validit&eacute; du jeton (temps autoris&eacute; pour remplir le formulaire)<br /><h3>Variable xsrf.checkReferer.enabled</h3>Active/d&eacute;sactive la v&eacute;rification de l&#039;url referrer, (pour &eacute;viter une soumission de formulaire depuis un autre site)<br /><h3>Variable xsrf.session.enabled</h3>Indique au plugin de jeton d&#039;utiliser la session pour garantir l&#039;unicit&eacute; du jeton<br /><h3>Variable xss.enabled</h3>Active/d&eacute;sactive la s&eacute;curisation des failles xss via une transformation en html des variables utilis&eacute;es par _root::getParam()<br /><br /><h2>Section [log]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">log</span><span style="color: #007700">]<br />class=</span><span style="color: #0000BB">plugin_log<br />application</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br />warning</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br />error</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br />information</span><span style="color: #007700">=</span><span style="color: #0000BB">0<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div>Plus d&#039;information sur le log du log ici: <a href="http://mkdevs.com/faq.html#log">http://mkdevs.com/faq.html#log </a><br /><h3>Variable class</h3>Classe &agrave; utiliser pour loguer dans l&#039;application<br /><h3>Variable application</h3>Indique si le log de l&#039;application est activ&eacute; ou non<br /><h3>Variable warning</h3>Indique si le log de niveau &quot;warning&quot; de l&#039;application est activ&eacute; ou non<br /><h3>Variable error</h3>Indique si le log de niveau &quot;error&quot; de l&#039;application est activ&eacute; ou non<br /><h3>Variable information</h3>Indique si le log de niveau &quot;information&quot; de l&#039;application est activ&eacute; ou non (choix d&#039;un module/action &agrave; charger, appel d&#039;une requ&ecirc;te sql...)<br /><br /><h2>Section [check]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">check</span><span style="color: #007700">]<br />class=</span><span style="color: #0000BB">plugin_check<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable class</h3>Indique le nom de la classe &agrave; utiliser lors des v&eacute;rification cot&eacute; mod&egrave;le (champ non vide, num&eacute;rique)<br /><br /><h2>Section [site]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">site</span><span style="color: #007700">]<br />;</span><span style="color: #0000BB">Redirection<br /></span><span style="color: #007700">;</span><span style="color: #0000BB">header&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">header</span><span style="color: #007700">(</span><span style="color: #DD0000">'location:$url&nbsp;'</span><span style="color: #007700">)<br />;</span><span style="color: #0000BB">http</span><span style="color: #007700">:&nbsp;&lt;</span><span style="color: #0000BB">html</span><span style="color: #007700">&gt;&lt;</span><span style="color: #0000BB">head</span><span style="color: #007700">&gt;&lt;</span><span style="color: #0000BB">META&nbsp;http</span><span style="color: #007700">-</span><span style="color: #0000BB">equiv</span><span style="color: #007700">=</span><span style="color: #DD0000">"refresh"&nbsp;</span><span style="color: #0000BB">content</span><span style="color: #007700">=</span><span style="color: #DD0000">"0;&nbsp;URL=</span><span style="color: #0000BB">$url</span><span style="color: #DD0000">&nbsp;&gt;&lt;/head&gt;&lt;/html&gt;<br />redirection.default=header<br />timezone=Europe/Paris<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable redirection.default</h3>Indique le type de redirection &agrave; utiliser: header ou http<br /><h3>Variable timezone</h3>Indique le d&eacute;calage horaire par d&eacute;faut de toutes les fonctions date/heure<br />Plus d&#039;infos ici: <a href="http://php.net/manual/fr/function.date-default-timezone-set.php">http://php.net/manual/fr/function.date-default-timezone-set.php </a><br /><br /><h2>Section [path]</h2><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">path</span><span style="color: #007700">]<br /></span><span style="color: #0000BB">lib</span><span style="color: #007700">=../../../../</span><span style="color: #0000BB">lib</span><span style="color: #007700">/</span><span style="color: #0000BB">framework</span><span style="color: #007700">/<br /><br /></span><span style="color: #0000BB">data</span><span style="color: #007700">=../</span><span style="color: #0000BB">data</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">upload</span><span style="color: #007700">=../</span><span style="color: #0000BB">data</span><span style="color: #007700">/</span><span style="color: #0000BB">upload</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">log</span><span style="color: #007700">=../</span><span style="color: #0000BB">data</span><span style="color: #007700">/</span><span style="color: #0000BB">log</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">img</span><span style="color: #007700">=../</span><span style="color: #0000BB">data</span><span style="color: #007700">/</span><span style="color: #0000BB">img</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">i18n</span><span style="color: #007700">=../</span><span style="color: #0000BB">data</span><span style="color: #007700">/</span><span style="color: #0000BB">i18n</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">cache</span><span style="color: #007700">=../</span><span style="color: #0000BB">data</span><span style="color: #007700">/</span><span style="color: #0000BB">cache</span><span style="color: #007700">/<br /><br /></span><span style="color: #0000BB">conf</span><span style="color: #007700">=../</span><span style="color: #0000BB">conf</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">module</span><span style="color: #007700">=../</span><span style="color: #0000BB">module</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">plugin</span><span style="color: #007700">=../</span><span style="color: #0000BB">plugin</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">model</span><span style="color: #007700">=../</span><span style="color: #0000BB">model</span><span style="color: #007700">/<br /></span><span style="color: #0000BB">layout</span><span style="color: #007700">=../</span><span style="color: #0000BB">layout</span><span style="color: #007700">/<br /><br /></span><span style="color: #0000BB">view</span><span style="color: #007700">=</span><span style="color: #0000BB">view</span><span style="color: #007700">/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Permet d&#039;indiquer l&#039;ensemble des chemins utilis&eacute;s par le framework<br /><br /><h2>Section [model]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">model</span><span style="color: #007700">]<br /></span><span style="color: #0000BB">ini</span><span style="color: #007700">.var=</span><span style="color: #0000BB">db<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable ini.var</h3>Indique le nom de la section o&ugrave; trouver les profils de connexion<br /><br /><h1>Fichier mode.ini.php</h1><h2>Section [site]</h2><h3>Introduction</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">site</span><span style="color: #007700">]<br /></span><span style="color: #0000BB">mode</span><span style="color: #007700">=</span><span style="color: #0000BB">dev<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><h3>Variable mode</h3>Indique le mode de l&#039;application &quot;dev&quot; : affiche les erreurs...,&quot;production&quot; devient muet<br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

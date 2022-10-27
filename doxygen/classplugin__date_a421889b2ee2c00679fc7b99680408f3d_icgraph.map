@@ -1,0 +1,12 @@
+<map id="setYear" name="setYear">
+<area shape="rect" id="node2" href="$classplugin__date.html#abe6ee70495caa63ec6481ed183676487" title="loadFromFormat" alt="" coords="147,183,264,209"/>
+<area shape="rect" id="node10" href="$classplugin__datetime.html#abe6ee70495caa63ec6481ed183676487" title="plugin_datetime\\loadFrom\lFormat" alt="" coords="120,281,291,322"/>
+<area shape="rect" id="node3" href="$classplugin__date.html#a7fe19bcf9ef6f2d92b683f8831827732" title="__construct" alt="" coords="387,5,477,32"/>
+<area shape="rect" id="node4" href="$classplugin__date.html#a493be9b75af759e470fe6088cc3b6298" title="addDay" alt="" coords="399,56,465,83"/>
+<area shape="rect" id="node5" href="$classplugin__date.html#a9abed00b578b8756c0a4c64bf09954b3" title="addMonth" alt="" coords="393,107,471,133"/>
+<area shape="rect" id="node6" href="$classplugin__date.html#aed7aed14ab2ff1026be9887d0f2a252d" title="addYear" alt="" coords="397,157,467,184"/>
+<area shape="rect" id="node7" href="$classplugin__date.html#a4b72b0eae8597bb7c012db17e2326605" title="removeDay" alt="" coords="387,208,477,235"/>
+<area shape="rect" id="node8" href="$classplugin__date.html#ada259368c3954dd09733abfb6ec7fe49" title="removeMonth" alt="" coords="381,259,483,285"/>
+<area shape="rect" id="node9" href="$classplugin__date.html#ad5f7329239bf06e0660061b5a80d3587" title="removeYear" alt="" coords="386,309,478,336"/>
+<area shape="rect" id="node11" href="$classplugin__datetime.html#a5158072dceb54a02207c3d8287f3b118" title="plugin_datetime\\__construct" alt="" coords="339,360,525,387"/>
+</map>

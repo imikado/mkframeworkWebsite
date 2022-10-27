@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="scraftsmanshipDetail_builder.html">FR</a></li>
+
+			<li><a class="nav-link"  href="scraftsmanshipDetail_builder.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Software Craftsmanship</h1><h2>Sommaire</h2>- <a href="scraftsmanship.html">Introduction </a><br />- Pr&eacute;sentation dans le builder<br />- <a href="scraftsmanshipDetail_exampleHexagonal.html">Exemple d&#039;un module utilisant l&#039;architecture hexagonale </a><br />- <a href="scraftsmanshipDetail_impactCoucheModel.html">L&#039;impact sur la couche model </a><br /><br /><h2>Le builder</h2>A son habitude, le g&eacute;n&eacute;rateur du framework vous facilite le travail.<br /><br /><img src="data/img/scBuilder_intro.jpg" /><br /><br />Une fois g&eacute;n&eacute;r&eacute;, vous avec l&#039;architecture suivante:<br /><br /><img src="data/img/scBuilder_tree.jpg" /><br /><br /><h2>Des modules de g&eacute;n&eacute;ration en plusieurs &eacute;tapes</h2>Pour simplifier les interfaces et &eacute;viter de les surcharger de nombreux champs, un nouveau moteur de g&eacute;n&eacute;ration multi-pages fait son apparition.<br />Vous avez en amont le nombre d&#039;&eacute;tapes (avec sur fond blanc la page en cours).<br /><br /><img src="data/img/scBuilder_BuilderMultiPage.jpg" /><br /><br /><br /><h2>G&eacute;n&eacute;ration de module avec h&eacute;ritage</h2><br />Sur ce template, chaque module est cr&eacute;&eacute; &quot;sous&quot; un module parent dont il herite les m&eacute;thodes before() et after()<br /><br />Vous avez donc une nouvelle ligne de g&eacute;n&eacute;ration &quot;module parent&quot;<br /><img src="data/img/scBuilder_edit.jpg" /><br /><br />Et lors de la g&eacute;n&eacute;ration d&#039;un module, vous devez s&eacute;lectionner son parent:<br /><br />Par exemple:<br /><img src="data/img/scBuilder_selectModuleParent.jpg" /><br /><br />Et le module g&eacute;n&eacute;r&eacute; est physiquement &quot;sous&quot; ce module parent<br /><img src="data/img/scBuilder_treeModuleParent.jpg" /><br /><br />Notez le code du module parent:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">module_global&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_module&nbsp;</span><span style="color: #007700">{<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$oLayout</span><span style="color: #007700">;<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">before</span><span style="color: #007700">()&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$sLang&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getConfigVar</span><span style="color: #007700">(</span><span style="color: #DD0000">'language.default'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(isset(</span><span style="color: #0000BB">$_SESSION</span><span style="color: #007700">[</span><span style="color: #DD0000">'lang'</span><span style="color: #007700">]))&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$sLang&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_SESSION</span><span style="color: #007700">[</span><span style="color: #DD0000">'lang'</span><span style="color: #007700">];<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getI18n</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">load</span><span style="color: #007700">(</span><span style="color: #0000BB">$sLang</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getI18n</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">loadFromDir</span><span style="color: #007700">(</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getConfigVar</span><span style="color: #007700">(</span><span style="color: #DD0000">'path.module'</span><span style="color: #007700">).</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_sModulePath</span><span style="color: #007700">.</span><span style="color: #DD0000">'/i18n/'</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">_layout</span><span style="color: #007700">(</span><span style="color: #DD0000">'bootstrap'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">after</span><span style="color: #007700">()&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">show</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />et celui du module enfant:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">module_global_Users&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">module_global&nbsp;</span><span style="color: #007700">{<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$_sModulePath&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'global/Users'</span><span style="color: #007700">;<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getView</span><span style="color: #007700">(</span><span style="color: #0000BB">$sView_</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;new&nbsp;</span><span style="color: #0000BB">_view</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_sModulePath&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$sView_</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Vous noterez que ce module h&eacute;rite du module parent &quot;module_global&quot;, h&eacute;ritant ainsi de ses m&eacute;thodes before() et after()<br /><br /><br /><br /><br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

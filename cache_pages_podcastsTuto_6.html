@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="podcastsTuto_6.html">FR</a></li>
+
+			<li><a class="nav-link"  href="podcastsTuto_6.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Episode 7: Gestion des droits 1/4</h1><h2>I. Introduction</h2>Ce tutorial est divis&eacute; en quatre vid&eacute;os, nous allons y apprendre comment mettre en place une gestion de droits.<br /><br />Dans cette premi&egrave;re partie, nous allons cr&eacute;&eacute;er les tables.<br /><br /><h2>II. Le concept</h2>Pour g&eacute;rer les droits, nous autorisons certains profils &agrave; faire quelque chose sur certains &eacute;l&eacute;ments.<br /><br /><h2>III. Les tables</h2><h3>III.A. Le sch&eacute;ma</h3><img src="data/img/podcastTuto_6mcd.jpg" /><br /><br /><h3>III.B. Table: Account</h3>Contiendra les utilisateurs, cette table contiendra &eacute;galement le couple login/mot de passe.<br /><br /><h3>III.C. Table: Groupe</h3>Contiendra les diff&eacute;rents profils: administrateur, r&eacute;dacteur...<br /><br /><h3>III.D. Table: Permission</h3>Elle fera le lien entre les groupes et les &eacute;l&eacute;ments. Elle nous permettra d&#039;indiquer que tel groupe &agrave; le droit de faire tel action sur tel &eacute;l&eacute;ments.<br /><br /><h3>III.E. La requ&ecirc;te SQL</h3>Dans ce tutoriel nous cr&eacute;ons nos tables dans une base mysql.<br />Nous cr&eacute;ons ici une base &quot;tutoACLdb&quot;<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />CREATE&nbsp;TABLE&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">Account</span><span style="color: #007700">`&nbsp;(<br />`</span><span style="color: #DD0000">id</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">int</span><span style="color: #007700">(</span><span style="color: #0000BB">11</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL&nbsp;auto_increment</span><span style="color: #007700">,<br />`</span><span style="color: #DD0000">login</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">varchar</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL</span><span style="color: #007700">,<br />`</span><span style="color: #DD0000">pass</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">varchar</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL</span><span style="color: #007700">,<br />`</span><span style="color: #DD0000">groupe_id</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">int</span><span style="color: #007700">(</span><span style="color: #0000BB">11</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">PRIMARY&nbsp;KEY&nbsp;&nbsp;</span><span style="color: #007700">(`</span><span style="color: #DD0000">id</span><span style="color: #007700">`)<br />);<br /><br /></span><span style="color: #0000BB">CREATE&nbsp;TABLE&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">Groupe</span><span style="color: #007700">`&nbsp;(<br />`</span><span style="color: #DD0000">id</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">int</span><span style="color: #007700">(</span><span style="color: #0000BB">11</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL&nbsp;auto_increment</span><span style="color: #007700">,<br />`</span><span style="color: #DD0000">name</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">varchar</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">PRIMARY&nbsp;KEY&nbsp;&nbsp;</span><span style="color: #007700">(`</span><span style="color: #DD0000">id</span><span style="color: #007700">`)<br />);<br /><br /></span><span style="color: #0000BB">CREATE&nbsp;TABLE&nbsp;</span><span style="color: #007700">`</span><span style="color: #DD0000">Permission</span><span style="color: #007700">`&nbsp;(<br />`</span><span style="color: #DD0000">id</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">int</span><span style="color: #007700">(</span><span style="color: #0000BB">11</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL&nbsp;auto_increment</span><span style="color: #007700">,<br />`</span><span style="color: #DD0000">action</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">varchar</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL</span><span style="color: #007700">,<br />`</span><span style="color: #DD0000">element</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">varchar</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL</span><span style="color: #007700">,<br />`</span><span style="color: #DD0000">allowdeny</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">varchar</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">NOT&nbsp;NULL</span><span style="color: #007700">,<br />`</span><span style="color: #DD0000">groupe_id</span><span style="color: #007700">`&nbsp;</span><span style="color: #0000BB">int</span><span style="color: #007700">(</span><span style="color: #0000BB">11</span><span style="color: #007700">),<br /></span><span style="color: #0000BB">PRIMARY&nbsp;KEY&nbsp;&nbsp;</span><span style="color: #007700">(`</span><span style="color: #DD0000">id</span><span style="color: #007700">`)<br />);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h2>IV. L&#039;application</h2>Ouvrez le builder, et cr&eacute;ez une application vide &quot;acl&quot;<br /><img src="data/img/podcastTuto_6builder.jpg" /><br /><br />Connectons la &agrave; notre base de donn&eacute;es pr&eacute;c&eacute;dement cr&eacute;&eacute; &quot;tutoACLdb&quot;<br />Editez le fichier conf/connexion.ini.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">die()</span><span style="color: #0000BB">?&gt;<br /></span>[db]<br />pdoMysqlExple.dsn="mysql:dbname=tutoACLdb;host=localhost"<br />pdoMysqlExple.sgbd=pdo_mysql<br />pdoMysqlExple.username=root<br />pdoMysqlExple.password=root<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div><br /><h2>IV. La couche mod&egrave;le</h2>Cliquez ensuite sur &quot;Cr&eacute;er la couche mod&egrave;le&quot;<br /><img src="data/img/podcastTuto_6builder2.jpg" /><br />Vous voyez le profil renseign&eacute;<br />En cliquant dessus, vous voyez les trois tables pr&eacute;c&eacute;dement cr&eacute;&eacute;es<br /><img src="data/img/podcastTuto_6builder3.jpg" /><br />Pour la table groupe, cochez la case pour g&eacute;n&eacute;rer la m&eacute;thode getSelect<br /><img src="data/img/podcastTuto_6builder4.jpg" /><br />Validez ensuite le formulaire.<br /><br /><h2>V. L&#039;authentification</h2>Pour g&eacute;rer des droits sur votre application, il faudra dans un premier temps identifi&eacute; le profil de l&#039;utilisateur. Pour cela il lui faudra s&#039;authentifier sur celle-ci<br /><br />Note: cette partie a d&eacute;j&agrave; fait l&#039;objet d&#039;un &eacute;pisode: <a href="podcasts_4.html">Episode 5: Builder: module d&#039;authentification </a>, dont le support est <a href="http://mkf/mkf4builder/data/genere/site/podcastsTuto_4.html">disponible ici </a><br /><br />Cliquez sur &quot;Cr&eacute;er un module d&#039;authentification avec inscription&quot;<br /><img src="data/img/podcastTuto_6builder5.jpg" /><br />Le builder vous demande quel classe model utiliser pour r&eacute;cup&eacute;rer les utilisateurs, selectionnez &quot;model_Account.php&quot;<br />Selectionnez ensuite &quot;login&quot; pour le champ de nom d&#039;utilisateur<br /><img src="data/img/podcastTuto_6builder6.jpg" /><br />Et &quot;pass&quot; pour celui de mot de passe<br /><img src="data/img/podcastTuto_6builder7.jpg" /><br />Le builder vous demande &agrave; ce moment l&agrave; d&#039;ajouter deux m&eacute;thodes &agrave; votre classe model model_account.php<br /><br />Une fois les m&eacute;thodes copi&eacute;es, cliquez sur le bouton de r&eacute;actualisation &quot;r&eacute;actualiser la page&quot;<br /><img src="data/img/podcastTuto_6builder8.jpg" /><br />Le builder vous affiche un nouveau formulaire que vous pouvez valider.<br /><img src="data/img/podcastTuto_6builder9.jpg" /><br /><br />Le builder vous invite &agrave; activer l&#039;authentification sur votre application: modifiez le fichier conf/site.ini.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">[</span><span style="color: #0000BB">auth</span><span style="color: #007700">]<br />;</span><span style="color: #0000BB">note&nbsp;</span><span style="color: #007700">:&nbsp;&gt;=&nbsp;</span><span style="color: #0000BB">php5.2&nbsp;dans&nbsp;le&nbsp;php</span><span style="color: #007700">.</span><span style="color: #0000BB">ini<br /></span><span style="color: #007700">;</span><span style="color: #0000BB">session</span><span style="color: #007700">.</span><span style="color: #0000BB">cookie_httponly</span><span style="color: #007700">=</span><span style="color: #0000BB">1<br /></span><span style="color: #007700">;</span><span style="color: #0000BB">session</span><span style="color: #007700">.</span><span style="color: #0000BB">use_cookies&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1<br /></span><span style="color: #007700">;</span><span style="color: #0000BB">session</span><span style="color: #007700">.</span><span style="color: #0000BB">use_only_cookies&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1<br />enabled</span><span style="color: #007700">=</span><span style="color: #0000BB">1<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div>Passez la variable &quot;enabled&quot; &agrave; &quot;1&quot; dans la section &quot;[auth]&quot;<br /><br /><h2>VI. L&#039;application</h2>En cliquant sur &quot;voir le site&quot;, cette fois nous atterissons sur le formulaire de login:<br /><img src="data/img/podcastTuto_6builder10.jpg" /><br /><br /><br /><br /><br /><br /><br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

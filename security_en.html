@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil_en.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news_en.html">The website <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item active">
+					<a  class="nav-link" href="fonctionnement_en.html">Presentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start_en.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb_en.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger_en.html">Download <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link"  href="security.html">FR</a></li>
+
+			<li><a class="nav-link" style="font-weight:bold" href="security_en.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="fonctionnement_en.html" >Diagram <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="builder_en.html" >The web generator <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="orm_en.html" >The ORM (abstract model layer) <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="configuration_en.html" >Configuration <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item active">
+				<a class="nav-link" href="#" >Security <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="scraftsmanship_en.html" >Software Craftsmanship <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Security in the mkframework</h1><h2>Introduction</h2>Security is an important point to be aware when you developp a public website which should be target of somme hackers.<br />To protect yourselft about the most important faults (Xss,Xsrf/Sql injection...) there are some best practice.<br />Working since long years with a security company who check somme of my applications, il correct the framework and add some of security check on the mkframework.s sur le mkframework pour vous proposer un framework le plus s&eacute;curis&eacute; possible.<br /><br /><h2>About the Xss/Css/null byte</h2>Xss faults consist on use a web parameter (GET/POST...) to modify the website, the mkframework provide to you a method _root::getParam() in place of the globals $_GET,$_POST<br />This method filter entries to protect on Xss faults and null byteattaques XSS mais &eacute;galement des attaques de type null byte<br /><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$id</span><span style="color: #007700">=</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//in&nbsp;place&nbsp;of&nbsp;$id=$_GET['id'];<br />//idem&nbsp;for&nbsp;POST<br /></span><span style="color: #0000BB">$titre</span><span style="color: #007700">=</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'titre'</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//in&nbsp;place&nbsp;of&nbsp;$titre=$_POST['titire'];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />More informations on Xss/Css: <a href="http://fr.wikipedia.org/wiki/Cross-site_scripting">http://fr.wikipedia.org/wiki/Cross-site_scripting </a><br /><br /><br /><h2>About Xsrf/Csrf</h2>Xsrf is more complex, it provide to submit a web query instead of an other user, to protect you, the mkframework provide to you a plugin: plugin_xsrf.<br />This plugin generate a token an can check its validity on demand.<br /><br />note: you can enforce this security with activate the variable &quot;xsrf.session.enabled=1&quot; in section [security] in the configuration file conf/site.ini.php<br />This feature need an open session (the token is saved in session to check is unicity)<br /><br />note 2: think to modify the salt which is fill in the construct method of the plugin plugin_xsrf<br />Fill it with an unique value:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">plugin_xsrf</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sSalt</span><span style="color: #007700">=</span><span style="color: #DD0000">'fdsfhoyu679hjfdsAfef'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">(...)<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Tutorial here <a href="http://mkdevs.com/tutoriaux.html#token">http://mkdevs.com/tutoriaux.html#token </a><br /><br />More informations about Xsrf/Csrf: <a href="http://fr.wikipedia.org/wiki/Cross-site_request_forgery">http://fr.wikipedia.org/wiki/Cross-site_request_forgery </a><br /><br /><br /><h2>About SQL injection</h2>It mean to use a normal query to execute a different goal (get identifiants, update data in database...)<br />The mkframework use the &quot;prepared statment&quot; of Pdo to protect you of this faults.<br /><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #FF8000">//for&nbsp;a&nbsp;query&nbsp;which&nbsp;get&nbsp;an&nbsp;author&nbsp;by&nbsp;id<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;FOM&nbsp;auteur&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />More informations on SQL injection <a href="http://fr.wikipedia.org/wiki/Injection_SQL">http://fr.wikipedia.org/wiki/Injection_SQL </a><br /><br /><h1>Best practices not implemented in the framework, it is the developper job</h1><h2>Disabled auto-completion on identification fields</h2>We recommend you to  you use the attribute autocomplet=&quot;off&quot; in you inputs fields<br /><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">input&nbsp;autocomplete</span><span style="color: #007700">=</span><span style="color: #DD0000">"off"&nbsp;</span><span style="color: #0000BB">name</span><span style="color: #007700">=</span><span style="color: #DD0000">"user"&nbsp;</span><span style="color: #007700">/&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><br /><h2>Manage bad authentication</h2>To protect you for &quot;brut force attack&quot;, you have to limit this kind of attack<br />- block an account if it fails N try<br />- suspend an account during a defined time (an force user to wait)<br />- add a Captcha in fail case, it will limit &quot;brut force&quot; robots<br />- depending a number of failure/minute: forbidden IP address<br />note: warn about the account block, it can be use for DDOS attack* (they can loop on every account and block all accounts)<br /><br />More informations about DDOS <a href="http://fr.wikipedia.org/wiki/Attaque_par_d%C3%A9ni_de_service">http://fr.wikipedia.org/wiki/Attaque_par_d%C3%A9ni_de_service </a><br /><br /><h2>Conclusion</h2>As you can read, i continue to interest about security and update the framework.<br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

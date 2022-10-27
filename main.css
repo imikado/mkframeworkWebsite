@@ -1,0 +1,194 @@
+*{
+font-family:arial;
+font-size:12px;
+}
+img{
+border:none;
+}
+a{
+color:#25567B;
+}
+body{
+margin:0px;
+background:#25567B;
+}
+.head{
+
+}
+strong, .strong{
+color:#A62F00;
+font-size:14px;
+}
+.main{
+width:980px;
+margin:0px auto;
+margin-top:20px;
+background:#fff url('images/banniere.png') no-repeat top left;
+}
+.main .header{
+height:50px;
+}
+.main .menu{
+float:left;
+width:148px;
+border:0px solid blue;		
+margin-top:70px;
+}
+	.main .menu ul{
+	margin:0px;
+	padding:0px;
+	
+	}
+	.main .menu a{
+	text-decoration:none;
+	color:black;
+	padding:0px;
+	margin:2px;
+	color:#fff;
+	display:block;
+	padding:8px 12px;
+	background:#3F92D2;
+	}
+	.main .menu li{
+	margin:0px;
+	margin:0px;
+	list-style-type:none;
+	color:white;
+	}
+	.main .menu li.item{
+	padding-left:4px;
+	}
+	.main .menu li.title{
+	padding:4px;
+	background:white;
+	color:#31494c;
+	font-weight:bold;
+	}
+	.main .menu li a:hover{
+	background:#BF5930;
+	}
+	
+	.main .menu li.selectionne a{
+	background:#FF4900;
+	font-weight:bold;
+	}
+	.main .menu .sep{
+	/*background:url('images/sep.png') no-repeat;*/
+	width:2px;
+	padding:11px 0px;
+	padding-right:1px;
+	}
+.main .content{
+float:right;
+width:810px;
+padding:8px;
+padding-top:0px;
+}
+.main .content img{
+margin:10px auto;
+display:block;
+}
+.main .content img.normal{
+display:inline;
+margin:0px;
+}
+.main .content table th{
+background:#ccc;
+}
+.main .content form .textarea, .main .content form .input{
+width:100%;
+}
+.inputDateAnnee{
+width:100px;
+}
+.inputDateMois{
+width:30px;
+}
+.inputDateJour{
+width:30px;
+}
+
+.content td{
+vertical-align:top;
+}
+/*------TEMPLATE-------*/
+.main .content .repertoire{
+	list-style-type:circle;
+}
+.main .content .code{
+margin:8px 0px;
+padding:2px;
+background:#EEE;
+border:1px solid silver;
+overflow:auto;
+}
+.main .content .code h1{
+margin:0px;
+margin-bottom:0px;
+font-size:10px;
+background:white;
+text-align:left;
+color:black;
+border-bottom:1px solid silver;
+border-left:2px solid silver;
+}
+.main .content div.sepa{
+border-bottom:1px dotted gray;
+}
+.main .content h1{
+text-align:left;
+color:#fff;
+background:#0B61A4;
+padding:8px;
+margin-top:1px;
+}
+.main .content h2{
+color:#fff;
+background:#25567B;
+padding:4px;
+font-weight:normal;
+padding-left:10px;
+color:#fff;
+}
+.main .content h3{
+background:#3F92D2 ;
+padding-left:3px;
+color:white;
+padding-left:20px;
+font-weight:normal;
+
+}
+.main .footer{
+clear:right;
+}
+
+.librairie ul{
+margin:0px;
+padding:0px;
+list-style:none;
+margin-top:8px;
+}
+.librairie li{
+margin:2px;
+}
+.librairie li a{
+}
+.librairie .prop{
+border-left:2px solid #ccc;
+margin-left:10px;
+margin-top:0px;
+margin-bottom:20px;
+}
+.librairie p{
+margin:0px;
+margin-left:5px;
+}
+.librairie h1{
+background:#eee;
+border-bottom:1px solid gray;
+font-size:12px;
+color:darkblue;
+}
+.librairie h2{
+margin-bottom:0px;
+}

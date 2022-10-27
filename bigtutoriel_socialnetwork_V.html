@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MkFramework V4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+         
+          <a class="navbar-brand" href="/">MkFramework</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav navbar-right">
+           			<li><a style="font-weight:bold" href="bigtutoriel_socialnetwork_V.html">FR</a></li>
+			
+			<li><a  href="bigtutoriel_socialnetwork_V.html">EN</a></li>
+			
+			
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	 
+
+ 
+		
+		
+		
+	<div class="container">
+
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+		<h1>Cr&eacute;ation d&#039;un r&eacute;seau social avec le mkframework</h1><br />-<a href="bigtutoriel_socialnetwork_I.html">I Pr&eacute;ambule </a><br />-<a href="bigtutoriel_socialnetwork_II.html">II Cr&eacute;ation et initialisation du projet </a><br />-<a href="bigtutoriel_socialnetwork_III.html">III L&#039;authentification </a><br />-<a href="bigtutoriel_socialnetwork_IV.html">IV Cr&eacute;ons notre menu </a><br />-<a style="font-weight:bold" href="bigtutoriel_socialnetwork_V.html">V Partie priv&eacute;e : le profil </a><br />-<a href="bigtutoriel_socialnetwork_VI.html">VI Partie priv&eacute;e : votre r&eacute;seaux de contacts </a><br />-<a href="bigtutoriel_socialnetwork_VII.html">VII Partie priv&eacute;e : votre fil </a><br />-<a href="bigtutoriel_socialnetwork_VIII.html">VIII Partie priv&eacute;e : administrez vos photos </a><br />-<a href="bigtutoriel_socialnetwork_IX.html">IX Profil partag&eacute; </a><br />-<a href="bigtutoriel_socialnetwork_X.html">X Design/ esth&eacute;tique </a><br />-<a href="bigtutoriel_socialnetwork_XI.html">XI Conclusion </a><br /><br /><h1>V Partie priv&eacute;e : le profil</h1><h2>V.A Introduction</h2>On a devant nous deux possibilit&eacute;s:<br />1. tout &eacute;crire &agrave; la main: la page d&#039;affichage du profil, le formulaire de modification, la partie sauvegarde, upload...<br />2. profiter du builder pour cr&eacute;er un module &quot;profil&quot; que l&#039;on incluera apr&egrave;s l&#039;avoir customis&eacute;<br />Nous partirons ici sur la deuxi&egrave;me option<br /><br /><h2>V.B G&eacute;n&eacute;ration du module profil</h2>Rendons-nous sur le builder, rubrique module CRUD* int&eacute;grable (Create Read Update Delete)<br />Pour rappel, cette fonctionnalit&eacute; permet, &agrave; partir de votre base de donn&eacute;e (selon vos profils<br />renseign&eacute;es) de g&eacute;n&eacute;rer pour n&#039;importe quel table les pages de listage des enregistrement,<br />formulaire d&#039;&eacute;dition, page de visualisation et de suppression d&#039;&eacute;l&eacute;ment.<br />Ici nous allons g&eacute;n&eacute;rer le CRUD int&eacute;grable de notre table &quot;Users&quot;<br /><img src="data/img/builderCreateCRUDusers.png" /><br />Dans notre application, nous avons besoin du module profil pour afficher son profil, le modifier(avec upload de sa photo)<br />D&eacute;cochez &quot;Formulaire d&#039;ajout&quot; et &quot;Formulaire de suppression&quot;<br />D&eacute;cochez les cases comme sur l&#039;image<br />Modifier le nom du module &agrave; cr&eacute;er pou &quot;profil&quot;<br />Attention &agrave; de bien indiquer pour le champ &quot;profilPicture&quot; dans le menu d&eacute;roulant &quot;upload&quot;<br /><img src="data/img/builderCreateCRUDusers2.png" /><br /><img src="data/img/builderCreateCRUDusers3.png" /><br /><br /><h2>V.C Customisation du module profil</h2>Nous nous retrouvons avec le module &quot;profil&quot; suivant<br /><img src="data/img/siteModuleProfilArbo2.png" /><br /><br />Modifions dans le fichier module/profil/main.php la page de redirection dans la m&eacute;thode save(): apr&egrave;s avoir sauvegard&eacute;,<br />le module redirige vers la page de listage par d&eacute;faut<br />Remplacer<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #FF8000">//une&nbsp;fois&nbsp;enregistre&nbsp;on&nbsp;redirige&nbsp;(vers&nbsp;la&nbsp;page&nbsp;liste)<br /></span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(</span><span style="color: #DD0000">'list'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Par<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #FF8000">//une&nbsp;fois&nbsp;enregistre&nbsp;on&nbsp;redirige&nbsp;(vers&nbsp;la&nbsp;page&nbsp;d'affichage)<br /></span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(</span><span style="color: #DD0000">'show'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Modifiez egalement la vue par defaut dans la methode _index()<br />Remplacez<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_index</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$sAction</span><span style="color: #007700">=</span><span style="color: #DD0000">'_'</span><span style="color: #007700">.</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'Action'</span><span style="color: #007700">,</span><span style="color: #DD0000">'list'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$sAction</span><span style="color: #007700">();<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Par<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_index</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$sAction</span><span style="color: #007700">=</span><span style="color: #DD0000">'_'</span><span style="color: #007700">.</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'Action'</span><span style="color: #007700">,</span><span style="color: #DD0000">'show'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$sAction</span><span style="color: #007700">();<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Ensuite, notre module profil ne va permettre de n&#039;&eacute;diter que le profil de l&#039;utilisateur indiqu&eacute; par<br />le module l&#039;appelant,<br />On va pour cela lui ajouter une propri&eacute;t&eacute; priv&eacute;e &quot;id&quot; et lui ajouter une methode public pour<br />l&#039;initialiser<br />Ajouter en d&eacute;but de classe:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">private&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setId</span><span style="color: #007700">(</span><span style="color: #0000BB">$uId</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">=(int)</span><span style="color: #0000BB">$uId</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>On va remplacer dans les methodes _edit() et _show()<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$oUsers</span><span style="color: #007700">=</span><span style="color: #0000BB">model_Users</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">module_profil</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Par<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$oUsers</span><span style="color: #007700">=</span><span style="color: #0000BB">model_Users</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id&nbsp;</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>On va remplacer dans la methode save()<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$iId</span><span style="color: #007700">=</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />if(</span><span style="color: #0000BB">$iId</span><span style="color: #007700">==</span><span style="color: #0000BB">null</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oUsers</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">row_Users</span><span style="color: #007700">;<br />}else{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oUsers</span><span style="color: #007700">=</span><span style="color: #0000BB">model_Users</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">module_profil</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;);<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Par<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$oUsers</span><span style="color: #007700">=</span><span style="color: #0000BB">model_Users</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id&nbsp;</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h2>V.C Inclusion du module profil dans notre module mainPrivate</h2>Dans notre module mainPrivate, nous voulons que notre action &quot;profil&quot; inclu notre module &quot;module_profil&quot; tout juste customis&eacute; &agrave; cet effet<br />Pour l&#039;inclusion d&#039;un module dans un autre, on va modifier la m&eacute;thode _profil du fichier module/mainPrivate/main.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_profil</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oModuleProfil</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">module_profil</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;initialise&nbsp;ici&nbsp;le&nbsp;profil&nbsp;à&nbsp;utiliser&nbsp;avec&nbsp;l'id&nbsp;du&nbsp;user&nbsp;connecté<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oModuleProfil</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setId</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getAuth</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getAccount</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">id&nbsp;</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//recuperation&nbsp;de&nbsp;la&nbsp;vue&nbsp;du&nbsp;module&nbsp;profil&nbsp;enrichie<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">=</span><span style="color: #0000BB">$oModuleProfil</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_index</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #DD0000">'main'</span><span style="color: #007700">,</span><span style="color: #0000BB">$oView</span><span style="color: #007700">);<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Ce qui donne d&eacute;j&agrave;<br /><img src="data/img/siteModuleProfil.png" /><br />Le probl&egrave;me c&#039;est ici que l&#039;on ne peut que voir le profil, on souhaiterait &eacute;galement le modifier<br />On va simplement ajouter un lien pour permettre la modification<br />Remplacer &agrave; la fin du fichier module/profil/view/show.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"&lt;?php&nbsp;echo&nbsp;module_profil::getLink('list')?&gt;"</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Retour</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;&lt;/</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Par<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">p&nbsp;style</span><span style="color: #007700">=</span><span style="color: #DD0000">"text-align:right"</span><span style="color: #007700">&gt;&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"&lt;?php&nbsp;echo&nbsp;module_profil::getLink('edit')?&gt;"</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Modifier</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;&lt;/</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><img src="data/img/siteModuleProfil2.png" /><br />Remplacer &agrave; la fin du fichier module/profil/view/edit.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">input&nbsp;type</span><span style="color: #007700">=</span><span style="color: #DD0000">"submit"&nbsp;</span><span style="color: #0000BB">value</span><span style="color: #007700">=</span><span style="color: #DD0000">"Modifier"&nbsp;</span><span style="color: #007700">/&gt;&nbsp;&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"&lt;?php&nbsp;echo&nbsp;module_profil::getLink('list')?&gt;"</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Annuler</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Par<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">input&nbsp;type</span><span style="color: #007700">=</span><span style="color: #DD0000">"submit"&nbsp;</span><span style="color: #0000BB">value</span><span style="color: #007700">=</span><span style="color: #DD0000">"Modifier"&nbsp;</span><span style="color: #007700">/&gt;&nbsp;&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"&lt;?php&nbsp;echo&nbsp;module_profil::getLink('show')?&gt;"</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Annuler</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h2>V.D Customisions notre page profil</h2>Actuellement, si vous renseignez votre profil, vous obtiendrez ceci:<br /><img src="data/img/siteModuleProfil3.png" /><br />Ce n&#039;est pas tr&egrave;s joli, notons que lors de l&#039;upload, le champ &quot;profilPicture&quot; a bien enregistr&eacute;<br />l&#039;adresse de l&#039;image upload&eacute;e<br />&Eacute;ditons le fichier module/profil/view/show.php comme suit:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">div&nbsp;style</span><span style="color: #007700">=</span><span style="color: #DD0000">"float:right"</span><span style="color: #007700">&gt;&lt;</span><span style="color: #0000BB">img&nbsp;style</span><span style="color: #007700">=</span><span style="color: #DD0000">"width:100px;border:2px&nbsp;solid&nbsp;gray"&nbsp;</span><span style="color: #0000BB">src</span><span style="color: #007700">=</span><span style="color: #DD0000">"&lt;?php&nbsp;echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oUsers</span><span style="color: #DD0000">-&gt;profilPicture&nbsp;?&gt;"&nbsp;</span><span style="color: #007700">/&gt;&lt;/</span><span style="color: #0000BB">div</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">table&nbsp;</span><span style="color: #007700">class=</span><span style="color: #DD0000">"tb_show"</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">tr</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">lastname</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">td</span><span style="color: #007700">&gt;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oUsers</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lastname&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;firstname&lt;/th&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oUsers</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">firstname&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;mail&lt;/th&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oUsers</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">mail&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;profilPicture&lt;/th&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oUsers</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">profilPicture&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;job&lt;/th&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oUsers</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">job&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />&lt;/table&gt;<br />&lt;p&nbsp;style="text-align:right"&gt;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">module_profil</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'edit'</span><span style="color: #007700">)</span><span style="color: #0000BB">?&gt;</span>"&gt;Modifier&lt;/a&gt;&lt;/p&gt;<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>Ici j&#039;ai juste supprim&eacute; la ligne concernant l&#039;image du profil, et ajout&eacute; en haut de la vue: un div<br />align&eacute; &agrave; droite avec une image ayant pour source le champ ?profilPicture? de notre table users<br /><br />Ce qui donne<br /><img src="data/img/siteModuleProfil4.png" /><br /><br />C&#039;est d&eacute;j&agrave; mieux ;)<br /><br /><p style="text-align:right">Lire la suite :  <a href="bigtutoriel_socialnetwork_VI.html">VI Partie priv&eacute;e : votre r&eacute;seaux de contacts </a></p><br /><br /><br /><br /><br />		
+		</div><!-- /.blog-main -->
+
+
+		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+			<a href="https://twitter.com/mkframework" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @mkframework</a> 
+			
+			<div class="sidebar-module">
+					 <h4>Le site</h4>
+          <ul class="nav">
+							<li><a href="accueil.html">Accueil</a></li>
+							<li><a href="news.html">News</a></li>
+							</ul>
+				 <h4>Pr&eacute;sentation</h4>
+          <ul class="nav">
+							<li><a href="fonctionnement.html">Sch&eacute;mas</a></li>
+							<li><a href="builder.html">Le g&eacute;n&eacute;rateur web</a></li>
+							<li><a href="orm.html">L'ORM <br/>(La couche mod&egrave;le)</a></li>
+							<li><a href="configuration.html">Configuration</a></li>
+							<li><a href="security.html">La s&eacute;curit&eacute;</a></li>
+							<li><a href="api.html">L'API (Phpdoc)</a></li>
+							</ul>
+				 <h4>Apprendre</h4>
+          <ul class="nav">
+							<li><a href="start.html">D&eacute;marrer</a></li>
+							<li><a href="tutoriaux.html">Tutoriaux</a></li>
+							<li><a href="screencasts.html">Tutotoriaux vid&eacute;os</a></li>
+							</ul>
+				 <h4>T&eacute;l&eacute;charger</h4>
+          <ul class="nav">
+							<li><a href="telecharger.html">Framework &amp; plus</a></li>
+							<li><a href="projets.html">Les applications</a></li>
+							</ul>
+				 <h4>Aide</h4>
+          <ul class="nav">
+							<li><a href="faq.html">FAQ <br/>Foire aux questions</a></li>
+					<li><a target="_blank" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum / aide</a></li>
+		 </ul>
+</div>
+ 
+			  
+             
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+	
+	 <div class="blog-footer">
+       
+      <p>
+        <a href="#">Retour en haut</a>
+      </p>
+    </div>
+	
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ 
+</body>
+</html>
+
+<!--cache -->

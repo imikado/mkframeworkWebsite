@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="podcastsTuto_2.html">FR</a></li>
+
+			<li><a class="nav-link"  href="podcastsTuto_2.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Episode 3: Builder: CRUD listage</h1><h2>I. Introduction</h2>Dans cet &eacute;pisode, nous allons g&eacute;n&eacute;rer un module CRUD.<br />C pour Create, R pour Read, U pour Update et D pour Delete<br />Ce sont les 4 actions que nous effectuons sur une base de donn&eacute;es: on liste les enregistrements, on permet d&#039;ajouter, modifier et de supprimer ceux-ci.<br /><br />Lors du pr&eacute;c&eacute;dent &eacute;pisode, nous avons g&eacute;n&eacute;r&eacute; la classe mod&egrave;le. En effet ce framework s&#039;appuie sur une architecture MVC: Mod&egrave;le Vue Controlleur.<br />Mod&egrave;le pour acc&eacute;der aux donn&eacute;es, Vue pour afficher celle-ci et le Controller pour faire le chef d&#039;orchestre.<br /><br /><h2>II. La couche mod&egrave;le</h2>On utilisera la couche mod&egrave;le pr&eacute;c&eacute;dement g&eacute;n&eacute;r&eacute;e:<br /><img src="data/img/podcastTuto_2tree1.jpg" /><br /><br /><h2>III. Passons au builder</h2>Dans le builder, il y a une cat&eacute;gorie &quot;module&quot;, dans celle-ci nous pouvons cr&eacute;&eacute;er:<br />- un simple module<br />- un module CRUD<br />- un module en lecture seule<br />- un module d&#039;authentification<br />- un module d&#039;authentification avec inscription<br />- un gestionnaire de droits<br /><br />Cliquez sur &quot;Cr&eacute;er un module CRUD&quot;<br /><img src="data/img/podcastTuto_2builder2.jpg" /><br />Le builder vous liste les classes mod&egrave;le de votre projet, en effet, il va s&#039;appuyer dessus pour g&eacute;n&eacute;rer votre module CRUD<br /><img src="data/img/podcastTuto_2builder3.jpg" /><br /><br /><h2>IV. Module CRUD auteur</h2>Nous allons commencer par auteur, cliquez sur &quot;model_auteur.php&quot;<br /><img src="data/img/podcastTuto_2builder4.jpg" /><br />Comme vous pouvez le voir, vous avez un formulaire de g&eacute;n&eacute;ration vous permettant de personnaliser la g&eacute;n&eacute;ration de ce module CRUD.<br />Vous pouvez choisir le nom du module, vous pouvez choisir les actions/pages &agrave; g&eacute;n&eacute;rer.<br /><br />C&#039;est interessant de pouvoir par exemple g&eacute;n&eacute;rer uniquement &quot;ajout&quot;, ainsi on aura un tableau listant les enregistrements avec un lien pour en ajouter, un peu comme pour des commentaires: on peut les lister et en ajouter mais ni les modifier, ni les supprimer.<br /><br />Ensuite pour chaque champs, on peut pr&eacute;ciser le libell&eacute; du champ, ici on va pr&eacute;ciser &quot;Nom&quot; et &quot;Pr&eacute;nom&quot; pour nos champs.<br /><img src="data/img/podcastTuto_2builder5.jpg" /><br /><br />G&eacute;n&eacute;rez.<br /><br /><img src="data/img/podcastTuto_2builder6.jpg" /><br /><br />Le builder vous indique avoir cr&eacute;er un r&eacute;pertoire module/auteurs avec un sous r&eacute;pertoire view<br />Ce module contient un fichier main.php et son sous r&eacute;pertoire view des fichiers de vues<br /><img src="data/img/podcastTuto_2tree6.jpg" /><br /><br />Notez &eacute;galement, qu&#039;il y a un lien permettant d&#039;afficher le module ainsi g&eacute;n&eacute;r&eacute;, en cliquant dessus<br /><br /><img src="data/img/podcastTuto_2builder7.jpg" /><br />Vous avez bien votre tableau qui liste les enregistrements, vous pouvez cliquez sur new pour ajouter<br /><img src="data/img/podcastTuto_2builder8.jpg" /><br /><br />Note: vous voyez bien sur les libell&eacute;s du tableau et du formulaire les valeurs renseign&eacute;es &quot;Nom&quot; et &quot;Pr&eacute;nom&quot;<br /><br />Vous voyez le tableau rempli<br /><img src="data/img/podcastTuto_2builder9.jpg" /><br /><br />Vous pouvez afficher, &eacute;diter ou supprimer les enregistrements.<br /><br />Note: pour les suppression, nous n&#039;avons pas un simple lien avec confirmation javascript mais une page de formulaire d&eacute;di&eacute;e pour &eacute;viter la faille xsrf.<br />Je vous invite &agrave; en lire plus sur le sujet http://fr.wikipedia.org/wiki/Cross-Site_Request_Forgery<br /><br /><h2>IV. Zoom sur la partie listage</h2>Si on ouvre le fichier main.php du module &quot;auteurs&quot;:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">module_auteurs&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_module</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">before</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">_layout</span><span style="color: #007700">(</span><span style="color: #DD0000">'template1'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//$this-&gt;oLayout-&gt;addModule('menu','menu::index');<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_index</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;considere&nbsp;que&nbsp;la&nbsp;page&nbsp;par&nbsp;defaut&nbsp;est&nbsp;la&nbsp;page&nbsp;de&nbsp;listage<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_list</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_list</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$tAuteur</span><span style="color: #007700">=</span><span style="color: #0000BB">model_auteur</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">_view</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteurs::list'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tAuteur</span><span style="color: #007700">=</span><span style="color: #0000BB">$tAuteur</span><span style="color: #007700">;<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #DD0000">'main'</span><span style="color: #007700">,</span><span style="color: #0000BB">$oView</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">(...)<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Dans un premier temps, la m&eacute;thode before() est appel&eacute;e, elle instancie le layout &quot;template1&quot; (layout/template1.php)<br /><br />Si on regarde ce layout (layout/template1.php)<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;!</span><span style="color: #0000BB">DOCTYPE&nbsp;HTML&nbsp;</span><span style="color: #007700">PUBLIC&nbsp;</span><span style="color: #DD0000">"-//W3C//DTD&nbsp;HTML&nbsp;4.01&nbsp;Transitional//EN"&nbsp;"http://www.w3.org/TR/html4/loose.dtd"</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">html</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">head</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">test</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">link&nbsp;rel</span><span style="color: #007700">=</span><span style="color: #DD0000">"stylesheet"&nbsp;</span><span style="color: #0000BB">type</span><span style="color: #007700">=</span><span style="color: #DD0000">"text/css"&nbsp;</span><span style="color: #0000BB">href</span><span style="color: #007700">=</span><span style="color: #DD0000">"css/main.css"&nbsp;</span><span style="color: #0000BB">media</span><span style="color: #007700">=</span><span style="color: #DD0000">"screen"&nbsp;</span><span style="color: #007700">/&gt;<br />&lt;</span><span style="color: #0000BB">script&nbsp;src</span><span style="color: #007700">=</span><span style="color: #DD0000">"js/main.js"&nbsp;</span><span style="color: #0000BB">type</span><span style="color: #007700">=</span><span style="color: #DD0000">"text/javascript"</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">&lt;/script&gt;<br /></span>&lt;link&nbsp;rel="alternate"&nbsp;type="application/rss+xml"&nbsp;title="RSS"&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'article::newsrss'</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">?&gt;</span>"/&gt;<br />&lt;meta&nbsp;http-equiv="Content-Type"&nbsp;content="text/html;&nbsp;charset=utf-8"/&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br /><br />&lt;div&nbsp;class="main"&gt;<br />&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="menu"&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">load</span><span style="color: #007700">(</span><span style="color: #DD0000">'menu'</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">?&gt;</span>&lt;/div&gt;<br />&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="content"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">load</span><span style="color: #007700">(</span><span style="color: #DD0000">'main'</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;<br /><br />&lt;/body&gt;<br />&lt;/html&gt;<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>On peut voir le code HTML de notre site, et nous pouvons remarquer qu&#039;il y a du code php qui &quot;charge&quot; les emplacements &quot;menu&quot; et &quot;main&quot;<br /><br />Revenons &agrave; notre module, apr&egrave;s avoir appel&eacute; before() qui instancie le layout, on appelle ensuite l&#039;action list (m&eacute;thode _list() )<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_list</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;recupere&nbsp;le&nbsp;tableau&nbsp;des&nbsp;auteurs<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$tAuteur</span><span style="color: #007700">=</span><span style="color: #0000BB">model_auteur</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;instancie&nbsp;la&nbsp;vue&nbsp;module/auteurs/view/list.php<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">_view</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteurs::list'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;assigne&nbsp;le&nbsp;tableau&nbsp;tAuteur&nbsp;a&nbsp;notre&nbsp;vue<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tAuteur</span><span style="color: #007700">=</span><span style="color: #0000BB">$tAuteur</span><span style="color: #007700">;<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;ajoute&nbsp;au&nbsp;layout&nbsp;a&nbsp;l'emplacement&nbsp;"main"&nbsp;notre&nbsp;vue<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #DD0000">'main'</span><span style="color: #007700">,</span><span style="color: #0000BB">$oView</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Si on va voir la vue en question:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">table&nbsp;</span><span style="color: #007700">class=</span><span style="color: #DD0000">"tb_list"</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">tr</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Nom</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Pr</span><span style="color: #007700">&amp;</span><span style="color: #0000BB">eacute</span><span style="color: #007700">;</span><span style="color: #0000BB">nom</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;&lt;/</span><span style="color: #0000BB">th</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">tr</span><span style="color: #007700">&gt;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tAuteur</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">foreach(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tAuteur&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">plugin_tpl</span><span style="color: #007700">::</span><span style="color: #0000BB">alternate</span><span style="color: #007700">(array(</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #DD0000">'class="alt"'</span><span style="color: #007700">))</span><span style="color: #0000BB">?&gt;</span>&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">nom&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">prenom&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteurs::edit'</span><span style="color: #007700">,array(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getId</span><span style="color: #007700">()<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">)</span><span style="color: #0000BB">?&gt;</span>"&gt;Edit&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteurs::delete'</span><span style="color: #007700">,array(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getId</span><span style="color: #007700">()<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">)</span><span style="color: #0000BB">?&gt;</span>"&gt;Delete&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteurs::show'</span><span style="color: #007700">,array(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getId</span><span style="color: #007700">()<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">)</span><span style="color: #0000BB">?&gt;</span>"&gt;Show&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endforeach;</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">else:</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&nbsp;colspan="3"&gt;Aucune&nbsp;ligne&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endif;</span><span style="color: #0000BB">?&gt;<br /></span>&lt;/table&gt;<br /><br />&lt;p&gt;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteurs::new'</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">?&gt;</span>"&gt;New&lt;/a&gt;&lt;/p&gt;<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>On peut voir ici le tableau tAuteur assign&eacute; &agrave; la vue, o&ugrave; l&#039;on boucle dessus pour afficher chaque ligne du tableau.<br /><br />Note: vous voyez comment cr&eacute;er des liens, vous pouvez utiliser deux m&eacute;thodes:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteurs::show'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getId</span><span style="color: #007700">())&nbsp;)<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>et<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteurs::show'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getId</span><span style="color: #007700">())&nbsp;)<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Premier argument le couple &quot;module::action&quot;, puis le tableau de param&egrave;tre si il y en a.<br />Dans notre exemple, le couple module::action, c&#039;est &quot;auteurs::show&quot;, et le tableau de param&egrave;tre qui contient l&#039;id de l&#039;auteur &agrave; afficher.<br /><br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

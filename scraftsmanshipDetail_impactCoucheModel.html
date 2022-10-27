@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="scraftsmanshipDetail_impactCoucheModel.html">FR</a></li>
+
+			<li><a class="nav-link"  href="scraftsmanshipDetail_impactCoucheModel.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Software Craftsmanship</h1><h2>Sommaire</h2>- <a href="scraftsmanship.html">Introduction </a><br />- <a href="scraftsmanshipDetail_builder.html">Pr&eacute;sentation dans le builder </a><br />- <a href="scraftsmanshipDetail_exampleHexagonal.html">Exemple d&#039;un module utilisant l&#039;architecture hexagonale </a><br />- L&#039;impact sur la couche model<br /><br /><h2>Les impacts sur la couche mod&egrave;le</h2>Dans les autres templates, on a tendance &agrave; deporter une partie de l&#039;application sur le module et le mod&egrave;le<br /><br />Dans ce nouveau template, on centraliste tout dans la couche business<br /><br /><h2>V&eacute;rification des donn&eacute;es pr&eacute;-enregistrement</h2><h3>Avant</h3>Dans les autres templates, pour verifier la coh&eacute;rence des donn&eacute;es avant de les enregistrer<br />Nous cr&eacute;ons une m&eacute;thode isValid dans la couche model ainsi par exemple<br /><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">private&nbsp;function&nbsp;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oPluginValid</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">plugin_valid</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTab</span><span style="color: #007700">());<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;$oPluginValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isNotEmpty</span><span style="color: #007700">(</span><span style="color: #DD0000">'monChamp'</span><span style="color: #007700">,</span><span style="color: #DD0000">'Le&nbsp;champ&nbsp;ne&nbsp;doit&nbsp;pas&nbsp;&amp;ecirc;tre&nbsp;vide'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;renseigner&nbsp;vos&nbsp;check&nbsp;ici<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEqual('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;&amp;eacute;gal&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isNotEqual('champ','valeurB','Le&nbsp;champ&nbsp;est&nbsp;&amp;eacute;gal&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isUpperThan('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;sup&amp;eacute;&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isUpperOrEqualThan('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;sup&amp;eacute;&nbsp;ou&nbsp;&amp;eacute;gal&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isLowerThan('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;inf&amp;eacute;rieur&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isLowerOrEqualThan('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;inf&amp;eacute;rieur&nbsp;ou&nbsp;&amp;eacute;gal&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEmpty('champ','Le&nbsp;champ&nbsp;n\'est&nbsp;pas&nbsp;vide');<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isNotEmpty('champ','Le&nbsp;champ&nbsp;ne&nbsp;doit&nbsp;pas&nbsp;&amp;ecirc;tre&nbsp;vide');<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEmailValid('champ','L\email&nbsp;est&nbsp;invalide');<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;matchExpression('champ','/[0-9]/','Le&nbsp;champ&nbsp;n\'est&nbsp;pas&nbsp;au&nbsp;bon&nbsp;format');<br />&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;notMatchExpression('champ','/[a-zA-Z]/','Le&nbsp;champ&nbsp;ne&nbsp;doit&nbsp;pas&nbsp;&amp;ecirc;tre&nbsp;a&nbsp;ce&nbsp;format');<br />&nbsp;&nbsp;&nbsp;*/<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$oPluginValid</span><span style="color: #007700">;<br />}<br /><br />public&nbsp;function&nbsp;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">();<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Et celle-ci &eacute;tait appel&eacute; au moment du save<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">save</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">()){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;parent</span><span style="color: #007700">::</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h3>Avec la classe business</h3>L&#039;id&eacute;e &eacute;tant de centraliser l&#039;intelligence de l&#039;application, il en est de m&ecirc;me quant &agrave; la coh&eacute;rence des donn&eacute;es.<br />Nous avons donc une m&eacute;thode dans la classe business pour verifier la m&ecirc;me chose:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">(</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">load</span><span style="color: #007700">(</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_tColumn&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$sColumn</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isNotEmpty</span><span style="color: #007700">(</span><span style="color: #0000BB">$sColumn</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tr</span><span style="color: #007700">(</span><span style="color: #DD0000">'errorIsEmpty'</span><span style="color: #007700">));<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oValid</span><span style="color: #007700">;<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Et au lieu de l&#039;appeler au moment du save, nous l&#039;appelons au d&eacute;but de l&#039;appel insert/update<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">insertItem</span><span style="color: #007700">(</span><span style="color: #0000BB">$oObject</span><span style="color: #007700">,</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oValid&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">(</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">$oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">())&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendReturn</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'tError'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">()));<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h2>Trigger &agrave; l&#039;update et/ou &agrave; l&#039;insert</h2><h3>Avant</h3>Auparavant nous ajoutions dans la m&eacute;thode save de la classe row_maTable du code par exemple<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">save</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">()){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;ajoute&nbsp;l'enregistrement&nbsp;de&nbsp;la&nbsp;date<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">date_update&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">'Y-m-d&nbsp;H:i:s'</span><span style="color: #007700">);<br /><br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;parent</span><span style="color: #007700">::</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h3>Avec la classe business</h3>Toujours dans l&#039;id&eacute;e de centraliser les traitements, nous ajouterons ceci dans la m&eacute;thode appropri&eacute;<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">updateItem</span><span style="color: #007700">(</span><span style="color: #0000BB">$id_</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oValid&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">(</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">$oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">())&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendReturn</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'tError'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">()));<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oObject</span><span style="color: #007700">=</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findByID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id_</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;$tColumn</span><span style="color: #007700">=array(&nbsp;</span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'title'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'description'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">foreach&nbsp;(</span><span style="color: #0000BB">$tColumn&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$sColummn</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oObject</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$sColummn&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">[</span><span style="color: #0000BB">$sColummn</span><span style="color: #007700">];<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;ajoute&nbsp;l'enregistrement&nbsp;de&nbsp;la&nbsp;date<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oObject</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">date_update&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">'Y-m-d&nbsp;H:i:s'</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">update</span><span style="color: #007700">(</span><span style="color: #0000BB">$oObject</span><span style="color: #007700">);<br /><br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />note: on peut ainsi facilement diff&eacute;rencier ce que l&#039;on fait en cas d&#039;insertion/mise &agrave; jour, en modifiant la m&eacute;thode ad&eacute;quate<br /><br />Par exemple:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">insertItem</span><span style="color: #007700">(</span><span style="color: #0000BB">$oObject_</span><span style="color: #007700">,</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oValid&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">(</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">$oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">())&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendReturn</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'tError'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">()));<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;$tColumn</span><span style="color: #007700">=array(&nbsp;</span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'title'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'description'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_tColumn&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$sColummn</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oObject_</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$sColummn&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">[</span><span style="color: #0000BB">$sColummn</span><span style="color: #007700">];<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;ajoute&nbsp;l'enregistrement&nbsp;de&nbsp;la&nbsp;date<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oObject_</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">date_insert&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">'Y-m-d&nbsp;H:i:s'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oObject_</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">date_update&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$oObject_</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">date_insert</span><span style="color: #007700">;<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">insert</span><span style="color: #007700">(</span><span style="color: #0000BB">$oObject_</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

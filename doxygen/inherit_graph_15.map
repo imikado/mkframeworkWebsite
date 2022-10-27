@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classabstract__sgbd.html" title="abstract_sgbd" alt="" coords="5,81,109,108"/>
+<area shape="rect" id="node2" href="$classsgbd__csv.html" title="sgbd_csv" alt="" coords="165,5,243,32"/>
+<area shape="rect" id="node3" href="$classsgbd__json.html" title="sgbd_json" alt="" coords="163,56,245,83"/>
+<area shape="rect" id="node4" href="$classsgbd__mysql.html" title="sgbd_mysql" alt="" coords="158,107,250,133"/>
+<area shape="rect" id="node5" href="$classsgbd__xml.html" title="sgbd_xml" alt="" coords="165,157,243,184"/>
+</map>

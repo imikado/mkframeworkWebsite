@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="podcastsTuto_4.html">FR</a></li>
+
+			<li><a class="nav-link"  href="podcastsTuto_4.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Episode 5: Builder: module d&#039;authentification</h1><h2>I. Introduction</h2>Dans cet &eacute;pisode nous allons voir comment ajouter un module d&#039;authentification &agrave; votre application.<br /><br /><h2>II. Cr&eacute;ons l&#039;application</h2>Dans le builder, cr&eacute;er l&#039;application &quot;application&quot;<br /><img src="data/img/podcastTuto_4New.jpg" /><br /><br /><h2>III. Connectons-la &agrave; notre base de donn&eacute;es</h2>Nous avons ici une base mysql &quot;tutorialDb&quot; contenant entre autre une table &quot;users&quot;<br />Editez le fichier de configuration conf/connexion.ini.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">die()</span><span style="color: #0000BB">?&gt;<br /></span>[db]<br />tutorial.dsn="mysql:dbname=tutorialDb;host=localhost"<br />tutorial.sgbd=pdo_mysql<br />tutorial.username=root<br />tutorial.password=root<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div><br /><h2>IV. Cr&eacute;ons la couche mod&egrave;le</h2>Cliquez ensuite sur &quot;cr&eacute;er la couche mod&egrave;le&quot;<br />S&eacute;lectionnez ensuite le profil &quot;tutorial&quot;<br /><img src="data/img/podcastTuto_4Builder.jpg" /><br /><br />Nous cochons uniquement la table &quot;users&quot; qui nous permettra de stoquer nos utilisateurs<br /><img src="data/img/podcastTuto_4Builder2.jpg" /><br /><br />Puis g&eacute;n&eacute;rer.<br />Le builder vous g&eacute;n&egrave;re votre classe model/model_users.php<br /><br /><h2>V. G&eacute;n&eacute;rons le module d&#039;authentification</h2>Actuellement si nous cliquons sur &quot;voir le site&quot;, on arrive sur une page simple:<br /><img src="data/img/podcastTuto_4site.jpg" /><br /><br />On peut lire dans la barre de debug, que nous chargeons par d&eacute;faut le module &quot;default&quot; et l&#039;action &quot;index&quot;<br /><br />Cliquez sur &quot;Cr&eacute;er un module d&#039;authentification avec inscription&quot;<br /><img src="data/img/podcastTuto_4Builder3.jpg" /><br /><br /><img src="data/img/podcastTuto_4Builder4.jpg" /><br />Le builder vous liste les classes mod&egrave;le disponible, s&eacute;lectionnez &quot;model_users.php&quot;<br /><br />Puis s&eacute;lectionnez le champ pour le nom d&#039;utilisateur: &quot;login&quot; et &quot;password&quot; pour le mot de passe.<br /><img src="data/img/podcastTuto_4Builder5.jpg" /><br />En s&eacute;lectionnant le nom d&#039;utilisateur et le mot de passe, le formulaire change<br /><img src="data/img/podcastTuto_4Builder6.jpg" /><br />Le builder vous demande d&#039;ajouter deux m&eacute;thodes dans votre classe model model/model_users.php<br />Ajoutez les deux m&eacute;thodes g&eacute;n&eacute;r&eacute;s par le builder (celles-ci peuvent diff&eacute;rer en fonction des noms de vos champs en base de donn&eacute;es ):<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getListAccount</span><span style="color: #007700">(){<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$tAccount</span><span style="color: #007700">=</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">();<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$tLoginPassAccount</span><span style="color: #007700">=array();<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">$tAccount</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">foreach(</span><span style="color: #0000BB">$tAccount&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$oAccount</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;cree&nbsp;ici&nbsp;un&nbsp;tableau&nbsp;indexe&nbsp;par&nbsp;nom&nbsp;d'utilisateur&nbsp;et&nbsp;mot&nbsp;de&nbsp;pase<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$tLoginPassAccount</span><span style="color: #007700">[</span><span style="color: #0000BB">$oAccount</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">login</span><span style="color: #007700">][</span><span style="color: #0000BB">$oAccount</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">password</span><span style="color: #007700">]=</span><span style="color: #0000BB">$oAccount</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$tLoginPassAccount</span><span style="color: #007700">;<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>et<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hashPassword</span><span style="color: #007700">(</span><span style="color: #0000BB">$sPassword</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//utiliser&nbsp;ici&nbsp;la&nbsp;methode&nbsp;de&nbsp;votre&nbsp;choix&nbsp;pour&nbsp;hasher&nbsp;votre&nbsp;mot&nbsp;de&nbsp;passe<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">sha1</span><span style="color: #007700">(</span><span style="color: #DD0000">'2votreSelAchanger2'</span><span style="color: #007700">.</span><span style="color: #0000BB">$sPassword</span><span style="color: #007700">);<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Pour information, la premi&egrave;re m&eacute;thode permet de retourner un tableau de couple login/mot de passe qui servira &agrave; v&eacute;rifier l&#039;authentification.<br />La seconde, elle, permet de retourne l&#039;empreinte du mot de passe. En effet, pour des raisons de s&eacute;curit&eacute;, on ne stoque pas les mots de passe en clair mais un hash de celle-ci. Lorsque l&#039;utilisateur nous soumet son mot de passe, on fait appel &agrave; la m&ecirc;me m&eacute;thode pour g&eacute;n&eacute;rer l&#039;empreinte, puis on v&eacute;rifie avec l&#039;empreinte stoqu&eacute;e en base de donn&eacute;es.<br />Note: pensez &agrave; changer le sel de la m&eacute;thode hashPassword() pour qu&#039;il soit unique &agrave; votre application<br /><br />Vous avez ici deux fa&ccedil;ons d&#039;ajouter ces deux m&eacute;thodes:<br />1. en cliquant sur le lien pr&eacute;sent sur le builder (qui passera par l&#039;explorateur)<br />2. en &eacute;ditant le fichier via votre &eacute;diteur de code habituel<br />Ajoutez ces deux m&eacute;thodes dans votre classe model_users (fichier model/model_users.php)<br /><br />Puis cliquez sur le bouton de r&eacute;actualisation:<br /><img src="data/img/podcastTuto_4Builder7.jpg" /><br />Le formulaire change &agrave; nouveau:<br /><img src="data/img/podcastTuto_4Builder8.jpg" /><br />Vous voyez ici que l&#039;on vous demande le nom du module d&#039;authentification &agrave; g&eacute;n&eacute;rer<br />On nous demande &eacute;galement de s&eacute;l&eacute;ctionner le couple de module/action o&ugrave; rediriger une fois connect&eacute;e<br />Validez ensuite ce formulaire:<br /><br /><img src="data/img/podcastTuto_4Builder9.jpg" /><br />Le builder vous g&eacute;n&egrave;re un module &quot;auth&quot;<br /><br />On nous demande &eacute;galement de modifier une variable dans le fichier de configuration.<br />Soit vous cliquez sur le lien pr&eacute;sent dans le builder, soit vous &eacute;ditez vous-m&ecirc;me le fichier conf/site.ini.php<br /><br /><img src="data/img/podcastTuto_4Builder10.jpg" /><br /><br /><h2>VI. Visualisons l&#039;application</h2>Si on clique &agrave; nouveau sur &quot;voir le site&quot;<br /><img src="data/img/podcastTuto_4BnewSite.jpg" /><br />On n&#039;arrive plus directement sur notre module &quot;default&quot;, mais sur un formulaire de login.<br />Cliquez sur le lien inscription:<br />Rensigner un compte: par exemple login/pass<br /><img src="data/img/podcastTuto_4BnewSite2.jpg" /><br />Authentifiez-vous avec:<br /><img src="data/img/podcastTuto_4BnewSite3.jpg" /><br /><br />On arrive ici de nouveau sur notre page &quot;defaut&quot;<br /><img src="data/img/podcastTuto_4site.jpg" /><br /><br /><h2>VII. Ajouter un bouton se d&eacute;connecter</h2>Si vous editer le fichier module/auth/main.php vous verrez qu&#039;il y a notamment une m&eacute;thode _logout() qui permet donc de se d&eacute;connecter.<br />Editons la vue index du module &quot;default&quot; pour ajouter un lien de d&eacute;connexion<br /><br />Editez module/default/view/index.php pour ajouter un lien de d&eacute;connexion:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />vue&nbsp;index<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">br</span><span style="color: #007700">/&gt;<br />&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"&lt;?php&nbsp;echo&nbsp;_root::getLink('auth::logout')?&gt;"</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Se&nbsp;deconnecter</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><img src="data/img/podcastTuto_4BnewSite4.jpg" /><br /><br /><br /><br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

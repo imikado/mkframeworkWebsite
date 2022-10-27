@@ -1,0 +1,10 @@
+<map id="loadFromFormat" name="loadFromFormat">
+<area shape="rect" id="node2" href="$classplugin__date.html#a421889b2ee2c00679fc7b99680408f3d" title="plugin_date\\setYear" alt="" coords="175,5,313,32"/>
+<area shape="rect" id="node3" href="$classplugin__date.html#a661a2aa48cdc0552543e43eb6880659e" title="plugin_date\\setMonth" alt="" coords="171,56,317,83"/>
+<area shape="rect" id="node4" href="$classplugin__date.html#a1ee7c9c6cff5be4e1c464fa8e4d862c8" title="plugin_date\\setDay" alt="" coords="177,107,311,133"/>
+<area shape="rect" id="node5" href="$classplugin__datetime.html#aa6b69c6dfff3864f42528a10c1d28ab0" title="setHour" alt="" coords="210,157,278,184"/>
+<area shape="rect" id="node6" href="$classplugin__datetime.html#adbd4469817045018acb432fb98dfd245" title="setMinute" alt="" coords="205,208,283,235"/>
+<area shape="rect" id="node7" href="$classplugin__datetime.html#a69200d24cc8f78c8049e64712e646258" title="setSecond" alt="" coords="202,259,286,285"/>
+<area shape="rect" id="node8" href="$classplugin__date.html#a7b37efab7473a1effc29f8be2421f6e3" title="plugin_date\\isValid" alt="" coords="179,309,309,336"/>
+<area shape="rect" id="node9" href="$classplugin__datetime.html#a4a20559544fdf4dcb457e258dc976cf8" title="reset" alt="" coords="219,360,269,387"/>
+</map>

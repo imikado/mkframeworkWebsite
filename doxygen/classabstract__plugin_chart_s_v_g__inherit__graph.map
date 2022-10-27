@@ -1,0 +1,6 @@
+<map id="abstract_pluginChartSVG" name="abstract_pluginChartSVG">
+<area shape="rect" id="node2" href="$classplugin__chart_bar_s_v_g.html" title="plugin_chartBarSVG" alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node3" href="$classplugin__chart_histo_s_v_g.html" title="plugin_chartHistoSVG" alt="" coords="169,80,319,107"/>
+<area shape="rect" id="node4" href="$classplugin__chart_line_s_v_g.html" title="plugin_chartLineSVG" alt="" coords="344,80,488,107"/>
+<area shape="rect" id="node5" href="$classplugin__chart_pie_s_v_g.html" title="plugin_chartPieSVG" alt="" coords="512,80,651,107"/>
+</map>

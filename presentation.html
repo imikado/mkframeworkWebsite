@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta name="language" content="fr" />
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<title>MkFramework V4</title>
+<link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div class="main">
+	<div class="header" style="text-align:right;padding:2px 2px">
+		<div style="margin-top:2px;margin-right:4px;margin-left:10px;float:right">
+						<a style="font-weight:bold" href="presentation.html">FR</a>
+			 | 
+			<a  href="presentation_en.html">EN</a>
+		</div><a href="https://twitter.com/mkframework" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @mkframework</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+	<div class="menu"><ul>
+					<li><a href="accueil.html">Accueil</a></li>
+		
+					<li><a href="start.html">D&eacute;marrer</a></li>
+		
+					<li><a href="fonctionnement.html">Sch&eacute;mas</a></li>
+		
+					<li><a href="builder.html">Le g&eacute;n&eacute;rateur web</a></li>
+		
+					<li><a href="security.html">La s&eacute;curit&eacute;</a></li>
+		
+					<li><a href="tutoriaux.html">Tutoriaux</a></li>
+		
+					<li><a href="screencasts.html">Tutotoriaux vid&eacute;os</a></li>
+		
+					<li><a href="faq.html">FAQ <br/>Foire aux questions</a></li>
+		
+					<li><a href="api.html">L'API (Phpdoc)</a></li>
+		
+			<li><a href="doxygen">Documentation Doxygen</a></li>
+		
+					<li><a href="orm.html">L'ORM <br/>(La couche mod&egrave;le)</a></li>
+		
+					<li><a href="configuration.html">Configuration</a></li>
+		
+					<li><a href="telecharger.html">T&eacute;l&eacute;charger &amp; plus</a></li>
+		
+			<li><a target="_blank" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum / aide</a></li>
+		
+</ul>
+</div>
+	<div class="content">
+		<h1>Pr&eacute;sentation</h1><h2>1.Un framework, kesako ?</h2><br />C&#039;est tout un environnement de travail :<br />Il comprend :<br />- une librairie bien fournie pour vous &eacute;conomiser du code et du temps<br />- une structure de d&eacute;veloppement d&eacute;j&agrave; &eacute;tablie<br />- une construction flexible, &eacute;volutive et r&eacute;utilisable (modules,plugins)<br /><br /><h2>2.Un framework pourquoi faire ?</h2><br />La premi&egrave;re r&eacute;ponse est : pour vous faciliter la vie bien s&ucirc;r :)<br />- en mettant &agrave; votre disposition une librairie pour am&eacute;liorer votre confort de programmation<br />- en am&eacute;liorant votre rapidit&eacute; de d&eacute;veloppement : (vous ne codez plus de z&eacute;ro, &eacute;conomie de code gr&acirc;ce aux librairies)<br />- en cadrant et homog&eacute;n&eacute;isant votre travail (structure oblige)<br />- en organisant votre application: chaque fichier a sa place<br /><br /><h2>3.Le menu siYouPlait ^_^</h2><br />Inclut dans le coffret :<br />- architecture MVC s&eacute;paration Mod&egrave;le, Vue Controller<br />- gestion int&eacute;gr&eacute;e du cache<br />- gestion int&eacute;gr&eacute;e de la s&eacute;curisation des pages via un acc&egrave;s prot&eacute;g&eacute; par login/mot de passe (module secure)<br />- structure &eacute;volutive avec deux types : modules et plugin<br />- des librairies vous facilitant: le traitement de fichier, l&#039;envoi de mail, la pagination, l&#039;ajax...<br />- gratos : un template download permettant de forcer le t&eacute;l&eacute;chargement de ladite page (export excel...)<br />- gratos : un module secure permettant de s&eacute;curiser une page via un acc&egrave;s restreint derri&egrave;re login/pass<br />- gratos : un plugin g&eacute;rant le rss d&eacute;j&agrave; int&eacute;gr&eacute; lors de la cr&eacute;ation de votre premi&egrave;re application ;)<br /><br /><h2>4.Des objets/librairies bien pratiques ;)</h2><br />- _dir : vous permet de gerer un repertoire (listage, creation...)<br />- _file : pour gerer les fichiers (creation,ecriture,lecture...)<br />- plugin_auth : pour gerer l&#039;authentification<br />- plugin_date : pour faciliter la manipulation de date<br />- plugin_html : pour faciliter la generation d&#039;elements html<br />- plugin_routing : appele pour g&eacute;rer l&#039;url rewriting<br />- plugin_jquery : pour simplifier l&#039;utilisation de la bilioth&egrave;que jQuery<br /><br /><h2>5.C&#039;est bien beau et la prise en main ?</h2><br />Pour utiliser d&#039;autres frameworks, j&#039;ai voulu viser la facilit&eacute; de prise en main<br />Pour cela :<br />- Une doc vous pr&eacute;sentant l&#039;ensemble des objets et leurs fonctions<br />- Des tutoriaux pour vous faciliter l&#039;apprentissage<br />- Des exemples pour expliquer de fa&ccedil;on concr&egrave;te<br />- Une rubrique commentKonFait pour r&eacute;pondre aux questions que vous vous posez<br />- Une application vierge cr&eacute;&eacute;e contient d&eacute;j&agrave; un lot de pages d&#039;exemple facilitant l&#039;apprentissage (on ne part pas de z&eacute;ro)<br /><br /><h2>6.C&#039;est tout ?</h2><br />Mais non ce n&#039;est pas tout, pour vous faciliter l&#039;adoption de ce framework :<br />Je vous ai d&eacute;velopp&eacute; un chti builder, le MkFrameworkBuilder (clin d&#039;oeil au commandeEnLigneOphobe)<br />Il vous permettra :<br />- De cr&eacute;er un environnement vierge (avec quelque pages d&#039;exemple)<br />- De g&eacute;n&eacute;rer la couche mod&egrave;le de votre application<br />- De g&eacute;n&eacute;rer le CRUD pour vos tables<br />- De g&eacute;n&eacute;rer un/des module(s) avec sa/ses action(s)<br /><br />Et tout ca en deux trois clic, pas de ligne de commande &agrave; saisir ;)<br />	</div>
+	<div class="footer">&nbsp;</div>
+</div>
+
+</body>
+</html>
+
+<!--cache -->

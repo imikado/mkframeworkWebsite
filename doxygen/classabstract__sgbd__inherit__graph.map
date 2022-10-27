@@ -1,0 +1,6 @@
+<map id="abstract_sgbd" name="abstract_sgbd">
+<area shape="rect" id="node2" href="$classsgbd__csv.html" title="sgbd_csv" alt="" coords="5,80,83,107"/>
+<area shape="rect" id="node3" href="$classsgbd__json.html" title="sgbd_json" alt="" coords="107,80,188,107"/>
+<area shape="rect" id="node4" href="$classsgbd__mysql.html" title="sgbd_mysql" alt="" coords="213,80,304,107"/>
+<area shape="rect" id="node5" href="$classsgbd__xml.html" title="sgbd_xml" alt="" coords="329,80,407,107"/>
+</map>

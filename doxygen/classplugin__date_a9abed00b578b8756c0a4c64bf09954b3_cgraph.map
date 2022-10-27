@@ -1,0 +1,8 @@
+<map id="addMonth" name="addMonth">
+<area shape="rect" id="node2" href="$classplugin__date.html#abe6ee70495caa63ec6481ed183676487" title="loadFromFormat" alt="" coords="133,107,251,133"/>
+<area shape="rect" id="node3" href="$classplugin__date.html#a421889b2ee2c00679fc7b99680408f3d" title="setYear" alt="" coords="304,5,371,32"/>
+<area shape="rect" id="node4" href="$classplugin__date.html#a661a2aa48cdc0552543e43eb6880659e" title="setMonth" alt="" coords="299,56,375,83"/>
+<area shape="rect" id="node5" href="$classplugin__date.html#a1ee7c9c6cff5be4e1c464fa8e4d862c8" title="setDay" alt="" coords="305,107,369,133"/>
+<area shape="rect" id="node6" href="$classplugin__date.html#a7b37efab7473a1effc29f8be2421f6e3" title="isValid" alt="" coords="307,157,368,184"/>
+<area shape="rect" id="node7" href="$classplugin__date.html#a4a20559544fdf4dcb457e258dc976cf8" title="reset" alt="" coords="312,208,363,235"/>
+</map>

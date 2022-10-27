@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="podcastsTuto_1.html">FR</a></li>
+
+			<li><a class="nav-link"  href="podcastsTuto_1.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Episode 2: Builder: couche mod&egrave;le</h1><h2>I. Introduction</h2>Dans cet &eacute;pisode, on voit comment le builder peut nous g&eacute;n&eacute;rer notre couche mod&egrave;le.<br /><br /><h2>II. Ouvrez le builder</h2>Ouvrez votre navigateur &agrave; l&#039;adresse du builder.<br />Cr&eacute;ez une application &quot;vide&quot; nomm&eacute; &quot;test&quot;<br /><img src="data/img/podcastTuto_1builder.jpg" /><br />Cliquez sur le lien &quot;Editer le projet&quot;<br /><img src="data/img/podcastTuto_1builder2.jpg" /><br />On peut voir que le menu du builder se divise en plusieurs partie:<br />- Couche mod&egrave;le<br />- Modules<br />- Modules int&eacute;grable<br />- Vues<br />- Base de donn&eacute;es embarqu&eacute;es<br /><br /><h2>III. Cr&eacute;ation de la couche mod&egrave;le</h2><h3>III.1 Introduction</h3>Le mkframework s&#039;articule autour d&#039;une architecture MVC*<br />Il utilise un ORM** pour interagir avec la/les base de donn&eacute;es (mysql, ms sql, postgresql, oracle, firebird, xml, csv et json)<br /><br />*MVC: Mod&egrave;le Vue Controlleur<br />**ORM: Object Relation Mapping<br /><br /><h3>III.2 Utilisons le builder</h3>Nous souhaitons connecter notre application &agrave; la base mysql tutorialDb.<br />Celle-ci contient 3 tables:<br />- article<br />- auteur<br />- users<br />Cliquez sur le lien &quot;Cr&eacute;er la couche mod&egrave;le&quot;<br /><img src="data/img/podcastTuto_1builder3.jpg" /><br />Le builder vous liste ici les profils disponibles dans votre fichier conf/connexion.ini.php*<br /><br />* celui de votre projet dans le r&eacute;pertoire Projects/ du framework<br /><img src="data/img/podcastTuto_1treeMkf.jpg" /><br /><br />Ce fichier contient le code suivant:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">die()</span><span style="color: #0000BB">?&gt;<br /></span>[db]<br />mysqlExple.dsn="mysql:dbname=blog;host=localhost"<br />mysqlExple.sgbd=pdo_mysql<br />mysqlExple.username=root<br />mysqlExple.password=root<br /><br />pdoPostgresqlExple.dsn="pgsql:dbname=postgres;host=localhost"<br />pdoPostgresqlExple.sgbd=pdo_pgsql<br />pdoPostgresqlExple.username=postgres<br />pdoPostgresqlExple.password=root<br /><br />pdoMysqlExple.dsn="mysql:dbname=blog;host=localhost"<br />pdoMysqlExple.sgbd=pdo_mysql<br />pdoMysqlExple.username=root<br />pdoMysqlExple.password=root<br /><br />pdoSqliteExple.dsn="sqlite:/var/www/test4.sqlite"<br />pdoSqliteExple.sgbd=pdo_sqlite<br />pdoSqliteExple.username=root<br />pdoSqliteExple.password=root<br /><br />firebirdExple.dsn="firebird:host=localhost;dbname=/var/www/firebirdDb"<br />firebirdExple.sgbd=pdo_firebird<br />firebirdExple.username=root<br />firebirdExple.password=root<br /><br />xmlExple.dsn=<br />xmlExple.sgbd=xml<br />xmlExple.database=../data/xml/base/<br /><br />csvExple.dsn=<br />csvExple.sgbd=csv<br />csvExple.database=../data/csv/base/<br /><br />sqlserverExple.dsn="dblib:dbname=blog;host=localhost"<br />sqlserverExple.sgbd=pdo_mssql<br />sqlserverExple.username=root<br />sqlserverExple.password=root<br /><br />jsonExple.dsn=<br />jsonExple.sgbd=json<br />jsonExple.database=../data/json/base/<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>Comme vous pouvez le voir, vous avez autant de lignes dans le builder que de bloc dans le fichier de configuration.<br />Ce sont des exemples de configuration.<br />Ici, nous allons nous connecter &agrave; une base mysql, donc on va supprimer tout sauf<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">die()</span><span style="color: #0000BB">?&gt;<br /></span>[db]<br />pdoMysqlExple.dsn="mysql:dbname=blog;host=localhost"<br />pdoMysqlExple.sgbd=pdo_mysql<br />pdoMysqlExple.username=root<br />pdoMysqlExple.password=root<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>On va appeler ici notre profil &quot;tutorial&quot; et renseigner notre nom de base<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">die()</span><span style="color: #0000BB">?&gt;<br /></span>[db]<br />tutorial.dsn="mysql:dbname=tutorialDb;host=localhost"<br />tutorial.sgbd=pdo_mysql<br />tutorial.username=root<br />tutorial.password=root<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>En r&eacute;actualisant le builder:<br /><img src="data/img/podcastTuto_1builder4.jpg" /><br />Il ne liste plus qu&#039;un profil, celui renseign&eacute; pr&eacute;c&eacute;demment.<br />Cliquez dessus:<br /><img src="data/img/podcastTuto_1builder5.jpg" /><br />Pour explication: le builder se connecte en utilisant le profil de connexion s&eacute;lectionn&eacute; et liste ainsi les diff&eacute;rentes tables visibles.<br />Nous souhaitons afficher la liste des articles avec les noms d&#039;auteurs plut&ocirc;t que la cl&eacute;, nous souhaitons &eacute;galement pouvoir choisir l&#039;auteur via un menu d&eacute;roulant.<br />Pour cela, cochez la case &quot;Retourne un tableau avec&quot; et s&eacute;lectionnez comme valeur &quot;nom&quot;<br /><img src="data/img/podcastTuto_1builder6.jpg" /><br />Pour information, le fait de faire ceci ajoutera &agrave; la classe mod&egrave;le g&eacute;n&eacute;r&eacute; une m&eacute;thode &quot;getSelect()&quot; qui retournera un tableau index&eacute;.<br />Cette m&eacute;thode sera utilis&eacute;e afin de faciliter l&#039;utilisation de menu d&eacute;roulant.<br />Cochez uniquement les tables auteur et article puis g&eacute;n&eacute;rez.<br /><br /><h3>IV Analysons la couche mod&egrave;le</h3>Une fois le formulaire valid&eacute;, le builder g&eacute;n&egrave;re deux classes mod&egrave;le<br /><img src="data/img/podcastTuto_1builder7.jpg" /><br />On peut bien retrouver les deux classes dans notre application<br /><img src="data/img/podcastTuto_1builder8.jpg" /><br /><br />Par exemple la classe mod&egrave;le model_article.php qui contient deux classes: model_article et row_article<br />Analysons d&#039;abord la premi&egrave;re.<br /><h3> Classe model_article</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">model_article&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_model</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sClassRow</span><span style="color: #007700">=</span><span style="color: #DD0000">'row_article'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sTable</span><span style="color: #007700">=</span><span style="color: #DD0000">'article'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sConfig</span><span style="color: #007700">=</span><span style="color: #DD0000">'tutorial'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$tId</span><span style="color: #007700">=array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">_getInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">__CLASS__</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">$uId</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sTable</span><span style="color: #007700">.</span><span style="color: #DD0000">'&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">$uId&nbsp;</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findMany</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sTable</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><h3> protected $sClassRow=&#039;row_article&#039;;</h3>On peut voir la variable $sClassRow qui contient le nom de la classe &agrave; utiliser lors de l&#039;hydratation.<br />L&#039;hydratation consiste lors de la r&eacute;cup&eacute;ration des enregistrements en base &agrave; l&#039;action d&#039;instancier une classe et de la renseigner avec les valeurs issues de la base.<br />Par exemple pour les article, &ccedil;a revient faire pour la r&eacute;cup&eacute;ration de plusieurs article:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$monTableau</span><span style="color: #007700">=array();<br />while(</span><span style="color: #0000BB">$tRow&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">recuperation&nbsp;issu&nbsp;de&nbsp;la&nbsp;base</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oArticle</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">row_article</span><span style="color: #007700">(</span><span style="color: #0000BB">$tRow</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;$monTableau</span><span style="color: #007700">[]=</span><span style="color: #0000BB">$oArticle</span><span style="color: #007700">;<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h3> protected $sTable=&#039;article&#039;;</h3>Cette variable contient le nom r&eacute;el de la table en base de donn&eacute;es<br /><br /><h3> protected $sConfig=&#039;tutorial&#039;;</h3>Ici, on a le nom du profil de connexion &agrave; utiliser.<br />Ainsi, on peut facilement avoir des tables stock&eacute;es sur des bases diff&eacute;rentes.<br />Pour rappel renseign&eacute; dans le fichier conf/connexion.ini.php<br /><br /><h3> protected $tId=array(&#039;id&#039;);</h3>L&agrave;, on stoque le champ de la cl&eacute; primaire.<br /><br />Et pour la classe row_article<br /><h3> classe row_article</h3><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;</span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">row_article&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_row</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sClassModel</span><span style="color: #007700">=</span><span style="color: #DD0000">'model_article'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*exemple&nbsp;jointure<br />&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;findAuteur(){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;model_auteur::getInstance()-&gt;findById($this-&gt;auteur_id);<br />&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;*/<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*exemple&nbsp;test&nbsp;validation*/<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">private&nbsp;function&nbsp;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">plugin_valid</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTab</span><span style="color: #007700">());<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;renseigner&nbsp;vos&nbsp;check&nbsp;ici<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEqual('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;&amp;eacute;gal&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isNotEqual('champ','valeurB','Le&nbsp;champ&nbsp;est&nbsp;&amp;eacute;gal&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isUpperThan('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;sup&amp;eacute;&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isUpperOrEqualThan('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;sup&amp;eacute;&nbsp;ou&nbsp;&amp;eacute;gal&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isLowerThan('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;inf&amp;eacute;rieur&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isLowerOrEqualThan('champ','valeurB','Le&nbsp;champ&nbsp;n\est&nbsp;pas&nbsp;inf&amp;eacute;rieur&nbsp;ou&nbsp;&amp;eacute;gal&nbsp;&amp;agrave;&nbsp;'.$valeurB);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEmpty('champ','Le&nbsp;champ&nbsp;n\'est&nbsp;pas&nbsp;vide');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isNotEmpty('champ','Le&nbsp;champ&nbsp;ne&nbsp;doit&nbsp;pas&nbsp;&amp;ecirc;tre&nbsp;vide');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEmailValid('champ','L\email&nbsp;est&nbsp;invalide');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;matchExpression('champ','/[0-9]/','Le&nbsp;champ&nbsp;n\'est&nbsp;pas&nbsp;au&nbsp;bon&nbsp;format');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;notMatchExpression('champ','/[a-zA-Z]/','Le&nbsp;champ&nbsp;ne&nbsp;doit&nbsp;pas&nbsp;&amp;ecirc;tre&nbsp;a&nbsp;ce&nbsp;format');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$oPluginValid</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">save</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">()){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parent</span><span style="color: #007700">::</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>C&#039;est cette classe qui sera instanci&eacute; lors de l&#039;hydratation, ainsi lorsque vous demander la liste des articles, vous allez r&eacute;cup&eacute;rer un tableau d&#039;objets row_article<br />Ainsi tous les objets retourn&eacute;s auront acc&egrave;s aux m&eacute;thodes d&eacute;finies ici.<br /><br /><h3> private function getCheck()</h3>Cette m&eacute;thode est appel&eacute;e &agrave; l&#039;enregistrement pour v&eacute;rifier la coh&eacute;rence des donn&eacute;es.<br />Vous avez des exemples de contraintes que vous pouvez ajouter<br /><br /><h3> private function isValid()</h3>Indique si les contraintes ont &eacute;t&eacute; respect&eacute;es.<br /><br /><h3> public function getListError()</h3>Si les contraintes ne sont pas respect&eacute;es, cette m&eacute;thode retourne une liste des contraintes non respect&eacute;es.<br /><br /><h3> public function save()</h3>Permet l&#039;enregistrement de l&#039;objet, notez ici que vous pouvez faire des modifications avant l&#039;enregistrement final puisque vous avez la main sur la m&eacute;thode appel&eacute;e.<br /><br /><br /><br /><br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

@@ -1,0 +1,6 @@
+<map id="__construct" name="__construct">
+<area shape="rect" id="node2" href="$classplugin__log.html#aebd9f6ff2bc2e2c1521ea54b002d1322" title="setApplication" alt="" coords="145,5,249,32"/>
+<area shape="rect" id="node3" href="$classplugin__log.html#a658f5a7d3a740398067c4f013cdd2c51" title="setInformation" alt="" coords="145,56,250,83"/>
+<area shape="rect" id="node4" href="$classplugin__log.html#abf1074aa43244de4277c01aa4661dcb1" title="setWarning" alt="" coords="153,107,241,133"/>
+<area shape="rect" id="node5" href="$classplugin__log.html#af9692604967f1b6740f3b53ef37bd68e" title="setError" alt="" coords="163,157,231,184"/>
+</map>

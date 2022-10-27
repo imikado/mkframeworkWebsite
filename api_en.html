@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MkFramework V4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="site/css/bootstrap.min.css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				<a class="navbar-brand" href="/"> MkFramework</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						
+			<li><h4>The website</h4></li>
+		
+
+					<li><a href="accueil_en.html">Home</a></li>
+		
+
+					<li><a href="news_en.html">News</a></li>
+		
+
+			<li><h4>Presentation</h4></li>
+		
+
+					<li><a href="fonctionnement_en.html">Diagram</a></li>
+		
+
+					<li><a href="builder_en.html">The web generator</a></li>
+		
+
+					<li><a href="orm_en.html">The ORM <br/>(abstract model layer)</a></li>
+		
+
+					<li><a href="configuration_en.html">Setup files</a></li>
+		
+
+					<li><a href="security_en.html">Security</a></li>
+		
+
+			<li class="active"><a href="api.html">The API (Phpdoc)</a></li>
+		
+
+			<li><h4>Learn</h4></li>
+		
+
+					<li><a href="start_en.html">Start</a></li>
+		
+
+					<li><a href="tutoriaux_en.html">Tutorials</a></li>
+		
+
+					<li><a href="otherscreencasts_en.html">Screencast  tutorials</a></li>
+		
+
+			<li><h4>Download</h4></li>
+		
+
+					<li><a href="telecharger_en.html">Framework &amp; more</a></li>
+		
+
+			<li><h4>Help</h4></li>
+		
+
+					<li><a href="faq_en.html">FAQ <br/>Freq asked questions</a></li>
+		
+
+					<li><a href="index.php?:nav=forum&lang=en">Forum / help</a></li>
+		
+
+ 
+					</ul>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+										<li><a  href="api.html">FR</a></li>
+
+					<li><a style="font-weight:bold" href="api_en.html">EN</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!-- container -->
+    </div>
+		
+	<div class="container">
+		
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+		<h1>API</h1>
+	<h2>Classes du framework</h2>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/class__root.html">_root</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Vertebral column of your website</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/class__cache.html">_cache</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Class to manage cache</span>
+			
+									| <a href="faq_en.html#cache" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/class__request.html">_request</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Class used by the framework to get parametrs GET/POST _root::getRequest()</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/class__layout.html">_layout</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Class to manage layout</span>
+			
+									| <a href="otherscreencasts_en_4.html" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/class__view.html">_view</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Class to manage view</span>
+			
+									| <a href="faq_en.html#passerunevariabledelactionalavue" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/class__file.html">_file</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Class of file management</span>
+			
+									| <a href="faq_en.html#filegetcontent" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/class__dir.html">_dir</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Class of directory management</span>
+			
+									| <a href="faq_en.html#dirlist" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+		<h2>Plugins</h2>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__auth.html">plugin_auth</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Authentication plugin used by _root::getAuth(), and configure in file conf/site.ini.php</span>
+			
+									| <a href="faq_en.html#authenabled" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__check.html">plugin_check</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin used by the plugin_validation to check data</span>
+			
+									| <a href="tutoriaux_en.html#ajoutcheck" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__chart.html">plugin_chart</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin used to generate charts</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__date.html">plugin_date</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to manage date, to calculate and format</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__datetime.html">plugin_datetime</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Idem about plugin_date with time management</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__debug.html">plugin_debug</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to communicate with debug bar</span>
+			
+									| <a href="tutoriaux.html#debug" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__gestionuser.html">plugin_gestionuser</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin of permission management, used by _root::getACL(), and configured in conf/site.ini.php</span>
+			
+									| <a href="tutoriaux_en.html#acl" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__html.html">plugin_html</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to manage/generate HTML</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__form.html">plugin_form</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to manage/generate form HTML</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__i18n.html">plugin_i18n</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to manage multi-language, use files data/i18n/fr.php or en.php</span>
+			
+									| <a href="faq_en.html#i18n" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__jquery.html">plugin_jquery</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to generate functon jQuery</span>
+			
+									| <a href="faq_en.html#jqueryinnerhtml" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__log.html">plugin_log</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to manage log used by _root::getLog(), and configured in file conf/site.ini.php</span>
+			
+									| <a href="faq_en.html#log" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__mail.html">plugin_mail</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to send email</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__rss.html">plugin_rss</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to manage RSS</span>
+			
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__upload.html">plugin_upload</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to manage upload with a form</span>
+			
+									| <a href="tutoriaux_en.html#upload" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__valid.html">plugin_valid</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to check data</span>
+			
+									| <a href="tutoriaux_en.html#formulaire" target="_blank">Tutoriel/faq</a>
+						
+				</p>
+					<p style="margin:0px;margin-left:10px;"><a class="strong" style="text-decoration:none" target="show" href="doxygen/classplugin__xsrf.html">plugin_xsrf</a>
+		
+								<span style="color:#444;margin:0px;margin-left:20px;">Plugin to manage token to protect xsrf/csrf faults</span>
+			
+						
+				</p>
+	<iframe name="show" id="show" style="width:100%;height:600px;border:0px"></iframe>
+		</div><!-- /.blog-main -->
+
+		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+			
+			 
+			<p><button onclick="goTo('telecharger.html');" type="button" class="btn btn-primary">T&eacute;l&eacute;charger le framework</button></p>
+			
+			<p><a href="https://twitter.com/mkframework" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @mkframework</a></p>
+			
+			
+			
+			<div class="sidebar-module">
+					 <h4>The website</h4>
+          <ul class="nav">
+							<li><a href="accueil_en.html">Home</a></li>
+							<li><a href="news_en.html">News</a></li>
+								</ul>
+				 <h4>Presentation</h4>
+          <ul class="nav">
+							<li><a href="fonctionnement_en.html">Diagram</a></li>
+							<li><a href="builder_en.html">The web generator</a></li>
+							<li><a href="orm_en.html">The ORM <br/>(abstract model layer)</a></li>
+							<li><a href="configuration_en.html">Setup files</a></li>
+							<li><a href="security_en.html">Security</a></li>
+					<li class="active"><a href="api.html">The API (Phpdoc)</a></li>
+								</ul>
+				 <h4>Learn</h4>
+          <ul class="nav">
+							<li><a href="start_en.html">Start</a></li>
+							<li><a href="tutoriaux_en.html">Tutorials</a></li>
+							<li><a href="otherscreencasts_en.html">Screencast  tutorials</a></li>
+								</ul>
+				 <h4>Download</h4>
+          <ul class="nav">
+							<li><a href="telecharger_en.html">Framework &amp; more</a></li>
+								</ul>
+				 <h4>Help</h4>
+          <ul class="nav">
+							<li><a href="faq_en.html">FAQ <br/>Freq asked questions</a></li>
+					<li><a target="_blank" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum / help</a></li>
+		 </ul>
+</div>
+ 
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+	
+	
+	 <div class="blog-footer">
+       
+      <p>
+        <a href="#">Retour en haut</a>
+      </p>
+    </div>
+	
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="site/js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="site/js/bootstrap.min.js"></script>
+  
+ 
+</body>
+</html>
+
+<!--cache -->

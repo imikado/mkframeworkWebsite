@@ -1,0 +1,23 @@
+<map id="getLog" name="getLog">
+<area shape="rect" id="node2" href="$classabstract__model.html#a04f56952f146aba98f88c32e7474193b" title="abstract_model\\findOneSimple" alt="" coords="119,5,319,32"/>
+<area shape="rect" id="node3" href="$classabstract__model.html#ade52bdcdd15cdf1a1bf31160b186b850" title="abstract_model\\findOne" alt="" coords="139,56,299,83"/>
+<area shape="rect" id="node4" href="$classabstract__model.html#a1a59505502682ff262820c794f5fd043" title="abstract_model\\findMany" alt="" coords="135,107,303,133"/>
+<area shape="rect" id="node5" href="$classabstract__model.html#ae9637c14563f71a0c5910e3229488a7d" title="abstract_model\\findManySimple" alt="" coords="115,157,323,184"/>
+<area shape="rect" id="node6" href="$classabstract__model.html#a1909f4b7f8129c7790cb75de2ffbe1e4" title="abstract_model\\execute" alt="" coords="138,208,299,235"/>
+<area shape="rect" id="node7" href="$classabstract__model.html#a15dc1a73f6da2cba3f80727a3f4aeddd" title="abstract_model\\update" alt="" coords="141,259,296,285"/>
+<area shape="rect" id="node8" href="$classabstract__model.html#a92414af9ebb0d9d7fca394808d445052" title="abstract_model\\insert" alt="" coords="145,309,292,336"/>
+<area shape="rect" id="node9" href="$classabstract__model.html#a20ce0afb6dbcbad3e548d541255cad59" title="abstract_model\\delete" alt="" coords="143,360,294,387"/>
+<area shape="rect" id="node10" href="$class__layout.html#ae7a417c1e928bce190c326d83c6f4217" title="_layout\\__construct" alt="" coords="371,487,507,513"/>
+<area shape="rect" id="node11" href="$class__layout.html#a7713792da3b0a5a746464a3620587f83" title="_layout\\__set" alt="" coords="169,461,269,488"/>
+<area shape="rect" id="node12" href="$class__layout.html#a325ceef8234f0f209150a206a434df62" title="_layout\\__get" alt="" coords="169,512,269,539"/>
+<area shape="rect" id="node13" href="$class__layout.html#a3d907ee1830988c96dfbbd8dd32b284c" title="_layout\\setLayout" alt="" coords="156,563,281,589"/>
+<area shape="rect" id="node14" href="$class__layout.html#a3e236fe08a09f168d505ba14edb58a23" title="_layout\\add" alt="" coords="174,613,263,640"/>
+<area shape="rect" id="node15" href="$class__layout.html#a15df76a69ae4e79ce55f77b7c64cd5f1" title="_layout\\addModule" alt="" coords="153,664,284,691"/>
+<area shape="rect" id="node16" href="$class__layout.html#a2b8e3779f5bd8c38f70307574859bd36" title="_layout\\show" alt="" coords="169,715,268,741"/>
+<area shape="rect" id="node17" href="$class__layout.html#aefad4c11248b7c6fa6581c25d82bf9c6" title="_layout\\getOutput" alt="" coords="156,765,281,792"/>
+<area shape="rect" id="node18" href="$class__layout.html#a8b99d33efab3d24f9058918673d20926" title="_layout\\load" alt="" coords="173,816,265,843"/>
+<area shape="rect" id="node19" href="$class__view.html#ae99d216befe55f06a6f7a6b4b48978e0" title="_view\\__construct" alt="" coords="155,867,283,893"/>
+<area shape="rect" id="node20" href="$class__view.html#a2b8e3779f5bd8c38f70307574859bd36" title="_view\\show" alt="" coords="173,917,264,944"/>
+<area shape="rect" id="node21" href="$classplugin__gestionuser.html#a4dc4293e943830edb0910979e37fba8d" title="plugin_gestionuser\\can" alt="" coords="141,968,296,995"/>
+<area shape="rect" id="node22" href="$classplugin__routing.html#a3c0e030da365603ff62065745cdf1c41" title="plugin_routing\\parseUrl" alt="" coords="141,1019,296,1045"/>
+</map>

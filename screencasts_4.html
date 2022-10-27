@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MkFramework V4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="site/css/bootstrap.min.css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				<a class="navbar-brand" href="/"> MkFramework</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						
+			<li><h4>Le site</h4></li>
+		
+
+					<li><a href="accueil.html">Accueil</a></li>
+		
+
+					<li><a href="news.html">News</a></li>
+		
+
+			<li><h4>Pr&eacute;sentation</h4></li>
+		
+
+					<li><a href="fonctionnement.html">Sch&eacute;mas</a></li>
+		
+
+					<li><a href="builder.html">Le g&eacute;n&eacute;rateur web</a></li>
+		
+
+					<li><a href="orm.html">L'ORM <br/>(La couche mod&egrave;le)</a></li>
+		
+
+					<li><a href="configuration.html">Configuration</a></li>
+		
+
+					<li><a href="security.html">La s&eacute;curit&eacute;</a></li>
+		
+
+					<li><a href="api.html">L'API (Phpdoc)</a></li>
+		
+
+			<li><h4>Apprendre</h4></li>
+		
+
+					<li><a href="start.html">D&eacute;marrer</a></li>
+		
+
+					<li><a href="tutoriaux.html">Tutoriaux</a></li>
+		
+
+			<li class="active"><a href="screencasts.html">Tutotoriaux vid&eacute;os</a></li>
+		
+
+					<li><a href="bestpractices.html">Bonnes pratiques</a></li>
+		
+
+					<li><a href="slides.html">Slides</a></li>
+		
+
+			<li><h4>T&eacute;l&eacute;charger</h4></li>
+		
+
+					<li><a href="telecharger.html">Framework &amp; plus</a></li>
+		
+
+					<li><a href="projets.html">Les applications</a></li>
+		
+
+					<li><a href="modules.html">Les modules</a></li>
+		
+
+					<li><a href="plugins.html">Les plugins</a></li>
+		
+
+			<li><h4>Aide</h4></li>
+		
+
+					<li><a href="faq.html">FAQ <br/>Foire aux questions</a></li>
+		
+
+					<li><a href="index.php?:nav=forum">Forum / aide</a></li>
+		
+
+ 
+					</ul>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+										<li><a style="font-weight:bold" href="screencasts_4.html">FR</a></li>
+
+					<li><a  href="otherscreencasts_en_4.html">EN</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!-- container -->
+    </div>
+		
+	<div class="container">
+		
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+		<style>
+.popup{
+top:200px;
+position:absolute;	
+background:white;
+border:3px solid gray;
+display:none;
+}
+.popup p{
+text-align:right;
+background:gray;
+margin:0px;
+}
+.popup p a{
+color:white;
+text-decoration:none;
+}
+.popup h2{
+margin:0px;
+}
+p.comment{
+margin-left:8px;
+}
+</style>
+<script>
+function showMovie(youtubeId){
+	var a=getById('popupMovie');
+	if(a){
+		a.style.display='block';
+		getById('frame').src='http://www.youtube.com/embed/'+youtubeId;
+	}
+}
+function closeMovie(){
+	var a=getById('popupMovie');
+	if(a){
+		a.style.display='none';
+	}
+}
+</script>
+<h1>Podcasts vid&eacute;os</h1>
+			<h4><a href="podcasts_0.html" onclick="showMovie('5ofFIwkBgCY');return false;">Episode 1: Pr&eacute;sentation</a></h4>
+			<p class="comment">Support de tutoriel <a href="podcastsTuto_0.html">disponible ici</a></p>
+				<h4><a href="podcasts_1.html" onclick="showMovie('7YPNU1QedaA');return false;">Episode 2: Builder: couche mod&egrave;le</a></h4>
+			<p class="comment">Support de tutoriel <a href="podcastsTuto_1.html">disponible ici</a></p>
+				<h4><a href="podcasts_2.html" onclick="showMovie('1REi2ee9gek');return false;">Episode 3: Builder: CRUD listage</a></h4>
+			<p class="comment">Support de tutoriel <a href="podcastsTuto_2.html">disponible ici</a></p>
+				<h4><a href="podcasts_3.html" onclick="showMovie('jrs3ZxG_57s');return false;">Episode 4: Builder: CRUD formulaire d'ajout</a></h4>
+			<p class="comment">Support de tutoriel <a href="podcastsTuto_3.html">disponible ici</a></p>
+				<h4><a href="podcasts_4.html" onclick="showMovie('JynOUKeFFZc');return false;">Episode 5: Builder: module d'authentification</a></h4>
+			<p class="comment">Support de tutoriel <a href="podcastsTuto_4.html">disponible ici</a></p>
+				<h4><a href="podcasts_5.html" onclick="showMovie('RdxqIjpxvYU');return false;">Episode 6: Builder: module menu</a></h4>
+			<p class="comment">Support de tutoriel <a href="podcastsTuto_5.html">disponible ici</a></p>
+				<h4><a href="podcasts_6.html" onclick="showMovie('bw8AOy6VE48');return false;">Episode 7: Gestion des droits 1/4</a></h4>
+			<p class="comment">Support de tutoriel <a href="podcastsTuto_6.html">disponible ici</a></p>
+				<h4><a href="podcasts_7.html" onclick="showMovie('MVdMx_uoFa4');return false;">Episode 8: Gestion des droits 2/4</a></h4>
+			<p class="comment">Support de tutoriel <a href="podcastsTuto_7.html">disponible ici</a></p>
+				<h4><a href="podcasts_8.html" onclick="showMovie('JBE1IrJzh24');return false;">Episode 9: Gestion des droits 3/4</a></h4>
+				<h4><a href="podcasts_9.html" onclick="showMovie('xn2QSLlBF2o');return false;">Episode 10: Gestion des droits 4/4</a></h4>
+				<h4><a href="podcasts_10.html" onclick="showMovie('tZPRlhXc-iw');return false;">Episode 11: Faire une page de recherche</a></h4>
+				<h4><a href="podcasts_11.html" onclick="showMovie('c3TO1xcY5LU');return false;">Episode 12: Builder: Gestion de droits 1/2</a></h4>
+				<h4><a href="podcasts_12.html" onclick="showMovie('_yjbP9ig74M');return false;">Episode 13: Builder: Gestion de droits 2/2</a></h4>
+				<h4><a href="podcasts_13.html" onclick="showMovie('CqaNWV1gaaI');return false;">Episode 14: Barre de debug</a></h4>
+				<h4><a href="podcasts_14.html" onclick="showMovie('SqSZ0mQlJS0');return false;">Episode 15: Module Table 1/2</a></h4>
+				<h4><a href="podcasts_15.html" onclick="showMovie('hx0p3WxOUJI');return false;">Episode 16: Module Table 2/2</a></h4>
+				<h4><a href="podcasts_16.html" onclick="showMovie('R2oVAhzs6-w');return false;">Episode 17: Builder, nouveau g&eacute;n&eacute;rateur de couche mod&egrave;le (avec contraintes)</a></h4>
+				<h4><a href="podcasts_17.html" onclick="showMovie('6X-ZmbfXi-E');return false;">Episode 18: Builder, cr&eacute;er une application Boostrap</a></h4>
+				<h4><a href="podcasts_18.html" onclick="showMovie('oRabWIGUHOg');return false;">Episode 19: Explication de l'utilisation des layouts et des vues 1/2</a></h4>
+				<h4><a href="podcasts_19.html" onclick="showMovie('QVOghs-EpXE');return false;">Episode 20: Explication de l'utilisation des layouts et des vues 2/2</a></h4>
+				<h4><a href="podcasts_20.html" onclick="showMovie('f5eiYD38pvk');return false;">Episode 21: G&eacute;n&eacute;ration d'un menu dynamique </a></h4>
+	
+<h1>Tutoriaux vid&eacute;os</h1>
+			<h4><a href="screencasts_0.html" onclick="showMovie('2PN-zHB-S9M');return false;">1.Installation du framework</a></h4>
+				<h4><a href="screencasts_1.html" onclick="showMovie('2LKeWRTKClI');return false;">2.Pr&eacute;sentation du builder</a></h4>
+				<h4><a href="screencasts_2.html" onclick="showMovie('Q8xJhKNTeVc');return false;">3.Hello World</a></h4>
+				<h4><a href="screencasts_3.html" onclick="showMovie('s510DWKsew4');return false;">4.Cr&eacute;er un module CRUD</a></h4>
+				<h4><a href="screencasts_4.html" onclick="showMovie('TH3D2cHgZKY');return false;">5.Cr&eacute;er un module int&eacute;grable: menu</a></h4>
+					<p class="comment">Note: ce tutorial s'appuie sur l'application cr&eacute; dans le tutoriel au dessus.</p>
+				<h4><a href="screencasts_5.html" onclick="showMovie('LzW7P-nOvuE');return false;">6.Utiliser un layout et ses "emplacements"</a></h4>
+				<h4><a href="screencasts_6.html" onclick="showMovie('Yv3ZSd1bW_Q');return false;">7.Cr&eacute;er une application avec deux tables li&eacute;es</a></h4>
+				<h4><a href="screencasts_7.html" onclick="showMovie('f6U-GqNeRzg');return false;">8.Utilisez le plugin jQuery</a></h4>
+				<h4><a href="screencasts_8.html" onclick="showMovie('8_3fpoBYU8E');return false;">9.Faire de l'url rewriting</a></h4>
+					<p class="comment">Note: le module mod_rewrite doit &ecirc;tre activ&eacute; sur votre serveur apache</p>
+				<h4><a href="screencasts_9.html" onclick="showMovie('iMEd-aNiqdQ');return false;">10.Cr&eacute;er un module d'authentification pour restreindre l'acc&egrave;s &agrave; votre application</a></h4>
+				<h4><a href="screencasts_10.html" onclick="showMovie('YWsKspVgeig');return false;">11.Cr&eacute;er un module int&eacute;grable li&eacute; &agrave; un autre module</a></h4>
+				<h4><a href="screencasts_11.html" onclick="showMovie('7mQuWs_d4bw');return false;">12.G&eacute;rer les permissions/droits 1/2</a></h4>
+					<p class="comment">Ce tutorial sera compl&eacute;t&eacute;e d'un tutorial d&eacute;taillant l'utilisation des droits</p>
+				<h4><a href="screencasts_12.html" onclick="showMovie('eLJ-iiPt1A0');return false;">13.G&eacute;rer les permissions/droits 2/2</a></h4>
+				<h4><a href="screencasts_13.html" onclick="showMovie('eSwCNLCT_d0');return false;">14.Ecrire un module CRUD &agrave; partir de z&eacute;ro 1/4</a></h4>
+				<h4><a href="screencasts_14.html" onclick="showMovie('t-6Y44iA0Ko');return false;">15.Ecrire un module CRUD &agrave; partir de z&eacute;ro 2/4</a></h4>
+				<h4><a href="screencasts_15.html" onclick="showMovie('8QHv7Qu45DU');return false;">16.Ecrire un module CRUD &agrave; partir de z&eacute;ro 3/4</a></h4>
+				<h4><a href="screencasts_16.html" onclick="showMovie('qDFAZRoZkGM');return false;">17.Ecrire un module CRUD &agrave; partir de z&eacute;ro 4/4</a></h4>
+				<h4><a href="screencasts_17.html" onclick="showMovie('uV5l1V8qevU');return false;">18.Explorez vos projets gr&acirc;ce au builder</a></h4>
+				<h4><a href="screencasts_18.html" onclick="showMovie('lS3nTQS3_Us');return false;">19.Cr&eacute;ez votre premi&egrave;re application Bootstrap</a></h4>
+	
+
+<p>
+		Vous pouvez demander un tutorial vid&eacute;o ici : 
+		<a href="http://www.developpez.net/forums/d1343958/mkframework/demande-tutoriaux-videos/">http://www.developpez.net/forums/d1343958/mkframework/demande-tutoriaux-videos/</a>
+</p>
+<p>
+		Pour vous abonner &agrave; la chaine Youtube : 
+		<a href="http://www.youtube.com/user/imikado" target="_blank">http://www.youtube.com/user/imikado</a>
+</p>
+
+<div class="popup" id="popupMovie" style="display:block">
+	<p><a href="#" onclick="closeMovie();return false">Fermer</a></p>
+	<iframe  id="frame" width="560" height="315" src="http://www.youtube.com/embed/TH3D2cHgZKY" frameborder="0" allowfullscreen></iframe>
+</div>
+
+		</div><!-- /.blog-main -->
+
+		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+			
+			 
+			<p><button onclick="goTo('telecharger.html');" type="button" class="btn btn-primary">T&eacute;l&eacute;charger le framework</button></p>
+			
+			<p><a href="https://twitter.com/mkframework" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @mkframework</a></p>
+			
+			
+			
+			<div class="sidebar-module">
+					 <h4>Le site</h4>
+          <ul class="nav">
+							<li><a href="accueil.html">Accueil</a></li>
+							<li><a href="news.html">News</a></li>
+								</ul>
+				 <h4>Pr&eacute;sentation</h4>
+          <ul class="nav">
+							<li><a href="fonctionnement.html">Sch&eacute;mas</a></li>
+							<li><a href="builder.html">Le g&eacute;n&eacute;rateur web</a></li>
+							<li><a href="orm.html">L'ORM <br/>(La couche mod&egrave;le)</a></li>
+							<li><a href="configuration.html">Configuration</a></li>
+							<li><a href="security.html">La s&eacute;curit&eacute;</a></li>
+							<li><a href="api.html">L'API (Phpdoc)</a></li>
+								</ul>
+				 <h4>Apprendre</h4>
+          <ul class="nav">
+							<li><a href="start.html">D&eacute;marrer</a></li>
+							<li><a href="tutoriaux.html">Tutoriaux</a></li>
+					<li class="active"><a href="screencasts.html">Tutotoriaux vid&eacute;os</a></li>
+							<li><a href="bestpractices.html">Bonnes pratiques</a></li>
+							<li><a href="slides.html">Slides</a></li>
+								</ul>
+				 <h4>T&eacute;l&eacute;charger</h4>
+          <ul class="nav">
+							<li><a href="telecharger.html">Framework &amp; plus</a></li>
+							<li><a href="projets.html">Les applications</a></li>
+							<li><a href="modules.html">Les modules</a></li>
+							<li><a href="plugins.html">Les plugins</a></li>
+								</ul>
+				 <h4>Aide</h4>
+          <ul class="nav">
+							<li><a href="faq.html">FAQ <br/>Foire aux questions</a></li>
+					<li><a target="_blank" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum / aide</a></li>
+		 </ul>
+</div>
+ 
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+	
+	
+	 <div class="blog-footer">
+       
+      <p>
+        <a href="#">Retour en haut</a>
+      </p>
+    </div>
+	
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="site/js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="site/js/bootstrap.min.js"></script>
+  
+ 
+</body>
+</html>
+
+<!--cache -->

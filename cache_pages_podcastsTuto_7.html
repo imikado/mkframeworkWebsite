@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="podcastsTuto_7.html">FR</a></li>
+
+			<li><a class="nav-link"  href="podcastsTuto_7.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Episode 8: Gestion des droits 2/4</h1><h2>I. Introduction</h2>Ce tutoriel fait partie d&#039;une s&eacute;rie de 4 vid&eacute;os permettant de mettre en place une gestion de droits.<br /><br />Dans la <a href="podcasts_6.html">premi&egrave;re partie </a> (support <a href="podcastsTuto_6.html">ici </a>), nous avons cr&eacute;&eacute; les tables, g&eacute;n&eacute;r&eacute; la couche mod&egrave;le puis ajout&eacute; un module d&#039;authentification avec inscription.<br /><br /><h2>II. Cr&eacute;ons un premier utilisateur</h2>Nous avons ici besoin d&#039;utilisateurs: cliquez sur le lien &quot;s&#039;inscrire&quot; et renseignez un premier utilisateur &quot;admin&quot;<br /><br /><h2>III. Connectez-vous</h2>Identifiez-vous avec cet utilisateur &quot;admin&quot;<br /><br /><h2>IV. G&eacute;n&eacute;rons des modules CRUDs</h2>L&#039;utilisateur est cr&eacute;&eacute;, maintenant nous allons permettre d&#039;administrer les droits.<br />Rendez-vous sur le builder:<br /><img src="data/img/podcastTuto_7builder.jpg" /><br /><br />Commen&ccedil;ons par la classe model_Groupe.php<br /><img src="data/img/podcastTuto_7builder2.jpg" /><br />G&eacute;n&eacute;rez.<br /><br />Puis pour la classe model_Permission.php<br /><img src="data/img/podcastTuto_7builder3.jpg" /><br />Pour le champ groupe_id, pensez &agrave; modifier le label pour &quot;groupe&quot; et de s&eacute;lectionner en valeur &quot;Select en utilisant model_Groupe::getSelect()&quot;<br />G&eacute;n&eacute;rez<br /><br /><h2>V. G&eacute;n&eacute;rons un module menu</h2>Pour rappel, le module menu a fait l&#039;objet d&#039;une <a href="podcasts_5.html">vid&eacute;o ici </a> (<a href="podcastsTuto_5.html">support disponible ici </a>)<br /><br />Apr&egrave;s avoir g&eacute;n&eacute;r&eacute; nos deux modules CRUD Groupe et Permission, nous allons ajouter un menu afin de naviguer entre ces modules.<br />Cliquez sur &quot;Cr&eacute;er un module menu&quot;<br /><img src="data/img/podcastTuto_7builder4.jpg" /><br />Validez le formulaire.<br /><br /><img src="data/img/podcastTuto_7builder5.jpg" /><br />Le builder vous affiche le code &agrave; coller dans la m&eacute;thode before() de vos modules pour y inclure ce menu.<br /><br />Editer les fichiers module/default/main.php, module/Permission/main.php et module/default/Groupe/main.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">before</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">_layout</span><span style="color: #007700">(</span><span style="color: #DD0000">'template1'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//assignez&nbsp;le&nbsp;menu&nbsp;a&nbsp;l'emplacement&nbsp;menu<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addModule</span><span style="color: #007700">(</span><span style="color: #DD0000">'menu'</span><span style="color: #007700">,</span><span style="color: #DD0000">'menu::index'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h2>VI. Le site avec le menu</h2>En cliquant sur &quot;voir le site&quot;, vous pouvez voir le menu int&eacute;gr&eacute;<br /><img src="data/img/podcastTuto_7builder6.jpg" /><br /><br /><h2>VII. Renseignez d&#039;abord les groupes</h2>Cliquez sur Groupes dans le menu, et renseigner deux groupes: &quot;admin&quot; et &quot;redacteur&quot;<br /><img src="data/img/podcastTuto_7builder7.jpg" /><br /><br /><h2>VIII. Renseignez ensuite les permissions</h2>Nos groupes cr&eacute;&eacute;s, nous allons ajouter des droits pour chacun des profils.<br /><br />L&#039;id&eacute;e est simple: &agrave; chaque fois que vous avez un &eacute;lement que vous voulez mettre sous droits, vous aller cr&eacute;&eacute; la permission.<br /><br />Cliquez sur le menu &quot;Permission&quot;<br />Nous allons commencer par ajouter un droit d&#039;&eacute;dition des utilisateurs:<br /><img src="data/img/podcastTuto_7builder8.jpg" /><br />Ajoutez<br /><img src="data/img/podcastTuto_7builder9.jpg" /><br />Ici, on peut lire que le groupe &quot;admin&quot; &agrave; le droit (ALLOW) de modifier (edit) les utilisateurs (users)<br /><br /><img src="data/img/podcastTuto_7builder10.jpg" /><br />Maintenant nous pouvons voir que les r&eacute;dacteurs peuvent &eacute;crire des articles et les admin modifier les utilisateurs<br /><br /><h2>IX. Parenth&egrave;se sur la gestion mono-groupe / multi-groupes</h2>Dans notre tutoriel, nous n&#039;utiliserons pas la colonne &quot;allowdeny&quot;, car nous avons ici une configuration mono groupe:<br />En effet pour g&eacute;rer les droits on peut soit avoir une gestion mono groupes comme ici: chaque utilisateur fait partie d&#039;un seul groupe qui lui conf&egrave;re des droits.<br />On peut &eacute;galement avoir une gestion multi groupes: ici chaque utilisateur ferait parti d&#039;un ou plusieurs groupes.<br />Dans cette seconde configuration, on pourrait avoir soit une addition de droits : chaque profil ajoutant des droits suppl&eacute;m&eacute;ntaire, soit avoir une soustraction:<br />Par exemple: un utilisateur membre du groupe comptabilit&eacute; a certains droits, et en lui ajoutant le groupe &quot;stagiaire&quot;, on lui ajouterait des contraintes supprimant certains d&#039;entre eux.<br />Dans cette seconde configuration, le champ &quot;allowdeny&quot; a un int&eacute;t&ecirc;t.<br /><br /><h2>X. Ajoutons la possibilit&eacute; d&#039;administrer les utilisateurs</h2>Dans le builder cliquez sur &quot;Cr&eacute;er un module CRUD&quot;<br />S&eacute;lectionnez &quot;model_Account.php&quot;<br /><img src="data/img/podcastTuto_7builder11.jpg" /><br />Nous d&eacute;cochons le champs mot de passe, car nous souhaitons ici juste administrer les groupes.<br />Nous laissons comme actions coch&eacute;es uniquement &quot;Formulaire de modification&quot;<br />G&eacute;n&eacute;rez<br /><br />En cliquant sur le lien g&eacute;n&eacute;r&eacute;:<br /><img src="data/img/podcastTuto_7builder12.jpg" /><br /><br />Notez qu&#039;il manque le menu, nous allons comme pr&eacute;c&eacute;dement ajouter la ligne suivante dans la m&eacute;thode before() du module CRUD &quot;account&quot; tout juste g&eacute;n&eacute;r&eacute;: module/Account/main.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">module_Account&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_module</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">before</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">_layout</span><span style="color: #007700">(</span><span style="color: #DD0000">'template1'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//assignez&nbsp;le&nbsp;menu&nbsp;a&nbsp;l'emplacement&nbsp;menu<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">oLayout</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addModule</span><span style="color: #007700">(</span><span style="color: #DD0000">'menu'</span><span style="color: #007700">,</span><span style="color: #DD0000">'menu::index'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Nous avons notre menu de retour.<br /><img src="data/img/podcastTuto_7builder13.jpg" /><br /><br /><h2>XI. Ajoutons une entr&eacute;e dans notre menu</h2>Il nous manque ici un lien dans le menu pour acc&eacute;der &agrave; ce nouveau module.<br />Editons le fichier module/menu/main.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">Class&nbsp;</span><span style="color: #0000BB">module_menu&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_moduleembedded</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_index</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$tLink</span><span style="color: #007700">=array(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Accueil'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'default::index'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Groupes'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Groupe::list'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Permissions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Permission::list'</span><span style="color: #007700">,<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">_view</span><span style="color: #007700">(</span><span style="color: #DD0000">'menu::index'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tLink</span><span style="color: #007700">=</span><span style="color: #0000BB">$tLink</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$oView</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Nous voyons ici qu&#039;il y a un simple tableau cl&eacute; / valeur<br />Dont la cl&eacute; est le lib&eacute;ll&eacute; et la valeur le couple module/action.<br />Ajoutons une ligne dans le tableau pour nos utilisateurs:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$tLink</span><span style="color: #007700">=array(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Accueil'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'default::index'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Groupes'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Groupe::list'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Permissions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Permission::list'</span><span style="color: #007700">,<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Utilisateurs'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Account::list'</span><span style="color: #007700">,<br /><br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div>Nous avons bien notre nouveau lien dans le menu:<br /><img src="data/img/podcastTuto_7builder14.jpg" /><br /><br /><h2>XII. Renseignons notre utilisateur admin</h2>Editez l&#039;utilisateur admin, et renseigner dans le menu d&eacute;roulant &quot;admin&quot;, puis valider.<br /><img src="data/img/podcastTuto_7builder15.jpg" /><br /><br /><h2>XIII. Ajoutons un lien de d&eacute;connexion</h2>Il nous manque un lien de d&eacute;connexion.<br /><br />Pour information, dans notre module &quot;auth&quot; permettant de g&eacute;rer l&#039;authentification, nous avons:<br /><img src="data/img/podcastTuto_7builder16.jpg" /><br />Vous pouvez voir ici qu&#039;il y a une m&eacute;thode _logout(), on a donc une action &quot;logout&quot; permettant de se d&eacute;connecter.<br /><br />Revenos dans le module menu, fichier module/menu/main.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$tLink</span><span style="color: #007700">=array(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Accueil'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'default::index'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Groupes'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Groupe::list'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Permissions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Permission::list'</span><span style="color: #007700">,<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Utilisateurs'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Account::list'</span><span style="color: #007700">,<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Se&nbsp;d&amp;eacute;connecter'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'auth::logout'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div>Ce qui donnera:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">Class&nbsp;</span><span style="color: #0000BB">module_menu&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_moduleembedded</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_index</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$tLink</span><span style="color: #007700">=array(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Accueil'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'default::index'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Groupes'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Groupe::list'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Permissions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Permission::list'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Utilisateurs'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Account::list'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Se&nbsp;d&amp;eacute;connecter'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'auth::logout'</span><span style="color: #007700">,<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">_view</span><span style="color: #007700">(</span><span style="color: #DD0000">'menu::index'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oView</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tLink</span><span style="color: #007700">=</span><span style="color: #0000BB">$tLink</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$oView</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><img src="data/img/podcastTuto_7builder17.jpg" /><br />Deconnectez-vous.<br /><br /><h2>XIII. Ajoutons un second utilisateur</h2>Passez par le formulaire d&#039;inscription popur renseigner un second utilisateur &quot;redac&quot;<br />Connectez-vous avec.<br />Cliquer sur le lien &quot;Utilisateurs&quot; et renseignez pour celui-ci le groupe &quot;redacteur&quot;<br /><img src="data/img/podcastTuto_7builder18.jpg" /><br />Validez<br /><img src="data/img/podcastTuto_7builder19.jpg" /><br />Nous avons bien ici nos deux utilisateurs.<br />Nous verrons dans le tutoriel suivant comment restreindre les droits en fonction de leur groupe respectif<br /><br /><br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item active">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="orm.html">FR</a></li>
+
+			<li><a class="nav-link"  href="orm_en.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="fonctionnement.html" >Sch&eacute;mas <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="builder.html" >Le g&eacute;n&eacute;rateur web <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item active">
+				<a class="nav-link" href="#" >L'ORM (La couche mod&egrave;le) <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="configuration.html" >Configuration <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="security.html" >La s&eacute;curit&eacute; <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+				
+			
+			<li class="nav-item ">
+				<a class="nav-link" href="scraftsmanship.html" >Software Craftsmanship <span class="sr-only">(current)</span></a>
+			</li>
+		
+			
+			
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>L&#039;ORM maison: la couche mod&egrave;le du framework</h1><h2>Au menu</h2><a href="#presentation">Pr&eacute;sentation </a><br /><a href="#laconfiguration">La configuration </a><br /><a href="#sesrequetes">Ecrire ses requ&ecirc;tes </a><br /><a href="#fairejointure">Faire une jointure </a><br /><a href="#modifierenregistrement">Modifier un enregistrement </a><br /><a href="#ajouterunenregistrement">Ajouter un enregistrement </a><br /><a href="#supprimerenregistrement">Supprimer un enregistrement </a><br /><a href="#automatiserretraitement">Automatiser un retraitement sur des enregistrements </a><br /><br /><a id="presentation" name="presentation"></a><br /><h2>Pr&eacute;sentation</h2>L&#039;ORM maison est inspir&eacute; de ce que j&#039;ai pu voir: un fichier par table situ&eacute; dans le r&eacute;pertoire mod&egrave;le<br />Un exemple de fichier:<br />Il est bas&eacute; sur les points suivants:<br />- performance<br />- transparence<br />- ergonomie<br /><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">model_article&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_model</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sClassRow</span><span style="color: #007700">=</span><span style="color: #DD0000">'row_article'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sTable</span><span style="color: #007700">=</span><span style="color: #DD0000">'article'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sConfig</span><span style="color: #007700">=</span><span style="color: #DD0000">'xml'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$tId</span><span style="color: #007700">=array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">_getInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">__CLASS__</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sTable</span><span style="color: #007700">.</span><span style="color: #DD0000">'&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findMany</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sTable</span><span style="color: #007700">.</span><span style="color: #DD0000">'&nbsp;ORDER&nbsp;BY&nbsp;id&nbsp;ASC'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">}<br /><br />class&nbsp;</span><span style="color: #0000BB">row_article&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_row</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sClassModel</span><span style="color: #007700">=</span><span style="color: #DD0000">'model_article'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findAuteur</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">model_auteur</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">auteur_id</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//permet&nbsp;de&nbsp;verifier&nbsp;la&nbsp;coherence&nbsp;de&nbsp;l'enregistrement<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">private&nbsp;function&nbsp;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">plugin_valid</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTab</span><span style="color: #007700">());<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;renseigner&nbsp;vos&nbsp;check&nbsp;ici<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEqual('champ','valeurB','Le&nbsp;champ&nbsp;doit&nbsp;etre&nbsp;egal&nbsp;a&nbsp;valeurB');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isNotEqual('champ','valeurB','Le&nbsp;champ&nbsp;ne&nbsp;doit&nbsp;pas&nbsp;etre&nbsp;egal&nbsp;a&nbsp;valeurB');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isUpperThan('champ','valeurB','Le&nbsp;champ&nbsp;doit&nbsp;etre&nbsp;superieur&nbsp;a&nbsp;valeurB');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isUpperOrEqualThan('champ','valeurB','Le&nbsp;champ&nbsp;doit&nbsp;etre&nbsp;superieur&nbsp;ou&nbsp;egal&nbsp;a&nbsp;valeurB');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isLowerThan('champ','valeurB','Le&nbsp;champ&nbsp;doit&nbsp;etre&nbsp;inferieur&nbsp;a&nbsp;valeurB');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isLowerOrEqualThan('champ','valeurB','Le&nbsp;champ&nbsp;doit&nbsp;etre&nbsp;inferieur&nbsp;ou&nbsp;egal&nbsp;a&nbsp;valeurB');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEmpty('champ','Le&nbsp;champ&nbsp;doit&nbsp;etre&nbsp;egal&nbsp;vide');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isNotEmpty('champ','Le&nbsp;champ&nbsp;ne&nbsp;doit&nbsp;pas&nbsp;etre&nbsp;vide');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;isEmailValid('champ','Le&nbsp;champ&nbsp;n&nbsp;est&nbsp;pas&nbsp;un&nbsp;email&nbsp;valide');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;matchExpression('champ','/[0-9]/','Le&nbsp;champ&nbsp;doit&nbsp;etre&nbsp;correspondre&nbsp;a&nbsp;une&nbsp;expression');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oPluginValid-&gt;notMatchExpression('champ','/[a-zA-Z]/','Le&nbsp;champ&nbsp;ne&nbsp;doit&nbsp;etre&nbsp;correspondre&nbsp;a&nbsp;une&nbsp;expression');<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$oPluginValid</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">save</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">()){&nbsp;</span><span style="color: #FF8000">//verifie&nbsp;la&nbsp;coherence&nbsp;avant&nbsp;d'enregistrer<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parent</span><span style="color: #007700">::</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">}<br /></span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>Chaque fichier ne contient que tr&egrave;s peu de lignes:<br /><h3>protected $sClassRow</h3>Le nom de la classe row du model les requ&ecirc;tes retournant des objets instanciant celle-ci<br /><h3>protected $sTable</h3>Le nom r&eacute;el de la table en base de donn&eacute;e<br /><h3>protected $sConfig</h3>L&#039;identifiant de connexion utilis&eacute; (param&eacute;tr&eacute; dans conf/connexion.ini.php)<br /><h3>protected $tId</h3>Tableau contenant le/les cl&eacute; primaire(s)<br /><br /><a id="laconfiguration" name="laconfiguration"></a><br /><h2>La configuration</h2><h3>Introduction</h3>La majorit&eacute; des profils de connexion utilisent le module pdo de php.<br /><h3>Exemple PDO (mysql,sqlserver,oracle,sqlite...)</h3>Les valeurs du fichier de configuration servent &agrave; cr&eacute;er l&#039;intance de pdo<br /><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #FF8000">//idee&nbsp;de&nbsp;la&nbsp;creation&nbsp;de&nbsp;l'objet&nbsp;pdo<br /></span><span style="color: #007700">new&nbsp;</span><span style="color: #0000BB">PDO</span><span style="color: #007700">(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;MON_PROFIL</span><span style="color: #007700">.</span><span style="color: #0000BB">dsn</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;MON_PROFIL</span><span style="color: #007700">.</span><span style="color: #0000BB">username</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;MON_PROFIL</span><span style="color: #007700">.</span><span style="color: #0000BB">password<br /></span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Comprenez ici: que dans votre classe mod&egrave;le, vous avez une variable $sConfig qui permet d&#039;intancier un objet pdo avec le profil choisi.<br /><br />Par exemple, pour se connecter &agrave; une base mysql<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />expleMysqlPdo</span><span style="color: #007700">.</span><span style="color: #0000BB">dsn</span><span style="color: #007700">=</span><span style="color: #DD0000">"mysql:dbname=maBase;host=localhost"<br /></span><span style="color: #0000BB">expleMysqlPdo</span><span style="color: #007700">.</span><span style="color: #0000BB">sgbd</span><span style="color: #007700">=</span><span style="color: #0000BB">pdo_mysql<br />expleMysqlPdo</span><span style="color: #007700">.</span><span style="color: #0000BB">username</span><span style="color: #007700">=</span><span style="color: #0000BB">root<br />expleMysqlPdo</span><span style="color: #007700">.</span><span style="color: #0000BB">password</span><span style="color: #007700">=</span><span style="color: #0000BB">monMotDePasse<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><br />qui cr&eacute;era une instanciation aussi simple que:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #FF8000">//idee&nbsp;de&nbsp;la&nbsp;creation&nbsp;de&nbsp;l'objet&nbsp;pdo<br /></span><span style="color: #007700">new&nbsp;</span><span style="color: #0000BB">PDO</span><span style="color: #007700">(<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">"mysql:dbname=maBase;host=localhost"</span><span style="color: #007700">,&nbsp;</span><span style="color: #FF8000">//dsn<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'</span><span style="color: #007700">,&nbsp;</span><span style="color: #FF8000">//user<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'monMotDePasse'&nbsp;</span><span style="color: #FF8000">//password<br /></span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h3>Note pour sqlite</h3>Utilisez l&#039;adresse absolu de votre base sqlite et non relative<br />Par exemple:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />expleSqlite</span><span style="color: #007700">.</span><span style="color: #0000BB">dsn</span><span style="color: #007700">=</span><span style="color: #DD0000">"sqlite:/var/www/maBase.sqlite"<br /></span><span style="color: #0000BB">expleSqlite</span><span style="color: #007700">.</span><span style="color: #0000BB">sgbd</span><span style="color: #007700">=</span><span style="color: #0000BB">pdo_sqlite<br />expleSqlite</span><span style="color: #007700">.</span><span style="color: #0000BB">username</span><span style="color: #007700">=</span><span style="color: #0000BB">root<br />expleSqlite</span><span style="color: #007700">.</span><span style="color: #0000BB">password</span><span style="color: #007700">=</span><span style="color: #0000BB">root<br />&nbsp;&nbsp;&nbsp;</span><br />
+</span><br />
+</code></div><br /><a id="fonctionnement" name="fonctionnement"></a><br /><h2>Son fonctionnement</h2><h3>Le commencement</h3>Soit une table article et une table auteur li&eacute;es par article.auteur_id = auteur.id<br />Apres la g&eacute;n&eacute;ration de notre couche mod&egrave;le via le mkbuilder<br />On obtient deux fichiers dans le repertoire &quot;model&quot;: model_article.php et model_auteur.php<br />Chaque fichier contient deux classes une commen&ccedil;ant par &quot;row_&quot; (active record) et une autre commen&ccedil;ant par &quot;model_&quot; (factory). C&#039;est &agrave; dire que lorsque vous voulez effectuer un &quot;select * from tableArticle&quot;<br />Vous allez utiliser la class &quot;model_article&quot;, et elle va retourner un tableau d&#039;objets &quot;row_article&quot;.<br /><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$tArticle</span><span style="color: #007700">=</span><span style="color: #0000BB">model_article</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Quand je dis que chaque methode retourne un tableau d&#039;objet row_article, cela veut dire que toutes les methodes que vous ajouterez dans la classe row_article seront accessibles &agrave; partir des enregistrements recup&eacute;r&eacute;s.<br /><br />Pour l&#039;exemple: vous voulez faire une jointure sur la table &quot;auteur&quot; pour r&eacute;cuperer son nom<br />Ajouter dans model_article.php<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findAuteur</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">model_auteur</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">auteur_id</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;retourne&nbsp;l'enregistrement&nbsp;"auteur"&nbsp;recupere&nbsp;via&nbsp;la&nbsp;cle&nbsp;etrangere&nbsp;"auteur_id"<br /></span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Et aussi simplement que possible vous allez afficher le nom de l&#039;auteur ainsi<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$tArticle</span><span style="color: #007700">=</span><span style="color: #0000BB">model_article</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">();<br />foreach(</span><span style="color: #0000BB">$tArticle&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$oArticle</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oArticle</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findAuteur</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">nom</span><span style="color: #007700">;<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Voici une pr&eacute;sentation des m&eacute;thodes d&eacute;j&agrave; impl&eacute;ment&eacute;es pour chaque enregistrement via l&#039;ORM<br /><br /><h3>public function findOne($requete,$tParam)</h3>retourne un objet en effectuant la requete $requete avec les parametres $tParam<br />exemple :<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">4</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>vous pouvez &eacute;galement &eacute;crire<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,array(</span><span style="color: #0000BB">4</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>ou encore (via driver pdo uniquement)<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=:id'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">4</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h3>public function findOneSimple($requete,$tParam)</h3>retourne un objet &quot;simple&quot; en effectuant la requete $requete avec les parametres $tParam<br />exemple :<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findOneSimple</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">4</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>vous pouvez &eacute;galement &eacute;crire<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findOneSimple</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,array(</span><span style="color: #0000BB">4</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>ou encore (via driver pdo uniquement)<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findOneSimple</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=:id'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">4</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>note: utilisez cette m&eacute;thode pour de l&#039;affichage rapide<br /><br /><h3>public function findMany($requete,$tParam)</h3>retourne un tableau d&#039; objets en effectuant la requete $requete avec les parametres $tParam<br />exemple :<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findMany</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;cat_id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>vous pouvez &eacute;galement &eacute;crire<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findMany</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;cat_id=?'</span><span style="color: #007700">,array(</span><span style="color: #0000BB">2</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>ou encore (via driver pdo uniquement)<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findMany</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;cat_id=:cat_id'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'cat_id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">2</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><h3>public function findManySimple($requete,$tParam)</h3>retourne un tableau d&#039; objets &quot;simple&quot; en effectuant la requete $requete avec les parametres $tParam<br />exemple :<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findManySimple</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;cat_id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>vous pouvez &eacute;galement &eacute;crire<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findManySimple</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;cat_id=?'</span><span style="color: #007700">,array(</span><span style="color: #0000BB">2</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>ou encore (via driver pdo uniquement)<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />findManySimple</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;cat_id=:cat_id'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'cat_id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">2</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />note: utilisez cette m&eacute;thode pour de l&#039;affichage rapide<br /><br /><h3>public function execute($requete,$tParam)</h3>Execute la requete $requete avec les parametres $tParam<br />exemple :<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />execute</span><span style="color: #007700">(</span><span style="color: #DD0000">'DELETE&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>vous pouvez &eacute;galement &eacute;crire<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />execute</span><span style="color: #007700">(</span><span style="color: #DD0000">'DELETE&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=?'</span><span style="color: #007700">,array(</span><span style="color: #0000BB">2</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>ou encore (via driver pdo uniquement)<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />execute</span><span style="color: #007700">(</span><span style="color: #DD0000">'DELETE&nbsp;FROM&nbsp;article&nbsp;WHERE&nbsp;id=:id'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">2</span><span style="color: #007700">)&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><a id="sesrequetes" name="sesrequetes"></a><br /><h2>Ecrire ses requ&ecirc;tes</h2>Si vous avez des elements variables, par exemple la requ&ecirc;te pour selectionner les articles de tel ou tel auteur<br />Selection d&#039;article par auteur<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findByAuteur</span><span style="color: #007700">(</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;auteur&nbsp;where&nbsp;auteur_id=?'</span><span style="color: #007700">,(int)</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">);<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>vous pouvez &eacute;galement &eacute;crire<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findByAuteur</span><span style="color: #007700">(</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;auteur&nbsp;where&nbsp;auteur_id=?'</span><span style="color: #007700">,array(</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">)&nbsp;);<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>ou encore (via driver pdo uniquement)<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findByAuteur</span><span style="color: #007700">(</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;auteur&nbsp;where&nbsp;auteur_id=:id'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$iAuteur_id</span><span style="color: #007700">)&nbsp;);<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Dans le cas de plusieurs arguments:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findByAuteur</span><span style="color: #007700">(</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$state</span><span style="color: #007700">=</span><span style="color: #0000BB">1</span><span style="color: #007700">;</span><span style="color: #FF8000">//etat&nbsp;actif<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;auteur&nbsp;where&nbsp;auteur_id=?&nbsp;AND&nbsp;state=?'</span><span style="color: #007700">,(int)</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">,(int)</span><span style="color: #0000BB">$state</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//ou<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;auteur&nbsp;where&nbsp;auteur_id=?&nbsp;AND&nbsp;state=?'</span><span style="color: #007700">,array(&nbsp;(int)</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">,(int)</span><span style="color: #0000BB">$state&nbsp;</span><span style="color: #007700">));<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//ou&nbsp;(via&nbsp;driver&nbsp;pdo&nbsp;uniquement)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;auteur&nbsp;where&nbsp;auteur_id=:auteur&nbsp;AND&nbsp;state=:state'</span><span style="color: #007700">,array(&nbsp;</span><span style="color: #DD0000">'auteur'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$auteur_id</span><span style="color: #007700">,</span><span style="color: #DD0000">'state'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$state&nbsp;</span><span style="color: #007700">));<br /><br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><a id="fairejointure" name="fairejointure"></a><br /><h2>Faire une jointure</h2>Par exemple une jointure livre/auteur<br />Ici deux m&eacute;thodes<br />- faire une m&eacute;thode dans l&#039;objet row pour recuperer un enregistrement ext&eacute;rieur<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">row_article&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_row</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">(...)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findAuteur</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">model_auteur</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">auteur_id</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>- faire simplement la jointure dans la requ&ecirc;te SQL<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">model_article&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_model</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">(...)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;article.*,auteur.nom<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;article<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INNER&nbsp;JOIN&nbsp;auteur&nbsp;ON&nbsp;article.auteur_id=auteur.id<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;article.id=?'</span><span style="color: #007700">,</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>Vous recuperez ainsi un objet article contenant &eacute;galement le nom de l&#039;auteur<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$oArticle</span><span style="color: #007700">=</span><span style="color: #0000BB">model_article</span><span style="color: #007700">::</span><span style="color: #0000BB">getIntance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br /><br />echo&nbsp;</span><span style="color: #0000BB">$oArticle</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">titre</span><span style="color: #007700">.</span><span style="color: #DD0000">'&nbsp;par&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$oArticle</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">nom</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><a id="modifierenregistrement" name="modifierenregistrement"></a><br /><h2>Modifier un enregistrement</h2>Vous souhaitez modifier le titre de l&#039;article qui a l&#039;id 2<br />Dans le code de votre module:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #FF8000">//on&nbsp;recupère&nbsp;l'objet&nbsp;de&nbsp;l'article&nbsp;à&nbsp;modifier<br /></span><span style="color: #0000BB">$oArticleToModify</span><span style="color: #007700">=</span><span style="color: #0000BB">model_Article</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br /></span><span style="color: #FF8000">//on&nbsp;modifie&nbsp;un&nbsp;de&nbsp;ses&nbsp;champs<br /></span><span style="color: #0000BB">$oArticleToModify</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">titre</span><span style="color: #007700">=</span><span style="color: #DD0000">'Mon&nbsp;nouveau&nbsp;titre'</span><span style="color: #007700">;<br /></span><span style="color: #FF8000">//on&nbsp;enregistre<br /></span><span style="color: #0000BB">$oArticleToModify</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><a id="ajouterunenregistrement" name="ajouterunenregistrement"></a><br /><h2>Ajouter un enregistrement</h2>Vous souhaitez ajouter un article<br />Dans le code de votre module:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #FF8000">//on&nbsp;créé&nbsp;un&nbsp;nouvel&nbsp;article<br /></span><span style="color: #0000BB">$oNewArticle</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">row_Article</span><span style="color: #007700">;<br /></span><span style="color: #FF8000">//on&nbsp;renseigne&nbsp;ses&nbsp;champs<br /></span><span style="color: #0000BB">$oNewArticle</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">titre</span><span style="color: #007700">=</span><span style="color: #DD0000">'Mon&nbsp;nouveau&nbsp;titre'</span><span style="color: #007700">;<br /></span><span style="color: #FF8000">//on&nbsp;enregistre<br /></span><span style="color: #0000BB">$oNewArticle</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><a id="supprimerenregistrement" name="supprimerenregistrement"></a><br /><h2>Supprimer un enregistrement</h2>Vous souhaitez supprimer l&#039;article qui a l&#039;id 2<br />Dans le code de votre module:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #FF8000">//on&nbsp;recupère&nbsp;l'objet&nbsp;de&nbsp;l'article&nbsp;à&nbsp;supprimer<br /></span><span style="color: #0000BB">$oArticleToDelete</span><span style="color: #007700">=</span><span style="color: #0000BB">model_Article</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br /></span><span style="color: #FF8000">//on&nbsp;le&nbsp;supprime<br /></span><span style="color: #0000BB">$oArticleToDelete</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><a id="automatiserretraitement" name="automatiserretraitement"></a><br /><h2>Automatiser un retraitement sur des enregistrements</h2>Il arrive certaines fois que l&#039;on souhaite reformater une date &agrave; la r&eacute;cup&eacute;ration et/ou &agrave; l&#039;enregistrement<br />Par exemple si l&#039;on change le format d&#039;affichage de la date en fonction de la langue ou si l&#039;on utilise un datePicker.<br /><br />Pour cela, il faut pour modifier les enregistrements lus:<br />Dans la class row_** de votre table, par exemple ici row_article<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">row_article&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_row</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sClassModel</span><span style="color: #007700">=</span><span style="color: #DD0000">'model_article'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">(...)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;surcharge&nbsp;le&nbsp;constructeur<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$tRow</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">){<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;appel&nbsp;le&nbsp;constructeur&nbsp;normal&nbsp;de&nbsp;la&nbsp;row<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parent</span><span style="color: #007700">::</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$tRow</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;modifie&nbsp;le&nbsp;champ&nbsp;date&nbsp;avant&nbsp;d'initialiser&nbsp;l'objet<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oDate&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">plugin_date</span><span style="color: #007700">(</span><span style="color: #0000BB">$tRow</span><span style="color: #007700">[</span><span style="color: #DD0000">'date'</span><span style="color: #007700">],</span><span style="color: #DD0000">'d/m/Y'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">date&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$oDate</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">toString</span><span style="color: #007700">(</span><span style="color: #DD0000">'Y-m-d'</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Et pour modifier &agrave; la sauvegarde en base de donn&eacute;es:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">row_article&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">abstract_row</span><span style="color: #007700">{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$sClassModel</span><span style="color: #007700">=</span><span style="color: #DD0000">'model_article'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">(...)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">save</span><span style="color: #007700">(){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">()){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//on&nbsp;formate&nbsp;à&nbsp;la&nbsp;volée<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oDate&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">plugin_date</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">date</span><span style="color: #007700">,</span><span style="color: #DD0000">'d/m/Y'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">date&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$oDate</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">toString</span><span style="color: #007700">(</span><span style="color: #DD0000">'Y-m-d'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parent</span><span style="color: #007700">::</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->

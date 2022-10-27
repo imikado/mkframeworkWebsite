@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MkFramework V4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="site/css/bootstrap.min.css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				<a class="navbar-brand" href="/"> MkFramework</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						
+			<li><h4>Le site</h4></li>
+		
+
+					<li><a href="accueil.html">Accueil</a></li>
+		
+
+					<li><a href="news.html">News</a></li>
+		
+
+					<li><a href="roadmap.html">Roadmap</a></li>
+		
+
+			<li><h4>Pr&eacute;sentation</h4></li>
+		
+
+					<li><a href="fonctionnement.html">Sch&eacute;mas</a></li>
+		
+
+					<li><a href="builder.html">Le g&eacute;n&eacute;rateur web</a></li>
+		
+
+					<li><a href="orm.html">L'ORM <br/>(La couche mod&egrave;le)</a></li>
+		
+
+					<li><a href="configuration.html">Configuration</a></li>
+		
+
+					<li><a href="security.html">La s&eacute;curit&eacute;</a></li>
+		
+
+					<li><a href="api.html">L'API (Phpdoc)</a></li>
+		
+
+			<li><h4>Apprendre</h4></li>
+		
+
+					<li><a href="start.html">D&eacute;marrer</a></li>
+		
+
+					<li><a href="tutoriaux.html">Tutoriaux</a></li>
+		
+
+					<li><a href="screencasts.html">Tutotoriaux vid&eacute;os</a></li>
+		
+
+					<li><a href="bestpractices.html">Bonnes pratiques</a></li>
+		
+
+					<li><a href="slides.html">Slides</a></li>
+		
+
+			<li><h4>T&eacute;l&eacute;charger</h4></li>
+		
+
+					<li><a href="telecharger.html">Framework &amp; plus</a></li>
+		
+
+					<li><a href="projets.html">Les applications</a></li>
+		
+
+					<li><a href="modules.html">Les modules</a></li>
+		
+
+					<li><a href="plugins.html">Les plugins</a></li>
+		
+
+			<li><h4>Aide</h4></li>
+		
+
+					<li><a href="faq.html">FAQ <br/>Foire aux questions</a></li>
+		
+
+					<li><a href="index.php?:nav=forum">Forum / aide</a></li>
+		
+
+ 
+					</ul>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+										<li><a style="font-weight:bold" href="bigtutoriel_socialnetworkUpgrade_II.html">FR</a></li>
+
+					<li><a  href="bigtutoriel_socialnetworkUpgrade_II.html">EN</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!-- container -->
+    </div>
+		
+	<div class="container">
+		
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+		<h1>Comment am&eacute;liorer ce r&eacute;seau social</h1><br />-<a href="bigtutoriel_socialnetworkUpgrade_I.html">I Pr&eacute;ambule </a><br />-<a style="font-weight:bold" href="bigtutoriel_socialnetworkUpgrade_II.html">II Am&eacute;liorons l&#039;application existante </a><br />-<a href="bigtutoriel_socialnetworkUpgrade_III.html">III Ajoutons la possibilit&eacute; de mettre des +1 &agrave; des posts </a><br />(en cours de r&eacute;daction)-<a href="bigtutoriel_socialnetworkUpgrade_IV.html">IV Ajoutons la possibilit&eacute; de commenter </a><br /><br /><h2>II Pr&eacute;ambule</h2><h3>II.A Introduction</h3>Nous allons dans ce chapitre am&eacute;liorer certains &eacute;l&eacute;ments de l&#039;application<br />Nous allons ajouter des liens pour voir les profils des utilisateurs, ajouter l&#039;icone des membres &agrave; cot&eacute; de leur noms...<br /><br /><h3>II.B Ajoutons des liens vers le profil de l&#039;utilisateur</h3>Dans me module posts, on liste les posts de chacun, nous allons ajouter un lien permettant de voir le profil de l&#039;auteur<br />Dans la vue <u>module/Posts/view/list.php</u><br />Modifiez l&#039;affichage du nom de l&#039;auteur de<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">h2</span><span style="color: #007700">&gt;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tIndexdUsers</span><span style="color: #007700">[</span><span style="color: #0000BB">$oPosts</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user_id</span><span style="color: #007700">]-&gt;</span><span style="color: #0000BB">firstname&nbsp;?&gt;</span>&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tIndexdUsers</span><span style="color: #007700">[</span><span style="color: #0000BB">$oPosts</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user_id</span><span style="color: #007700">]-&gt;</span><span style="color: #0000BB">lastname&nbsp;?&gt;</span>&lt;/h2&gt;<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>Par<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">h2</span><span style="color: #007700">&gt;&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"&lt;?php&nbsp;echo&nbsp;_root::getLink('mainShare::profil',array('user_id'=&gt;</span><span style="color: #0000BB">$oPosts</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user_id</span><span style="color: #DD0000">))?&gt;"</span><span style="color: #007700">&gt;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tIndexdUsers</span><span style="color: #007700">[</span><span style="color: #0000BB">$oPosts</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user_id</span><span style="color: #007700">]-&gt;</span><span style="color: #0000BB">firstname&nbsp;?&gt;</span>&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tIndexdUsers</span><span style="color: #007700">[</span><span style="color: #0000BB">$oPosts</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user_id</span><span style="color: #007700">]-&gt;</span><span style="color: #0000BB">lastname&nbsp;?&gt;</span>&lt;/a&gt;&lt;/h2&gt;<br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div><br />Dans le module contacts, on ajoute un lien sur les noms des membres trouv&eacute;s lors d&#039;une recherche<br />Modifier la vue <u>module/contacts/view/find.php</u><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /><br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">hr</span><span style="color: #007700">/&gt;<br />&lt;</span><span style="color: #0000BB">h1</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Rechercher</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">h1</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">form&nbsp;action</span><span style="color: #007700">=</span><span style="color: #DD0000">""&nbsp;</span><span style="color: #0000BB">method</span><span style="color: #007700">=</span><span style="color: #DD0000">"POST"</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Rechercher&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">input&nbsp;type</span><span style="color: #007700">=</span><span style="color: #DD0000">"text"&nbsp;</span><span style="color: #0000BB">name</span><span style="color: #007700">=</span><span style="color: #DD0000">"pattern"&nbsp;</span><span style="color: #007700">/&gt;&nbsp;&lt;</span><span style="color: #0000BB">input&nbsp;type</span><span style="color: #007700">=</span><span style="color: #DD0000">"submit"<br /></span><span style="color: #0000BB">value</span><span style="color: #007700">=</span><span style="color: #DD0000">"Rechercher"</span><span style="color: #007700">/&gt;&lt;/</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;<br />&lt;/</span><span style="color: #0000BB">form</span><span style="color: #007700">&gt;<br />&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">isPost</span><span style="color: #007700">()&nbsp;and&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'pattern'</span><span style="color: #007700">)):</span><span style="color: #0000BB">?&gt;<br /></span>&lt;h1&gt;R&amp;eacute;sultat(s)&nbsp;de&nbsp;recherche&lt;/h1&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tUserFound</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&lt;table&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">foreach(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tUserFound&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&lt;tr&gt;<br />&lt;td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'mainShare::profil'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'user_id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">))</span><span style="color: #0000BB">?&gt;</span>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lastname?&gt;</span>&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">firstname?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&lt;/td&gt;<br />&lt;td&gt;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'contacts::ask'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">))<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&gt;</span>"&gt;demander&nbsp;en&nbsp;contact&lt;/a&gt;&lt;/td&gt;<br />&lt;/tr&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endforeach;</span><span style="color: #0000BB">?&gt;<br /></span>&lt;/table&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">else:</span><span style="color: #0000BB">?&gt;<br /></span>&lt;p&gt;Aucun&nbsp;r&amp;eacute;sultats&lt;/p&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endif;</span><span style="color: #0000BB">?&gt;<br />&lt;?php&nbsp;</span><span style="color: #007700">endif;</span><span style="color: #0000BB">?&gt;<br /></span><br />&nbsp;&nbsp;&nbsp;</span><br />
+</code></div><br /><h3>II.C Ajoutons l&#039;affichage de l&#039;avatar &agrave; cot&eacute; de nos contacts</h3>Actuellement, lorsque vous afficher la page de vos contacts, vous voyez une liste de noms, nous allons leur ajouter leur icone de profil.<br />Mais avant tout, nous allons cr&eacute;er une image par d&eacute;faut: si l&#039;avatar n&#039;est pas renseign&eacute;: ajouter cette image de 100px x 100px dans data/img sous le nom default.png<br />Editons notre vue <u>module/contacts/view/listembedded.php</u><br />Ajoutons une colonne &agrave; notre tableau affichant l&#039;image du profil<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tContacts</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&lt;table&gt;<br />&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">foreach(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tContacts&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;$sPicture</span><span style="color: #007700">=</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getConfigVar</span><span style="color: #007700">(</span><span style="color: #DD0000">'path.data'</span><span style="color: #007700">).</span><span style="color: #DD0000">'/img/default.png'</span><span style="color: #007700">;&nbsp;if(</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">profilPicture</span><span style="color: #007700">!=</span><span style="color: #DD0000">''</span><span style="color: #007700">){&nbsp;</span><span style="color: #0000BB">$sPicture</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">profilPicture</span><span style="color: #007700">;}</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;img&nbsp;style="height:20px"&nbsp;src="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$sPicture</span><span style="color: #007700">;</span><span style="color: #0000BB">?&gt;</span>"/&gt;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'mainShare::profil'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'user_id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">))</span><span style="color: #0000BB">?&gt;</span>"&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lastname&nbsp;?&gt;</span>&lt;/a&gt;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'mainShare::profil'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'user_id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">))</span><span style="color: #0000BB">?&gt;</span>"&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">firstname&nbsp;?&gt;</span>&lt;/a&gt;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endforeach;</span><span style="color: #0000BB">?&gt;<br /></span>&lt;/table&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">else:</span><span style="color: #0000BB">?&gt;<br /></span>Aucun&nbsp;pour&nbsp;le&nbsp;moment<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endif;</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>Idem pour la vue <u>module/contacts/view/listembeddedToValidate.php</u><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tContacts</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&lt;table&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">foreach(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tContacts&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;$sPicture</span><span style="color: #007700">=</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getConfigVar</span><span style="color: #007700">(</span><span style="color: #DD0000">'path.data'</span><span style="color: #007700">).</span><span style="color: #DD0000">'/img/default.png'</span><span style="color: #007700">;&nbsp;if(</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">profilPicture</span><span style="color: #007700">!=</span><span style="color: #DD0000">''</span><span style="color: #007700">){&nbsp;</span><span style="color: #0000BB">$sPicture</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">profilPicture</span><span style="color: #007700">;}</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;img&nbsp;style="height:20px"&nbsp;src="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$sPicture</span><span style="color: #007700">;</span><span style="color: #0000BB">?&gt;</span>"/&gt;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lastname&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">firstname&nbsp;?&gt;</span>&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'contacts::accept'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">friend_id</span><span style="color: #007700">))<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&gt;</span>"&gt;Accepter&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'contacts::refuse'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oContact</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">friend_id</span><span style="color: #007700">))<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&gt;</span>"&gt;Refuser&lt;/a&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endforeach;</span><span style="color: #0000BB">?&gt;<br /></span>&lt;/table&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">else:</span><span style="color: #0000BB">?&gt;<br /></span>Aucun&nbsp;pour&nbsp;le&nbsp;moment<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endif;</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>Idem pour la vue de recherche <u>module/contacts/view/find.php</u><br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /><br /></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">hr</span><span style="color: #007700">/&gt;<br />&lt;</span><span style="color: #0000BB">h1</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Rechercher</span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">h1</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">form&nbsp;action</span><span style="color: #007700">=</span><span style="color: #DD0000">""&nbsp;</span><span style="color: #0000BB">method</span><span style="color: #007700">=</span><span style="color: #DD0000">"POST"</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">Rechercher&nbsp;</span><span style="color: #007700">&lt;</span><span style="color: #0000BB">input&nbsp;type</span><span style="color: #007700">=</span><span style="color: #DD0000">"text"&nbsp;</span><span style="color: #0000BB">name</span><span style="color: #007700">=</span><span style="color: #DD0000">"pattern"&nbsp;</span><span style="color: #007700">/&gt;&nbsp;&lt;</span><span style="color: #0000BB">input&nbsp;type</span><span style="color: #007700">=</span><span style="color: #DD0000">"submit"<br /></span><span style="color: #0000BB">value</span><span style="color: #007700">=</span><span style="color: #DD0000">"Rechercher"</span><span style="color: #007700">/&gt;&lt;/</span><span style="color: #0000BB">p</span><span style="color: #007700">&gt;<br />&lt;/</span><span style="color: #0000BB">form</span><span style="color: #007700">&gt;<br />&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">isPost</span><span style="color: #007700">()&nbsp;and&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'pattern'</span><span style="color: #007700">)):</span><span style="color: #0000BB">?&gt;<br /></span>&lt;h1&gt;R&amp;eacute;sultat(s)&nbsp;de&nbsp;recherche&lt;/h1&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tUserFound</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&lt;table&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">foreach(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">tUserFound&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">):</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;$sPicture</span><span style="color: #007700">=</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getConfigVar</span><span style="color: #007700">(</span><span style="color: #DD0000">'path.data'</span><span style="color: #007700">).</span><span style="color: #DD0000">'/img/default.png'</span><span style="color: #007700">;&nbsp;if(</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">profilPicture</span><span style="color: #007700">!=</span><span style="color: #DD0000">''</span><span style="color: #007700">){&nbsp;</span><span style="color: #0000BB">$sPicture</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">profilPicture</span><span style="color: #007700">;}</span><span style="color: #0000BB">?&gt;<br /></span>&lt;tr&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;img&nbsp;style="height:20px"&nbsp;src="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$sPicture</span><span style="color: #007700">;</span><span style="color: #0000BB">?&gt;</span>"/&gt;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'mainShare::profil'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'user_id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">))</span><span style="color: #0000BB">?&gt;</span>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lastname?&gt;</span>&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">firstname?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href="<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getLink</span><span style="color: #007700">(</span><span style="color: #DD0000">'contacts::ask'</span><span style="color: #007700">,<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">array(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$oUserFound</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">))<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&gt;</span>"&gt;demander&nbsp;en&nbsp;contact&lt;/a&gt;&lt;/td&gt;<br />&lt;/tr&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endforeach;</span><span style="color: #0000BB">?&gt;<br /></span>&lt;/table&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">else:</span><span style="color: #0000BB">?&gt;<br /></span>&lt;p&gt;Aucun&nbsp;r&amp;eacute;sultats&lt;/p&gt;<br /><span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">endif;</span><span style="color: #0000BB">?&gt;<br />&lt;?php&nbsp;</span><span style="color: #007700">endif;</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;</span><br />
+</code></div>Ce qui donne:<br /><img src="data/img/socialnetwork_contacts.png" /><br /><br /><h1>T&eacute;l&eacute;chargez le zip</h1>T&eacute;l&eacute;chargez l&#039;archive du projet &agrave; cette &eacute;tape <a href="data/down/socialnetworkUpgradeII.zip">en cliquant ici </a><br />A copier dans le r&eacute;pertoire data/genere du mkframework<br /><br /><br /><p style="text-align:right">Lire la suite :  <a href="bigtutoriel_socialnetworkUpgrade_III.html">III Ajoutons la possibilit&eacute; de mettre des +1 &agrave; des posts </a></p><br /><br />		</div><!-- /.blog-main -->
+
+		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+			
+			 
+			<p><button onclick="goTo('telecharger.html');" type="button" class="btn btn-primary">T&eacute;l&eacute;charger le framework</button></p>
+			
+			<p><a href="https://twitter.com/mkframework" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @mkframework</a></p>
+			
+			
+			
+			<div class="sidebar-module">
+					 <h4>Le site</h4>
+          <ul class="nav">
+							<li><a href="accueil.html">Accueil</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="roadmap.html">Roadmap</a></li>
+								</ul>
+				 <h4>Pr&eacute;sentation</h4>
+          <ul class="nav">
+							<li><a href="fonctionnement.html">Sch&eacute;mas</a></li>
+							<li><a href="builder.html">Le g&eacute;n&eacute;rateur web</a></li>
+							<li><a href="orm.html">L'ORM <br/>(La couche mod&egrave;le)</a></li>
+							<li><a href="configuration.html">Configuration</a></li>
+							<li><a href="security.html">La s&eacute;curit&eacute;</a></li>
+							<li><a href="api.html">L'API (Phpdoc)</a></li>
+								</ul>
+				 <h4>Apprendre</h4>
+          <ul class="nav">
+							<li><a href="start.html">D&eacute;marrer</a></li>
+							<li><a href="tutoriaux.html">Tutoriaux</a></li>
+							<li><a href="screencasts.html">Tutotoriaux vid&eacute;os</a></li>
+							<li><a href="bestpractices.html">Bonnes pratiques</a></li>
+							<li><a href="slides.html">Slides</a></li>
+								</ul>
+				 <h4>T&eacute;l&eacute;charger</h4>
+          <ul class="nav">
+							<li><a href="telecharger.html">Framework &amp; plus</a></li>
+							<li><a href="projets.html">Les applications</a></li>
+							<li><a href="modules.html">Les modules</a></li>
+							<li><a href="plugins.html">Les plugins</a></li>
+								</ul>
+				 <h4>Aide</h4>
+          <ul class="nav">
+							<li><a href="faq.html">FAQ <br/>Foire aux questions</a></li>
+					<li><a target="_blank" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum / aide</a></li>
+		 </ul>
+</div>
+ 
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+	
+	
+	 <div class="blog-footer">
+       
+      <p>
+        <a href="#">Retour en haut</a>
+      </p>
+    </div>
+	
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="site/js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="site/js/bootstrap.min.js"></script>
+  
+ 
+</body>
+</html>
+
+<!--cache -->

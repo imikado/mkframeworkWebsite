@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min_v2.css" />
+    
+ 
+    <title>MkFramework</title>
+ <link rel="stylesheet" type="text/css" href="site/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="site/css/jumbotron.css" media="screen" />
+
+
+  
+<script src="site/js/main.js" type="text/javascript"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="news.rss"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34332613-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.container2{
+margin-top:40px;
+
+}
+</style>
+</head>
+<body>
+
+<style>
+.navbar .navbar-brand{
+background: url('site/css/images//logoMk.png') no-repeat 0px 0px ;
+padding-left:60px;
+}
+</style>
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">MKFramework</a>
+	<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+		
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="news.html">Le site <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="fonctionnement.html">Pr&eacute;sentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="start.html">Documentation <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="publishonweb.html">Publications <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a  class="nav-link" href="telecharger.html">T&eacute;l&eacute;charger <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+			
+							
+				<li class="nav-item ">
+					<a target="_blank" class="nav-link" href="http://www.developpez.net/forums/f1355/applications/projets/projets-heberges/mkframework/">Forum <span class="sr-only">(current)</span></a>
+				</li>
+			
+				
+				
+						
+			
+          
+		</ul>
+		
+		<ul class="navbar-nav  navbar-right">
+						<li class="nav-item"><a class="nav-link" style="font-weight:bold" href="scraftsmanshipDetail_exampleHexagonal.html">FR</a></li>
+
+			<li><a class="nav-link"  href="scraftsmanshipDetail_exampleHexagonal.html">EN</a></li>
+		</ul>
+		
+	</div>
+</nav>
+ <style>
+ .navbar-custom {
+    background-color: #124c5c;
+}</style>
+<nav class="navbar navbar-expand-md  navbar-custom navbar-dark">
+	 
+
+	<div class="navbar-collapse collapse"  >
+		<ul class="navbar-nav mr-auto">
+	
+			
+	
+		  
+  
+         
+	</ul>
+</div>
+</nav>
+
+
+    
+      <main role="main">
+      
+		<div class="container container2">
+	 
+		<h1>Software Craftsmanship</h1><h2>Sommaire</h2>- <a href="scraftsmanship.html">Introduction </a><br />- <a href="scraftsmanshipDetail_builder.html">Pr&eacute;sentation dans le builder </a><br />- Exemple d&#039;un module utilisant l&#039;architecture hexagonale<br />- <a href="scraftsmanshipDetail_impactCoucheModel.html">L&#039;impact sur la couche model </a><br /><br /><h2>Module utlisant l&#039;architecture hexagonale</h2>La notion d&#039;architecure hexagonale, concr&egrave;tement &agrave; quoi &ccedil;a ressemble ?<br /><br /><img src="data/img/archiHexagonal.jpg" /><br /><br />L&#039;id&eacute;e est simple: tout ce qui est ext&eacute;rieur &agrave; l&#039;algorythme doit etre param&eacute;trable.<br />Ceci inclu, comme vous pouvez le voir sur le sch&eacute;ma aussi bien la base de donn&eacute;es que le syst&egrave;me de fichier (lecture/&eacute;criture fichiers..), en passant par le contexte du serveur (date)<br /><br />Concr&egrave;tement on a, sur ce template, un nouveau type de classe: les classes &quot;business&quot;<br /><br />Ces classes doivent contenir l&#039;intelligence m&eacute;tier de votre application.<br />Celles-ci prennent dans leur constructeur l&#039;ensemble de ces param&egrave;tres contextuels.<br /><br />Par exemple pour une classe business de CRUD:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">&lt;?</span><span style="color: #0000BB">php<br /><br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">business_crudUsers&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">business_abstract&nbsp;</span><span style="color: #007700">{<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$_oModel</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$_oAuth</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$_oI18n</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$_oValid</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">protected&nbsp;</span><span style="color: #0000BB">$_tColumn&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #DD0000">'login'</span><span style="color: #007700">,</span><span style="color: #DD0000">'password'</span><span style="color: #007700">,</span><span style="color: #DD0000">'groups_id'</span><span style="color: #007700">,);<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">interface_model&nbsp;$oModel_</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">interface_i18n&nbsp;$oI18n_</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">interface_valid&nbsp;$oValid_</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oModel&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$oModel_</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oI18n</span><span style="color: #007700">=</span><span style="color: #0000BB">$oI18n_</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oValid</span><span style="color: #007700">=</span><span style="color: #0000BB">$oValid_</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Ainsi, plutot que d&#039;avoir du code d&eacute;pendant comme ceci:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$iId</span><span style="color: #007700">=</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />if(</span><span style="color: #0000BB">$iId</span><span style="color: #007700">==</span><span style="color: #0000BB">null</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oAuteur</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">row_auteur</span><span style="color: #007700">;&nbsp;</span><span style="color: #0000BB">&nbsp;&nbsp;<br /></span><span style="color: #007700">}else{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oAuteur</span><span style="color: #007700">=</span><span style="color: #0000BB">model_auteur</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findById</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;);<br />}<br /><br /></span><span style="color: #0000BB">$tColumn</span><span style="color: #007700">=array(</span><span style="color: #DD0000">'nom'</span><span style="color: #007700">);<br />foreach(</span><span style="color: #0000BB">$tColumn&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$sColumn</span><span style="color: #007700">){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$sColumn</span><span style="color: #007700">=</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #0000BB">$sColumn</span><span style="color: #007700">,</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;;<br />}<br /><br /><br />if(</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">()){<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//une&nbsp;fois&nbsp;enregistre&nbsp;on&nbsp;redirige&nbsp;(vers&nbsp;la&nbsp;page&nbsp;liste)<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;_root</span><span style="color: #007700">::</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(</span><span style="color: #DD0000">'auteur::list'</span><span style="color: #007700">);<br />}else{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$oAuteur</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">();<br />}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div>O&ugrave; il est notamment tr&egrave;s difficile de mettre des tests unitaires, nous avons plutot ceci:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />$tParams&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getParams</span><span style="color: #007700">();<br /><br /></span><span style="color: #0000BB">$oBusiness&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">business_crudUsers</span><span style="color: #007700">(</span><span style="color: #0000BB">model_Users</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getI18n</span><span style="color: #007700">(),&nbsp;new&nbsp;</span><span style="color: #0000BB">plugin_sc_valid</span><span style="color: #007700">()&nbsp;);<br /><br /></span><span style="color: #0000BB">$iId&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />if&nbsp;(</span><span style="color: #0000BB">$iId&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">false&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">$oBusiness</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">insertItem</span><span style="color: #007700">(new&nbsp;</span><span style="color: #0000BB">row_Users</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$tParams</span><span style="color: #007700">))&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$oBusiness</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getReturn</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getData</span><span style="color: #007700">(</span><span style="color: #DD0000">'tError'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}&nbsp;else&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">false&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">$oBusiness</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">updateItem</span><span style="color: #007700">(</span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">getParam</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$tParams</span><span style="color: #007700">))&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$oBusiness</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getReturn</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getData</span><span style="color: #007700">(</span><span style="color: #DD0000">'tError'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}<br /><br /></span><span style="color: #FF8000">//une&nbsp;fois&nbsp;enregistre&nbsp;on&nbsp;redirige&nbsp;(vers&nbsp;la&nbsp;page&nbsp;liste)<br /></span><span style="color: #0000BB">_root</span><span style="color: #007700">::</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(</span><span style="color: #DD0000">'global_Users::list'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br />Dont le code, par exemple de la m&eacute;thode &quot;updateItem&quot; utilise les param&egrave;tres pass&eacute;s dans le constructeur:<br /><div class="code"> <code><span style="color: #000000"><br />
+<span style="color: #0000BB">&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">updateItem</span><span style="color: #007700">(</span><span style="color: #0000BB">$id_</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oValid&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCheck</span><span style="color: #007700">(</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">$oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">())&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendReturn</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'tError'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oValid</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getListError</span><span style="color: #007700">()));<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oUsers_</span><span style="color: #007700">=</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findByID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id_</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_tColumn&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$sColummn</span><span style="color: #007700">)&nbsp;{<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$oUsers_</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$sColummn&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$tParam_</span><span style="color: #007700">[</span><span style="color: #0000BB">$sColummn</span><span style="color: #007700">];<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_oModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">update</span><span style="color: #007700">(</span><span style="color: #0000BB">$oUsers_</span><span style="color: #007700">);<br /><br /><br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000B"></span><br />
+</span><br />
+</code></div><br /><br /><br /><br /><br /><br /><br /><br />	 
+		</div>	
+	 
+		</main>
+	 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="site/js/bootstrap.min.js" ></script>
+  </body>
+</html>
+
+<!--cache -->
